@@ -1,0 +1,7 @@
+**.bag
+**.out
+Jobs/tmp.prof
+Training_sets/**lag
+Training_sets/Backup
+Training_sets/Sims
+Training_sets/videos
