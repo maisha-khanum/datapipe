@@ -1,11 +1,12 @@
 import os
 os.environ["PATH"] = "/usr/bin:" + os.environ["PATH"]
 
-import rosbag
+import rosbag2
 import sys
 import yaml
 import numpy as np
-import ros_numpy as rnp
+# import ros_numpy as rnp
+from cv_bridge import CvBridge
 import matplotlib.pyplot as plt
 import sensor_msgs
 # import cv2
@@ -51,7 +52,11 @@ class video_generator:
             print('[TYPE] video_frame',self.video_channel,t,len(self.video_t))
             # Convert to cv frame
             msg.__class__ = sensor_msgs.msg._Image.Image
-            img = rnp.numpify(msg)
+            # img = rnp.numpify(msg) #ROS 1
+
+            # Convert ROS Image message to OpenCV image
+            img = self.bridge.imgmsg_to_cv2(msg, desired_encoding="passthrough")
+            img = np.array(img)  # Ensure it's a NumPy array
             
             # Gather info from header
             msg_t = msg.header.stamp.secs+msg.header.stamp.nsecs*1e-9
@@ -139,10 +144,10 @@ if __name__ == "__main__":
     # fpath = '../bag_recording/field_2021-08-18-15-59-25.bag'
     # fpath      = '../bag_recording/field_2021-10-17-15-58-05.bag'
     bagname = sys.argv[1]
-    fpath = '/afs/cs.stanford.edu/u/weizhuo2/Documents/Data_pipe/Bags/'+bagname
+    fpath = '/home/mkhanum/datapipe/Bags'+bagname
     # fpath = '/afs/cs.stanford.edu/u/weizhuo2/Documents/Data_pipe/Bags/realsense_2022-08-01-17-25-56_lag.bag'
     # fpath      = '../bag_recording/field_2021-12-09-16-45-58.bag.active'
-    save_fpath = '/afs/cs.stanford.edu/u/weizhuo2/Documents/Data_pipe/Training_sets/videos/'+fpath.split('/')[-1].split('.')[0] # extract the fname
+    save_fpath = '/home/mkhanum/datapipe/Training_sets/videos/'+fpath.split('/')[-1].split('.')[0] # extract the fname
     # video_channel = '/d400/color/image_raw'
     # # video_channel = '/testpano'
     

@@ -2,7 +2,7 @@ from math import trunc
 import bz2,gzip
 import time
 import pickle,json
-import rosbag
+import rosbag2
 import yaml
 import argparse
 from tqdm import tqdm

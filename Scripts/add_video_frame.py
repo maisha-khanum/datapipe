@@ -1,6 +1,6 @@
 import numpy as np
 import pickle
-import rosbag
+import rosbag2
 import yaml
 from tqdm import tqdm
 import sensor_msgs
@@ -74,7 +74,7 @@ def point_to_channelD455(pc_frame):
 
     return depth_frame
 
-def find_scale_shift(Dgt, Dpred):
+def find_scale_shift(Dgt, Dpred): # Look into segmented alignment
     """
     Finds the scale and shift coefficients to match the predicted depth image to the ground truth.
 

@@ -1,5 +1,6 @@
 #/usr/bin/env python
-import rosbag
+# import ros2_numpy as rnp
+import rosbag2_py
 import yaml
 import argparse
 from tqdm import tqdm
