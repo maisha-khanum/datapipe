@@ -109,20 +109,6 @@ def uv2xyz(u, v, depth):
     z = depth
     return x,y,z
 
-# def load_frame(np_image: np.array) -> Tuple[np.array, torch.Tensor]:
-#     transform = T.Compose(
-#         [
-#             T.RandomResize([480], max_size=1333),
-#             T.ToTensor(),
-#             T.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225]),
-#         ]
-#     )
-#     # # image_source = Image.fromarray(np.transpose(np_image,(1,2,0))).convert("RGB")
-#     image_source = Image.fromarray(np_image).convert("RGB")
-#     # image = np.asarray(image_source)
-#     image_transformed, _ = transform(image_source, None)
-#     print(image_transformed.shape)
-#     return np_image, image_transformed
 
 def generate_pano(pc_frame_glob, curr_pos,r,sample_ratio,view_dist=10.0,filter=False):  
       
@@ -223,13 +209,6 @@ class semantic_labeler:
             device=self.device,
         )
         print("Grounding DINO loaded successfully.")
-
-    # def load_data_source(self): # LOAD FRAME
-    #     """Load data source based on the provided bag name."""
-    #     fpath = '/afs/cs.stanford.edu/u/weizhuo2/Documents/Data_pipe/Training_sets/' + 'V20HZVZS_' + self.bag_name[:-4]
-    #     print(f"\nLoading {fpath}")
-    #     self.data_dict = joblib.load(fpath)
-    #     print("Data source loaded successfully.")
 
     def load_data_source(self):  # LOAD FRAME
         """Load an RGB image and a point cloud instead of a bag file."""
@@ -391,6 +370,8 @@ class semantic_labeler:
 
         seg_frame = self.seg_frame_lst
 
+        min_depth = 2000
+
         for ch_idx in range(seg_frame.shape[2]):
             mask = seg_frame[:, :, ch_idx] > 0  # Get the mask for class ch_idx
             
@@ -421,6 +402,9 @@ class semantic_labeler:
                             # points_3d.append([x, y, z, r, g, b])
 
                             points_3d.append([x,y,z])
+
+                            if depth < min_depth:
+                                min_depth = depth
             
             print("HERE")
 
@@ -428,7 +412,9 @@ class semantic_labeler:
         self.masked_depth_frame = masked_depth_frame
         self.masked_pc_frame = points_3d
 
-        print(self.depth_frame.shape)
+        print(min(points_3d))
+
+        print(min_depth)
 
         # self.masked_pc_frame = self.get_3d_points_from_mask(self.video_frame, self.depth_values, self.seg_frame_lst)
 

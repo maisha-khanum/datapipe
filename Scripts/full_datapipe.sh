@@ -48,6 +48,7 @@ source /home/mkhanum/miniconda3/etc/profile.d/conda.sh
 # conda activate GSAM
 conda activate GSAM2Env
 which python
-python3 DINOv2_labeler.py $lag_bag_name  # window_sz=9
+# python3 DINOv2_labeler.py $lag_bag_name  # window_sz=9
+python3 GSAM2_labeler.py $lag_bag_name  # window_sz=9
 
 # Turn dataset into mmap arrays
