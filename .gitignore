@@ -5,4 +5,6 @@ Jobs/tmp.prof
 Training_sets/**lag
 Training_sets/Backup
 Training_sets/Sims
-Training_sets/videos
+Training_sets/videosBags/*
+Bags/*
+!Bags/place_bag_file_here
