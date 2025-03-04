@@ -1,2 +1,0 @@
-Invoking command in '/home/mkhanum/datapipe/build/ros2_ws': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/mkhanum/datapipe/ros2_ws -DCMAKE_INSTALL_PREFIX=/home/mkhanum/datapipe/install/ros2_ws
-Invoked command in '/home/mkhanum/datapipe/build/ros2_ws' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/mkhanum/datapipe/ros2_ws -DCMAKE_INSTALL_PREFIX=/home/mkhanum/datapipe/install/ros2_ws

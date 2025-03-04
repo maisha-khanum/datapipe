@@ -1,5 +1,0 @@
-source;share/smartbelt_segmentation/local_setup.bash
-source;share/smartbelt_segmentation/local_setup.dsv
-source;share/smartbelt_segmentation/local_setup.ps1
-source;share/smartbelt_segmentation/local_setup.sh
-source;share/smartbelt_segmentation/local_setup.zsh

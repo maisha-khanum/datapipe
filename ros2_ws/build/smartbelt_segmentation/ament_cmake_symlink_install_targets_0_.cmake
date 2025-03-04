@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation/mk_matching_ptcld" "TARGETS" "mk_matching_ptcld" "DESTINATION" "lib/smartbelt_segmentation")

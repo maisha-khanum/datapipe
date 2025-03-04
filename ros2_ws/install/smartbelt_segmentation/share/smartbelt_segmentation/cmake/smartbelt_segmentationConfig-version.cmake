@@ -1,0 +1,1 @@
+/home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation/ament_cmake_core/smartbelt_segmentationConfig-version.cmake
