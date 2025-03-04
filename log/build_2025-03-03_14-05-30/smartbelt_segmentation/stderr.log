@@ -1,0 +1,7 @@
+[01m[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Kros/package.h: No such file or directory
+    2 | #include [01;31m[K<ros/package.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/mk_matching_ptcld.dir/build.make:76: CMakeFiles/mk_matching_ptcld.dir/src/MK_matching_ptcld.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/mk_matching_ptcld.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

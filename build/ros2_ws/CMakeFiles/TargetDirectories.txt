@@ -1,0 +1,10 @@
+/home/mkhanum/datapipe/build/ros2_ws/CMakeFiles/uninstall.dir
+/home/mkhanum/datapipe/build/ros2_ws/CMakeFiles/ros2_ws_uninstall.dir
+/home/mkhanum/datapipe/build/ros2_ws/CMakeFiles/mk_matching_ptcld.dir
+/home/mkhanum/datapipe/build/ros2_ws/CMakeFiles/test.dir
+/home/mkhanum/datapipe/build/ros2_ws/CMakeFiles/edit_cache.dir
+/home/mkhanum/datapipe/build/ros2_ws/CMakeFiles/rebuild_cache.dir
+/home/mkhanum/datapipe/build/ros2_ws/CMakeFiles/list_install_components.dir
+/home/mkhanum/datapipe/build/ros2_ws/CMakeFiles/install.dir
+/home/mkhanum/datapipe/build/ros2_ws/CMakeFiles/install/local.dir
+/home/mkhanum/datapipe/build/ros2_ws/CMakeFiles/install/strip.dir

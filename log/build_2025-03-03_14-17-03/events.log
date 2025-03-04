@@ -1,0 +1,437 @@
+[0.000000] (-) TimerEvent: {}
+[0.000744] (smartbelt_segmentation) JobQueued: {'identifier': 'smartbelt_segmentation', 'dependencies': OrderedDict()}
+[0.001220] (smartbelt_segmentation) JobStarted: {'identifier': 'smartbelt_segmentation'}
+[0.015035] (smartbelt_segmentation) JobProgress: {'identifier': 'smartbelt_segmentation', 'progress': 'cmake'}
+[0.016838] (smartbelt_segmentation) JobProgress: {'identifier': 'smartbelt_segmentation', 'progress': 'build'}
+[0.018144] (smartbelt_segmentation) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mkhanum/datapipe/build/smartbelt_segmentation', '--', '-j16', '-l16'], 'cwd': '/home/mkhanum/datapipe/build/smartbelt_segmentation', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('USER', 'mkhanum'), ('GIT_ASKPASS', '/home/mkhanum/.vscode-server/bin/e54c774e0add60467559eb0d1e229c6452cf8447/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{61c54bbd-c2c6-5271-96e7-009a87ff44bf}'), ('HOME', '/home/mkhanum'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/mkhanum/datapipe/smartbelt_segmentation'), ('TERM_PROGRAM_VERSION', '1.97.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-ef23a5c1-4693-4236-928b-02f49ddf1ba5.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/mkhanum/.vscode-server/bin/e54c774e0add60467559eb0d1e229c6452cf8447/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/mkhanum/.vscode-server/bin/e54c774e0add60467559eb0d1e229c6452cf8447/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mkhanum'), ('NAME', 'Code'), ('WSL_INTEROP', '/run/WSL/519_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/mkhanum/.vscode-server/bin/e54c774e0add60467559eb0d1e229c6452cf8447/bin/remote-cli:/opt/ros/humble/bin:/home/mkhanum/miniconda3/bin:/home/mkhanum/miniconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Windows/System32/OpenSSH:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/MATLAB/R2022a/bin:/mnt/c/Program Files/MATLAB/R2020a/bin:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn:/mnt/c/Program Files/Microsoft SQL Server/120/DTS/Binn:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit:/mnt/c/Program Files/Wolfram Research/WolframScript:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0:/mnt/c/WINDOWS/System32/OpenSSH:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/mkhan/AppData/Local/Programs/Python/Python39/Scripts:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files (x86)/PharosSystems/Core:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/usbipd-win:/mnt/c/Users/mkhan/AppData/Local/Microsoft/WindowsApps:/mnt/c/ProgramData/mkhan/GitHubDesktop/bin:/mnt/c/Users/mkhan/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/mkhan/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files/Multipass/bin:/mnt/c/Users/mkhan/AppData/Roaming/TinyTeX/bin/windows:/mnt/c/Users/mkhan/AppData/Local/Programs/Python/Python39/Scripts:/snap/bin'), ('WT_SESSION', '70d29724-b221-4f1e-9e44-22464791ed93'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-ef7082a247.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/mkhanum/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/mkhanum/datapipe/build/smartbelt_segmentation'), ('CONDA_EXE', '/home/mkhanum/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('CONDA_PREFIX', '/home/mkhanum/miniconda3'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'ELECTRON_RUN_AS_NODE/w:WT_SESSION:WT_PROFILE_ID:'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099484] (-) TimerEvent: {}
+[0.130101] (smartbelt_segmentation) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/mk_matching_ptcld.dir/src/MK_matching_ptcld.cpp.o\x1b[0m\n'}
+[0.199638] (-) TimerEvent: {}
+[0.300127] (-) TimerEvent: {}
+[0.400593] (-) TimerEvent: {}
+[0.501087] (-) TimerEvent: {}
+[0.601518] (-) TimerEvent: {}
+[0.702114] (-) TimerEvent: {}
+[0.802714] (-) TimerEvent: {}
+[0.903206] (-) TimerEvent: {}
+[1.003679] (-) TimerEvent: {}
+[1.104191] (-) TimerEvent: {}
+[1.204680] (-) TimerEvent: {}
+[1.305179] (-) TimerEvent: {}
+[1.405673] (-) TimerEvent: {}
+[1.506183] (-) TimerEvent: {}
+[1.606755] (-) TimerEvent: {}
+[1.707476] (-) TimerEvent: {}
+[1.808064] (-) TimerEvent: {}
+[1.908637] (-) TimerEvent: {}
+[2.009149] (-) TimerEvent: {}
+[2.109702] (-) TimerEvent: {}
+[2.210231] (-) TimerEvent: {}
+[2.310770] (-) TimerEvent: {}
+[2.411306] (-) TimerEvent: {}
+[2.511942] (-) TimerEvent: {}
+[2.612476] (-) TimerEvent: {}
+[2.712978] (-) TimerEvent: {}
+[2.813535] (-) TimerEvent: {}
+[2.914125] (-) TimerEvent: {}
+[3.014691] (-) TimerEvent: {}
+[3.115526] (-) TimerEvent: {}
+[3.216589] (-) TimerEvent: {}
+[3.317167] (-) TimerEvent: {}
+[3.417784] (-) TimerEvent: {}
+[3.518290] (-) TimerEvent: {}
+[3.618777] (-) TimerEvent: {}
+[3.719353] (-) TimerEvent: {}
+[3.819948] (-) TimerEvent: {}
+[3.920524] (-) TimerEvent: {}
+[4.021136] (-) TimerEvent: {}
+[4.121654] (-) TimerEvent: {}
+[4.222251] (-) TimerEvent: {}
+[4.322837] (-) TimerEvent: {}
+[4.423337] (-) TimerEvent: {}
+[4.523830] (-) TimerEvent: {}
+[4.624336] (-) TimerEvent: {}
+[4.724887] (-) TimerEvent: {}
+[4.825472] (-) TimerEvent: {}
+[4.926045] (-) TimerEvent: {}
+[5.026583] (-) TimerEvent: {}
+[5.127126] (-) TimerEvent: {}
+[5.227710] (-) TimerEvent: {}
+[5.328263] (-) TimerEvent: {}
+[5.428887] (-) TimerEvent: {}
+[5.529525] (-) TimerEvent: {}
+[5.630080] (-) TimerEvent: {}
+[5.730639] (-) TimerEvent: {}
+[5.831279] (-) TimerEvent: {}
+[5.931851] (-) TimerEvent: {}
+[6.032425] (-) TimerEvent: {}
+[6.133067] (-) TimerEvent: {}
+[6.233680] (-) TimerEvent: {}
+[6.334318] (-) TimerEvent: {}
+[6.395806] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:70:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KCameraInfo\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[6.396138] (smartbelt_segmentation) StderrLine: {'line': b'   70 |         void info_callback(const sensor_msgs::\x1b[01;31m\x1b[KCameraInfo\x1b[m\x1b[K::ConstPtr& msg);\n'}
+[6.396214] (smartbelt_segmentation) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.396278] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:70:67:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K&\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[6.396338] (smartbelt_segmentation) StderrLine: {'line': b'   70 |         void info_callback(const sensor_msgs::CameraInfo::ConstPtr\x1b[01;31m\x1b[K&\x1b[m\x1b[K msg);\n'}
+[6.396533] (smartbelt_segmentation) StderrLine: {'line': b'      |                                                                   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.396955] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:70:67:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K&\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[6.397057] (smartbelt_segmentation) StderrLine: {'line': b'   70 |         void info_callback\x1b[34m\x1b[K(\x1b[m\x1b[Kconst sensor_msgs::CameraInfo::ConstPtr\x1b[01;31m\x1b[K&\x1b[m\x1b[K msg);\n'}
+[6.397120] (smartbelt_segmentation) StderrLine: {'line': b'      |                           \x1b[34m\x1b[K~\x1b[m\x1b[K                                       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.397182] (smartbelt_segmentation) StderrLine: {'line': b'      |                                                                   \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[6.397245] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:70:67:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[6.397303] (smartbelt_segmentation) StderrLine: {'line': b'   70 |         void info_callback(const sensor_msgs::CameraInfo::ConstPtr\x1b[01;31m\x1b[K&\x1b[m\x1b[K msg);\n'}
+[6.397359] (smartbelt_segmentation) StderrLine: {'line': b'      |                                                                   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.397414] (smartbelt_segmentation) StderrLine: {'line': b'      |                                                                    \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[6.399736] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:70:69:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[6.399858] (smartbelt_segmentation) StderrLine: {'line': b'   70 |         void info_callback(const sensor_msgs::CameraInfo::ConstPtr& \x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K);\n'}
+[6.399919] (smartbelt_segmentation) StderrLine: {'line': b'      |                                                                     \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.399977] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:72:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KImage\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[6.400045] (smartbelt_segmentation) StderrLine: {'line': b'   72 |         void depth_callback(const sensor_msgs::\x1b[01;31m\x1b[KImage\x1b[m\x1b[K::ConstPtr& msg); // TODO: POSSIBLE ISSUE, MAY NEED TO BE PC\n'}
+[6.400101] (smartbelt_segmentation) StderrLine: {'line': b'      |                                                \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[6.400157] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:72:63:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K&\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[6.400216] (smartbelt_segmentation) StderrLine: {'line': b'   72 |         void depth_callback(const sensor_msgs::Image::ConstPtr\x1b[01;31m\x1b[K&\x1b[m\x1b[K msg); // TODO: POSSIBLE ISSUE, MAY NEED TO BE PC\n'}
+[6.400275] (smartbelt_segmentation) StderrLine: {'line': b'      |                                                               \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.400329] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:72:63:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K&\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[6.400386] (smartbelt_segmentation) StderrLine: {'line': b'   72 |         void depth_callback\x1b[34m\x1b[K(\x1b[m\x1b[Kconst sensor_msgs::Image::ConstPtr\x1b[01;31m\x1b[K&\x1b[m\x1b[K msg); // TODO: POSSIBLE ISSUE, MAY NEED TO BE PC\n'}
+[6.400447] (smartbelt_segmentation) StderrLine: {'line': b'      |                            \x1b[34m\x1b[K~\x1b[m\x1b[K                                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.400502] (smartbelt_segmentation) StderrLine: {'line': b'      |                                                               \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[6.400557] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:72:63:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[6.400625] (smartbelt_segmentation) StderrLine: {'line': b'   72 |         void depth_callback(const sensor_msgs::Image::ConstPtr\x1b[01;31m\x1b[K&\x1b[m\x1b[K msg); // TODO: POSSIBLE ISSUE, MAY NEED TO BE PC\n'}
+[6.400681] (smartbelt_segmentation) StderrLine: {'line': b'      |                                                               \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.400737] (smartbelt_segmentation) StderrLine: {'line': b'      |                                                                \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[6.402241] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:72:65:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[6.402343] (smartbelt_segmentation) StderrLine: {'line': b'   72 |         void depth_callback(const sensor_msgs::Image::ConstPtr& \x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K); // TODO: POSSIBLE ISSUE, MAY NEED TO BE PC\n'}
+[6.402405] (smartbelt_segmentation) StderrLine: {'line': b'      |                                                                 \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.402463] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:73:54:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KImage\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[6.402519] (smartbelt_segmentation) StderrLine: {'line': b'   73 |         void color_image_callback(const sensor_msgs::\x1b[01;31m\x1b[KImage\x1b[m\x1b[K::ConstPtr& msg);\n'}
+[6.402578] (smartbelt_segmentation) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[6.402635] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:73:69:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K&\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[6.402694] (smartbelt_segmentation) StderrLine: {'line': b'   73 |         void color_image_callback(const sensor_msgs::Image::ConstPtr\x1b[01;31m\x1b[K&\x1b[m\x1b[K msg);\n'}
+[6.402750] (smartbelt_segmentation) StderrLine: {'line': b'      |                                                                     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.402805] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:73:69:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K&\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[6.402862] (smartbelt_segmentation) StderrLine: {'line': b'   73 |         void color_image_callback\x1b[34m\x1b[K(\x1b[m\x1b[Kconst sensor_msgs::Image::ConstPtr\x1b[01;31m\x1b[K&\x1b[m\x1b[K msg);\n'}
+[6.402918] (smartbelt_segmentation) StderrLine: {'line': b'      |                                  \x1b[34m\x1b[K~\x1b[m\x1b[K                                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.402973] (smartbelt_segmentation) StderrLine: {'line': b'      |                                                                     \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[6.403029] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:73:69:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[6.403085] (smartbelt_segmentation) StderrLine: {'line': b'   73 |         void color_image_callback(const sensor_msgs::Image::ConstPtr\x1b[01;31m\x1b[K&\x1b[m\x1b[K msg);\n'}
+[6.403139] (smartbelt_segmentation) StderrLine: {'line': b'      |                                                                     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.403194] (smartbelt_segmentation) StderrLine: {'line': b'      |                                                                      \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[6.403990] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:73:71:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[6.404112] (smartbelt_segmentation) StderrLine: {'line': b'   73 |         void color_image_callback(const sensor_msgs::Image::ConstPtr& \x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K);\n'}
+[6.404182] (smartbelt_segmentation) StderrLine: {'line': b'      |                                                                       \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.405808] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:81:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kros\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[6.405973] (smartbelt_segmentation) StderrLine: {'line': b'   81 |         \x1b[01;31m\x1b[Kros\x1b[m\x1b[K::NodeHandle nh;\n'}
+[6.406044] (smartbelt_segmentation) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.407614] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:84:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kros\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[6.407721] (smartbelt_segmentation) StderrLine: {'line': b'   84 |         \x1b[01;31m\x1b[Kros\x1b[m\x1b[K::Publisher image_color_filt_pub_;\n'}
+[6.407787] (smartbelt_segmentation) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.409423] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:85:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kros\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[6.409564] (smartbelt_segmentation) StderrLine: {'line': b'   85 |         \x1b[01;31m\x1b[Kros\x1b[m\x1b[K::Publisher camera_cube_locator_marker_;\n'}
+[6.409629] (smartbelt_segmentation) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.411172] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:88:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kros\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[6.411307] (smartbelt_segmentation) StderrLine: {'line': b'   88 |         \x1b[01;31m\x1b[Kros\x1b[m\x1b[K::Subscriber depth_sub_;\n'}
+[6.411369] (smartbelt_segmentation) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.412918] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:89:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kros\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[6.413006] (smartbelt_segmentation) StderrLine: {'line': b'   89 |         \x1b[01;31m\x1b[Kros\x1b[m\x1b[K::Subscriber rgb_image_sub_;\n'}
+[6.413066] (smartbelt_segmentation) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.414648] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:91:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kros\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[6.414820] (smartbelt_segmentation) StderrLine: {'line': b'   91 |         \x1b[01;31m\x1b[Kros\x1b[m\x1b[K::ServiceServer service_;\n'}
+[6.415110] (smartbelt_segmentation) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.415219] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:93:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPointStamped\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[6.415293] (smartbelt_segmentation) StderrLine: {'line': b'   93 |         geometry_msgs::\x1b[01;31m\x1b[KPointStamped\x1b[m\x1b[K point_3d_cloud_; //Point in pointcloud corresponding to desired pixels\n'}
+[6.415352] (smartbelt_segmentation) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.416393] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:95:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPoint\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.416496] (smartbelt_segmentation) StderrLine: {'line': b'   95 |         std::vector<geometry_msgs::\x1b[01;31m\x1b[KPoint\x1b[m\x1b[K> mask_pixels_;\n'}
+[6.416557] (smartbelt_segmentation) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[6.416929] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:95:36:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Ksuggested alternatives:\n'}
+[6.417331] (smartbelt_segmentation) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:57\x1b[m\x1b[K,\n'}
+[6.417432] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[6.417498] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:36\x1b[m\x1b[K:\n'}
+[6.417557] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:198:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.417616] (smartbelt_segmentation) StderrLine: {'line': b'  198 | typedef Point2i \x1b[01;36m\x1b[KPoint\x1b[m\x1b[K;\n'}
+[6.417673] (smartbelt_segmentation) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[6.417729] (smartbelt_segmentation) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:20\x1b[m\x1b[K,\n'}
+[6.417786] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp:22\x1b[m\x1b[K,\n'}
+[6.417841] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_stamped.hpp:7\x1b[m\x1b[K,\n'}
+[6.417896] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:21\x1b[m\x1b[K:\n'}
+[6.417952] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:150:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.418010] (smartbelt_segmentation) StderrLine: {'line': b'  150 | using \x1b[01;36m\x1b[KPoint\x1b[m\x1b[K =\n'}
+[6.418067] (smartbelt_segmentation) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[6.418124] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:95:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[6.418180] (smartbelt_segmentation) StderrLine: {'line': b'   95 |         std::vector<geometry_msgs::Point\x1b[01;31m\x1b[K>\x1b[m\x1b[K mask_pixels_;\n'}
+[6.418235] (smartbelt_segmentation) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.418289] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:95:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 2 is invalid\n'}
+[6.422010] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:100:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kimage_geometry\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[6.422158] (smartbelt_segmentation) StderrLine: {'line': b'  100 |         \x1b[01;31m\x1b[Kimage_geometry\x1b[m\x1b[K::PinholeCameraModel camera_model_; //Camera model, will help us with projecting the ray through the depth image\n'}
+[6.422227] (smartbelt_segmentation) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.430913] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KMatching_Pix_to_Ptcld::Matching_Pix_to_Ptcld()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.431196] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:107:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Ktf2_ros::Buffer::Buffer()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.431262] (smartbelt_segmentation) StderrLine: {'line': b'  107 | Matching_Pix_to_Ptcld::Matching_Pix_to_Ptcld(\x1b[01;31m\x1b[K)\x1b[m\x1b[K\n'}
+[6.431324] (smartbelt_segmentation) StderrLine: {'line': b'      |                                              \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.431381] (smartbelt_segmentation) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/tf2_eigen/tf2_eigen/tf2_eigen.hpp:42\x1b[m\x1b[K,\n'}
+[6.431437] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:27\x1b[m\x1b[K:\n'}
+[6.431494] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:73:18:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktf2_ros::Buffer::Buffer(rclcpp::Clock::SharedPtr, tf2::Duration, rclcpp::Node::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.431552] (smartbelt_segmentation) StderrLine: {'line': b'   73 |   TF2_ROS_PUBLIC \x1b[01;36m\x1b[KBuffer\x1b[m\x1b[K(\n'}
+[6.431609] (smartbelt_segmentation) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[6.431664] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:73:18:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 0 provided\n'}
+[6.434425] (-) TimerEvent: {}
+[6.438818] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:110:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Knh\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.439022] (smartbelt_segmentation) StderrLine: {'line': b'  110 |         \x1b[01;31m\x1b[Knh\x1b[m\x1b[K = ros::NodeHandle(); //This argument makes all topics internal to this node namespace. //takes the node name (global node handle), If you use ~ then its private (under the node handle name) /armcontroller/ *param*\n'}
+[6.439092] (smartbelt_segmentation) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.439201] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:110:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kros\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[6.439379] (smartbelt_segmentation) StderrLine: {'line': b'  110 |         nh = \x1b[01;31m\x1b[Kros\x1b[m\x1b[K::NodeHandle(); //This argument makes all topics internal to this node namespace. //takes the node name (global node handle), If you use ~ then its private (under the node handle name) /armcontroller/ *param*\n'}
+[6.439441] (smartbelt_segmentation) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.439499] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:114:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[6.439559] (smartbelt_segmentation) StderrLine: {'line': b'  114 |         nh.param<std::string\x1b[01;31m\x1b[K>\x1b[m\x1b[K("pt_srv_color_img_topic", color_image_topic_, "/d455/color/image_raw");\n'}
+[6.439622] (smartbelt_segmentation) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.439678] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:115:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[6.439735] (smartbelt_segmentation) StderrLine: {'line': b'  115 |         nh.param<std::string\x1b[01;31m\x1b[K>\x1b[m\x1b[K("pt_srv_reg_pt_cld_topic", registered_pt_cld_topic_, "/d455/depth/color/points");\n'}
+[6.439791] (smartbelt_segmentation) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.451152] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:121:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmasked_img_pub_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kmasked_img_gen\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.451398] (smartbelt_segmentation) StderrLine: {'line': b'  121 |         \x1b[01;31m\x1b[Kmasked_img_pub_\x1b[m\x1b[K = nh.advertise<sensor_msgs::Image>("/processed_d455/image_gsam2_mask",1);\n'}
+[6.451471] (smartbelt_segmentation) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.451533] (smartbelt_segmentation) StderrLine: {'line': b'      |         \x1b[32m\x1b[Kmasked_img_gen\x1b[m\x1b[K\n'}
+[6.452764] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:121:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KImage\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs::msg::Image\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.453130] (smartbelt_segmentation) StderrLine: {'line': b'  121 |         masked_img_pub_ = nh.advertise<sensor_msgs::\x1b[01;31m\x1b[KImage\x1b[m\x1b[K>("/processed_d455/image_gsam2_mask",1);\n'}
+[6.453220] (smartbelt_segmentation) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[6.453281] (smartbelt_segmentation) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/image.hpp:7\x1b[m\x1b[K,\n'}
+[6.453346] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/image_transport/image_transport/camera_publisher.hpp:38\x1b[m\x1b[K,\n'}
+[6.453404] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:39\x1b[m\x1b[K,\n'}
+[6.453472] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:40\x1b[m\x1b[K:\n'}
+[6.453529] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__struct.hpp:208:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs::msg::Image\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[6.453587] (smartbelt_segmentation) StderrLine: {'line': b'  208 | using \x1b[01;36m\x1b[KImage\x1b[m\x1b[K =\n'}
+[6.453643] (smartbelt_segmentation) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[6.472659] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:122:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmasked_pc_filt_pub_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.472923] (smartbelt_segmentation) StderrLine: {'line': b'  122 |         \x1b[01;31m\x1b[Kmasked_pc_filt_pub_\x1b[m\x1b[K = nh.advertise<sensor_msgs::PointCloud2>("/processed_d455/points_gsam2_mask",1);\n'}
+[6.472991] (smartbelt_segmentation) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.474788] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:122:57:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPointCloud2\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs::msg::PointCloud2\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.475120] (smartbelt_segmentation) StderrLine: {'line': b'  122 |         masked_pc_filt_pub_ = nh.advertise<sensor_msgs::\x1b[01;31m\x1b[KPointCloud2\x1b[m\x1b[K>("/processed_d455/points_gsam2_mask",1);\n'}
+[6.475216] (smartbelt_segmentation) StderrLine: {'line': b'      |                                                         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.475278] (smartbelt_segmentation) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/point_cloud2.hpp:7\x1b[m\x1b[K,\n'}
+[6.475342] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:46\x1b[m\x1b[K:\n'}
+[6.475421] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__struct.hpp:235:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs::msg::PointCloud2\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[6.475498] (smartbelt_segmentation) StderrLine: {'line': b'  235 | using \x1b[01;36m\x1b[KPointCloud2\x1b[m\x1b[K =\n'}
+[6.475557] (smartbelt_segmentation) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.488198] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:126:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdepth_sub_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.488443] (smartbelt_segmentation) StderrLine: {'line': b'  126 |         \x1b[01;31m\x1b[Kdepth_sub_\x1b[m\x1b[K = nh.subscribe(depth_image_topic_,1,&Matching_Pix_to_Ptcld::depth_callback,this);\n'}
+[6.488508] (smartbelt_segmentation) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.502705] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:127:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krgb_image_sub_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.502938] (smartbelt_segmentation) StderrLine: {'line': b'  127 |         \x1b[01;31m\x1b[Krgb_image_sub_\x1b[m\x1b[K = nh.subscribe(color_image_topic_,1,&Matching_Pix_to_Ptcld::color_image_callback,this);\n'}
+[6.503010] (smartbelt_segmentation) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.513221] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:130:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kservice_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.513469] (smartbelt_segmentation) StderrLine: {'line': b'  130 |         \x1b[01;31m\x1b[Kservice_\x1b[m\x1b[K = nh.advertiseService("pix_to_point_cpp", &Matching_Pix_to_Ptcld::service_callback, this);\n'}
+[6.513545] (smartbelt_segmentation) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.513759] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:130:84:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kservice_callback\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[KMatching_Pix_to_Ptcld\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.513913] (smartbelt_segmentation) StderrLine: {'line': b'  130 |         service_ = nh.advertiseService("pix_to_point_cpp", &Matching_Pix_to_Ptcld::\x1b[01;31m\x1b[Kservice_callback\x1b[m\x1b[K, this);\n'}
+[6.514076] (smartbelt_segmentation) StderrLine: {'line': b'      |                                                                                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.514495] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:\x1b[m\x1b[K At global scope:\n'}
+[6.514634] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:133:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Kvoid Matching_Pix_to_Ptcld::masked_img_gen(const cv::Mat&, const cv::Mat&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.514723] (smartbelt_segmentation) StderrLine: {'line': b'  133 | void \x1b[01;31m\x1b[KMatching_Pix_to_Ptcld\x1b[m\x1b[K::masked_img_gen(const cv::Mat& color_img, const cv::Mat& mask) {\n'}
+[6.514784] (smartbelt_segmentation) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.514846] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:77:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate is: \xe2\x80\x98\x1b[01m\x1b[Kvoid Matching_Pix_to_Ptcld::masked_img_gen()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.514905] (smartbelt_segmentation) StderrLine: {'line': b'   77 |         void \x1b[01;36m\x1b[Kmasked_img_gen\x1b[m\x1b[K();\n'}
+[6.514961] (smartbelt_segmentation) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.515018] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:64:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass Matching_Pix_to_Ptcld\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[6.515091] (smartbelt_segmentation) StderrLine: {'line': b'   64 | class \x1b[01;36m\x1b[KMatching_Pix_to_Ptcld\x1b[m\x1b[K\n'}
+[6.515152] (smartbelt_segmentation) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.527764] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Matching_Pix_to_Ptcld::masked_pc_gen()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.527940] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:161:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmasked_points_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.528008] (smartbelt_segmentation) StderrLine: {'line': b'  161 |         if (\x1b[01;31m\x1b[Kmasked_points_\x1b[m\x1b[K.empty()) {\n'}
+[6.528067] (smartbelt_segmentation) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.534562] (-) TimerEvent: {}
+[6.537895] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:162:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KROS_WARN\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.538069] (smartbelt_segmentation) StderrLine: {'line': b'  162 |                 \x1b[01;31m\x1b[KROS_WARN\x1b[m\x1b[K("No valid masked points to publish");\n'}
+[6.538136] (smartbelt_segmentation) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.538660] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:167:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPointCloud2\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs::msg::PointCloud2\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.538814] (smartbelt_segmentation) StderrLine: {'line': b'  167 |         sensor_msgs::\x1b[01;31m\x1b[KPointCloud2\x1b[m\x1b[K pc;\n'}
+[6.538886] (smartbelt_segmentation) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.538951] (smartbelt_segmentation) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/point_cloud2.hpp:7\x1b[m\x1b[K,\n'}
+[6.539013] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:46\x1b[m\x1b[K:\n'}
+[6.539070] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__struct.hpp:235:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs::msg::PointCloud2\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[6.539129] (smartbelt_segmentation) StderrLine: {'line': b'  235 | using \x1b[01;36m\x1b[KPointCloud2\x1b[m\x1b[K =\n'}
+[6.539185] (smartbelt_segmentation) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.545452] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:168:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpc\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.545637] (smartbelt_segmentation) StderrLine: {'line': b'  168 |         \x1b[01;31m\x1b[Kpc\x1b[m\x1b[K.header.stamp = ros::Time::now();\n'}
+[6.545708] (smartbelt_segmentation) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.545766] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:168:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kros\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[6.545826] (smartbelt_segmentation) StderrLine: {'line': b'  168 |         pc.header.stamp = \x1b[01;31m\x1b[Kros\x1b[m\x1b[K::Time::now();\n'}
+[6.545883] (smartbelt_segmentation) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.560021] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:169:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcamera_model_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.560307] (smartbelt_segmentation) StderrLine: {'line': b'  169 |         pc.header.frame_id = \x1b[01;31m\x1b[Kcamera_model_\x1b[m\x1b[K.tfFrame();\n'}
+[6.560377] (smartbelt_segmentation) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.575490] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:171:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmasked_points_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.575759] (smartbelt_segmentation) StderrLine: {'line': b'  171 |         pc.width = \x1b[01;31m\x1b[Kmasked_points_\x1b[m\x1b[K.size();\n'}
+[6.575825] (smartbelt_segmentation) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.577249] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:175:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPointCloud2Modifier\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.577364] (smartbelt_segmentation) StderrLine: {'line': b'  175 |         sensor_msgs::\x1b[01;31m\x1b[KPointCloud2Modifier\x1b[m\x1b[K modifier(pc);\n'}
+[6.577437] (smartbelt_segmentation) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.588253] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:176:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmodifier\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.588428] (smartbelt_segmentation) StderrLine: {'line': b'  176 |         \x1b[01;31m\x1b[Kmodifier\x1b[m\x1b[K.setPointCloud2FieldsByString(1, "xyz");\n'}
+[6.588520] (smartbelt_segmentation) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.589086] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:177:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPointCloud2Iterator\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.589166] (smartbelt_segmentation) StderrLine: {'line': b'  177 |         sensor_msgs::\x1b[01;31m\x1b[KPointCloud2Iterator\x1b[m\x1b[K<float> iter_x(pc, "x");\n'}
+[6.589226] (smartbelt_segmentation) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.589284] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:177:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.589342] (smartbelt_segmentation) StderrLine: {'line': b'  177 |         sensor_msgs::PointCloud2Iterator<\x1b[01;31m\x1b[Kfloat\x1b[m\x1b[K> iter_x(pc, "x");\n'}
+[6.589398] (smartbelt_segmentation) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[6.590091] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:178:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPointCloud2Iterator\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.590242] (smartbelt_segmentation) StderrLine: {'line': b'  178 |         sensor_msgs::\x1b[01;31m\x1b[KPointCloud2Iterator\x1b[m\x1b[K<float> iter_y(pc, "y");\n'}
+[6.590310] (smartbelt_segmentation) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.590370] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:178:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.590430] (smartbelt_segmentation) StderrLine: {'line': b'  178 |         sensor_msgs::PointCloud2Iterator<\x1b[01;31m\x1b[Kfloat\x1b[m\x1b[K> iter_y(pc, "y");\n'}
+[6.590488] (smartbelt_segmentation) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[6.590749] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:179:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPointCloud2Iterator\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.590901] (smartbelt_segmentation) StderrLine: {'line': b'  179 |         sensor_msgs::\x1b[01;31m\x1b[KPointCloud2Iterator\x1b[m\x1b[K<float> iter_z(pc, "z");\n'}
+[6.590971] (smartbelt_segmentation) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.591029] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:179:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.591090] (smartbelt_segmentation) StderrLine: {'line': b'  179 |         sensor_msgs::PointCloud2Iterator<\x1b[01;31m\x1b[Kfloat\x1b[m\x1b[K> iter_z(pc, "z");\n'}
+[6.591147] (smartbelt_segmentation) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[6.591557] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:183:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPointStamped\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::PointStamped\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.591700] (smartbelt_segmentation) StderrLine: {'line': b'  183 |                 geometry_msgs::\x1b[01;31m\x1b[KPointStamped\x1b[m\x1b[K transformed_point;\n'}
+[6.591761] (smartbelt_segmentation) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.591825] (smartbelt_segmentation) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point_stamped.hpp:7\x1b[m\x1b[K,\n'}
+[6.591884] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/tf2_eigen/tf2_eigen/tf2_eigen.hpp:35\x1b[m\x1b[K,\n'}
+[6.591944] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:27\x1b[m\x1b[K:\n'}
+[6.592001] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__struct.hpp:135:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::PointStamped\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[6.592059] (smartbelt_segmentation) StderrLine: {'line': b'  135 | using \x1b[01;36m\x1b[KPointStamped\x1b[m\x1b[K =\n'}
+[6.592114] (smartbelt_segmentation) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.607397] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:185:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktransformed_point\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.607582] (smartbelt_segmentation) StderrLine: {'line': b'  185 |                         tf_buffer_.transform(point, \x1b[01;31m\x1b[Ktransformed_point\x1b[m\x1b[K, camera_model_.tfFrame());\n'}
+[6.607657] (smartbelt_segmentation) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.618101] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:187:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KROS_ERROR\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KCV_ERROR\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.618249] (smartbelt_segmentation) StderrLine: {'line': b'  187 |                         \x1b[01;31m\x1b[KROS_ERROR\x1b[m\x1b[K("TF Transform Exception: %s", ex.what());\n'}
+[6.618313] (smartbelt_segmentation) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[6.618371] (smartbelt_segmentation) StderrLine: {'line': b'      |                         \x1b[32m\x1b[KCV_ERROR\x1b[m\x1b[K\n'}
+[6.626063] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:191:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kiter_x\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.626212] (smartbelt_segmentation) StderrLine: {'line': b'  191 |                 *\x1b[01;31m\x1b[Kiter_x\x1b[m\x1b[K = transformed_point.point.x;\n'}
+[6.626276] (smartbelt_segmentation) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[6.634698] (-) TimerEvent: {}
+[6.642926] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:191:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktransformed_point\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.643110] (smartbelt_segmentation) StderrLine: {'line': b'  191 |                 *iter_x = \x1b[01;31m\x1b[Ktransformed_point\x1b[m\x1b[K.point.x;\n'}
+[6.643188] (smartbelt_segmentation) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.651975] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:192:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kiter_y\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.652293] (smartbelt_segmentation) StderrLine: {'line': b'  192 |                 *\x1b[01;31m\x1b[Kiter_y\x1b[m\x1b[K = transformed_point.point.y;\n'}
+[6.652371] (smartbelt_segmentation) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[6.661905] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:193:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kiter_z\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.662228] (smartbelt_segmentation) StderrLine: {'line': b'  193 |                 *\x1b[01;31m\x1b[Kiter_z\x1b[m\x1b[K = transformed_point.point.z;\n'}
+[6.662295] (smartbelt_segmentation) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[6.681684] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:198:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmasked_pc_filt_pub_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.682440] (smartbelt_segmentation) StderrLine: {'line': b'  198 |         \x1b[01;31m\x1b[Kmasked_pc_filt_pub_\x1b[m\x1b[K.publish(pc);\n'}
+[6.682534] (smartbelt_segmentation) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.682595] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:\x1b[m\x1b[K At global scope:\n'}
+[6.682654] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:201:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Kvoid Matching_Pix_to_Ptcld::camera_cube_locator_marker_gen()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.682733] (smartbelt_segmentation) StderrLine: {'line': b'  201 | void \x1b[01;31m\x1b[KMatching_Pix_to_Ptcld\x1b[m\x1b[K::camera_cube_locator_marker_gen(){\n'}
+[6.682790] (smartbelt_segmentation) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.682847] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:201:6:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kno functions named \xe2\x80\x98\x1b[01m\x1b[Kvoid Matching_Pix_to_Ptcld::camera_cube_locator_marker_gen()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.682903] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:64:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass Matching_Pix_to_Ptcld\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[6.682966] (smartbelt_segmentation) StderrLine: {'line': b'   64 | class \x1b[01;36m\x1b[KMatching_Pix_to_Ptcld\x1b[m\x1b[K\n'}
+[6.683020] (smartbelt_segmentation) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.683075] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:224:62:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KCameraInfo\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[6.683133] (smartbelt_segmentation) StderrLine: {'line': b'  224 | void Matching_Pix_to_Ptcld::info_callback(const sensor_msgs::\x1b[01;31m\x1b[KCameraInfo\x1b[m\x1b[K::ConstPtr& msg){\n'}
+[6.683193] (smartbelt_segmentation) StderrLine: {'line': b'      |                                                              \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.683248] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:224:82:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K&\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[6.683304] (smartbelt_segmentation) StderrLine: {'line': b'  224 | void Matching_Pix_to_Ptcld::info_callback(const sensor_msgs::CameraInfo::ConstPtr\x1b[01;31m\x1b[K&\x1b[m\x1b[K msg){\n'}
+[6.683362] (smartbelt_segmentation) StderrLine: {'line': b'      |                                                                                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.683448] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:224:82:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K&\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[6.683508] (smartbelt_segmentation) StderrLine: {'line': b'  224 | void Matching_Pix_to_Ptcld::info_callback\x1b[34m\x1b[K(\x1b[m\x1b[Kconst sensor_msgs::CameraInfo::ConstPtr\x1b[01;31m\x1b[K&\x1b[m\x1b[K msg){\n'}
+[6.683568] (smartbelt_segmentation) StderrLine: {'line': b'      |                                          \x1b[34m\x1b[K~\x1b[m\x1b[K                                       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.683625] (smartbelt_segmentation) StderrLine: {'line': b'      |                                                                                  \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[6.683682] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:224:84:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected initializer before \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.683739] (smartbelt_segmentation) StderrLine: {'line': b'  224 | void Matching_Pix_to_Ptcld::info_callback(const sensor_msgs::CameraInfo::ConstPtr& \x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K){\n'}
+[6.683795] (smartbelt_segmentation) StderrLine: {'line': b'      |                                                                                    \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.683852] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:230:63:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KImage\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[6.683910] (smartbelt_segmentation) StderrLine: {'line': b'  230 | void Matching_Pix_to_Ptcld::depth_callback(const sensor_msgs::\x1b[01;31m\x1b[KImage\x1b[m\x1b[K::ConstPtr& msg){\n'}
+[6.683966] (smartbelt_segmentation) StderrLine: {'line': b'      |                                                               \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[6.684022] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:230:78:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K&\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[6.684081] (smartbelt_segmentation) StderrLine: {'line': b'  230 | void Matching_Pix_to_Ptcld::depth_callback(const sensor_msgs::Image::ConstPtr\x1b[01;31m\x1b[K&\x1b[m\x1b[K msg){\n'}
+[6.684135] (smartbelt_segmentation) StderrLine: {'line': b'      |                                                                              \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.684191] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:230:78:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K&\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[6.684250] (smartbelt_segmentation) StderrLine: {'line': b'  230 | void Matching_Pix_to_Ptcld::depth_callback\x1b[34m\x1b[K(\x1b[m\x1b[Kconst sensor_msgs::Image::ConstPtr\x1b[01;31m\x1b[K&\x1b[m\x1b[K msg){\n'}
+[6.684306] (smartbelt_segmentation) StderrLine: {'line': b'      |                                           \x1b[34m\x1b[K~\x1b[m\x1b[K                                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.684363] (smartbelt_segmentation) StderrLine: {'line': b'      |                                                                              \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[6.684417] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:230:80:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected initializer before \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.684473] (smartbelt_segmentation) StderrLine: {'line': b'  230 | void Matching_Pix_to_Ptcld::depth_callback(const sensor_msgs::Image::ConstPtr& \x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K){\n'}
+[6.684531] (smartbelt_segmentation) StderrLine: {'line': b'      |                                                                                \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.684588] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:281:69:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KImage\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[6.684645] (smartbelt_segmentation) StderrLine: {'line': b'  281 | void Matching_Pix_to_Ptcld::color_image_callback(const sensor_msgs::\x1b[01;31m\x1b[KImage\x1b[m\x1b[K::ConstPtr& msg){\n'}
+[6.684699] (smartbelt_segmentation) StderrLine: {'line': b'      |                                                                     \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[6.684753] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:281:84:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K&\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[6.684808] (smartbelt_segmentation) StderrLine: {'line': b'  281 | void Matching_Pix_to_Ptcld::color_image_callback(const sensor_msgs::Image::ConstPtr\x1b[01;31m\x1b[K&\x1b[m\x1b[K msg){\n'}
+[6.684864] (smartbelt_segmentation) StderrLine: {'line': b'      |                                                                                    \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.684919] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:281:84:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K&\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[6.684975] (smartbelt_segmentation) StderrLine: {'line': b'  281 | void Matching_Pix_to_Ptcld::color_image_callback\x1b[34m\x1b[K(\x1b[m\x1b[Kconst sensor_msgs::Image::ConstPtr\x1b[01;31m\x1b[K&\x1b[m\x1b[K msg){\n'}
+[6.685034] (smartbelt_segmentation) StderrLine: {'line': b'      |                                                 \x1b[34m\x1b[K~\x1b[m\x1b[K                                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.685111] (smartbelt_segmentation) StderrLine: {'line': b'      |                                                                                    \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[6.685168] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:281:86:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected initializer before \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.685224] (smartbelt_segmentation) StderrLine: {'line': b'  281 | void Matching_Pix_to_Ptcld::color_image_callback(const sensor_msgs::Image::ConstPtr& \x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K){\n'}
+[6.685281] (smartbelt_segmentation) StderrLine: {'line': b'      |                                                                                      \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.685337] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:330:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Kbool Matching_Pix_to_Ptcld::run_gsam2(const string&, const string&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.685393] (smartbelt_segmentation) StderrLine: {'line': b'  330 | bool \x1b[01;31m\x1b[KMatching_Pix_to_Ptcld\x1b[m\x1b[K::run_gsam2(const std::string& image_path, const std::string& mask_path) {\n'}
+[6.685449] (smartbelt_segmentation) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.685504] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:330:6:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kno functions named \xe2\x80\x98\x1b[01m\x1b[Kbool Matching_Pix_to_Ptcld::run_gsam2(const string&, const string&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.685559] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:64:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass Matching_Pix_to_Ptcld\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[6.685614] (smartbelt_segmentation) StderrLine: {'line': b'   64 | class \x1b[01;36m\x1b[KMatching_Pix_to_Ptcld\x1b[m\x1b[K\n'}
+[6.685668] (smartbelt_segmentation) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.685723] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:336:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<cv::Point_<int> > Matching_Pix_to_Ptcld::extract_mask_pixels(const cv::Mat&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.685779] (smartbelt_segmentation) StderrLine: {'line': b'  336 | std::vector<cv::Point> \x1b[01;31m\x1b[KMatching_Pix_to_Ptcld\x1b[m\x1b[K::extract_mask_pixels(const cv::Mat& mask) {\n'}
+[6.685834] (smartbelt_segmentation) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.685889] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:336:24:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kno functions named \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<cv::Point_<int> > Matching_Pix_to_Ptcld::extract_mask_pixels(const cv::Mat&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.685950] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:64:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass Matching_Pix_to_Ptcld\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[6.686008] (smartbelt_segmentation) StderrLine: {'line': b'   64 | class \x1b[01;36m\x1b[KMatching_Pix_to_Ptcld\x1b[m\x1b[K\n'}
+[6.686063] (smartbelt_segmentation) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.686119] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:350:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kbool Matching_Pix_to_Ptcld::service_callback\x1b[m\x1b[K\xe2\x80\x99 is not a static data member of \xe2\x80\x98\x1b[01m\x1b[Kclass Matching_Pix_to_Ptcld\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.686187] (smartbelt_segmentation) StderrLine: {'line': b'  350 | bool \x1b[01;31m\x1b[KMatching_Pix_to_Ptcld\x1b[m\x1b[K::service_callback(me326_locobot_example::PixtoPoint::Request &req, me326_locobot_example::PixtoPoint::Response &res){\n'}
+[6.686259] (smartbelt_segmentation) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.686314] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:350:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kme326_locobot_example\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[6.686370] (smartbelt_segmentation) StderrLine: {'line': b'  350 | bool Matching_Pix_to_Ptcld::service_callback(\x1b[01;31m\x1b[Kme326_locobot_example\x1b[m\x1b[K::PixtoPoint::Request &req, me326_locobot_example::PixtoPoint::Response &res){\n'}
+[6.686426] (smartbelt_segmentation) StderrLine: {'line': b'      |                                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.691260] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:350:90:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kreq\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.691415] (smartbelt_segmentation) StderrLine: {'line': b'  350 | bool Matching_Pix_to_Ptcld::service_callback(me326_locobot_example::PixtoPoint::Request &\x1b[01;31m\x1b[Kreq\x1b[m\x1b[K, me326_locobot_example::PixtoPoint::Response &res){\n'}
+[6.691488] (smartbelt_segmentation) StderrLine: {'line': b'      |                                                                                          \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.691548] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:350:95:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kme326_locobot_example\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[6.691607] (smartbelt_segmentation) StderrLine: {'line': b'  350 | bool Matching_Pix_to_Ptcld::service_callback(me326_locobot_example::PixtoPoint::Request &req, \x1b[01;31m\x1b[Kme326_locobot_example\x1b[m\x1b[K::PixtoPoint::Response &res){\n'}
+[6.691665] (smartbelt_segmentation) StderrLine: {'line': b'      |                                                                                               \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.698984] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:350:140:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kres\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.699141] (smartbelt_segmentation) StderrLine: {'line': b'  350 | bool Matching_Pix_to_Ptcld::service_callback(me326_locobot_example::PixtoPoint::Request &req, me326_locobot_example::PixtoPoint::Response &\x1b[01;31m\x1b[Kres\x1b[m\x1b[K){\n'}
+[6.699214] (smartbelt_segmentation) StderrLine: {'line': b'      |                                                                                                                                            \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.699578] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:350:143:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpression list treated as compound expression in initializer [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.700237] (smartbelt_segmentation) StderrLine: {'line': b'  350 | bool Matching_Pix_to_Ptcld::service_callback(me326_locobot_example::PixtoPoint::Request &req, me326_locobot_example::PixtoPoint::Response &res\x1b[01;31m\x1b[K)\x1b[m\x1b[K{\n'}
+[6.700324] (smartbelt_segmentation) StderrLine: {'line': b'      |                                                                                                                                               \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.700387] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.700457] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:359:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kros\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[6.700527] (smartbelt_segmentation) StderrLine: {'line': b'  359 |   \x1b[01;31m\x1b[Kros\x1b[m\x1b[K::init(argc,argv,"matching_ptcld_serv");\n'}
+[6.700584] (smartbelt_segmentation) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.700640] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:360:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kros\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[6.700697] (smartbelt_segmentation) StderrLine: {'line': b'  360 |   \x1b[01;31m\x1b[Kros\x1b[m\x1b[K::NodeHandle nh("~");\n'}
+[6.700754] (smartbelt_segmentation) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.700810] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/smartbelt_segmentation/src/MK_matching_ptcld.cpp:362:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kros\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[6.700867] (smartbelt_segmentation) StderrLine: {'line': b'  362 |   \x1b[01;31m\x1b[Kros\x1b[m\x1b[K::spin();\n'}
+[6.700923] (smartbelt_segmentation) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.734929] (-) TimerEvent: {}
+[6.835573] (-) TimerEvent: {}
+[6.936066] (-) TimerEvent: {}
+[7.036610] (-) TimerEvent: {}
+[7.137240] (-) TimerEvent: {}
+[7.237860] (-) TimerEvent: {}
+[7.338492] (-) TimerEvent: {}
+[7.439098] (-) TimerEvent: {}
+[7.539645] (-) TimerEvent: {}
+[7.640237] (-) TimerEvent: {}
+[7.740842] (-) TimerEvent: {}
+[7.841433] (-) TimerEvent: {}
+[7.942097] (-) TimerEvent: {}
+[8.042786] (-) TimerEvent: {}
+[8.143429] (-) TimerEvent: {}
+[8.244068] (-) TimerEvent: {}
+[8.344649] (-) TimerEvent: {}
+[8.445228] (-) TimerEvent: {}
+[8.545776] (-) TimerEvent: {}
+[8.646425] (-) TimerEvent: {}
+[8.747046] (-) TimerEvent: {}
+[8.847641] (-) TimerEvent: {}
+[8.855269] (smartbelt_segmentation) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/mk_matching_ptcld.dir/build.make:76: CMakeFiles/mk_matching_ptcld.dir/src/MK_matching_ptcld.cpp.o] Error 1\n'}
+[8.855662] (smartbelt_segmentation) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/mk_matching_ptcld.dir/all] Error 2\n'}
+[8.855921] (smartbelt_segmentation) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[8.858519] (smartbelt_segmentation) CommandEnded: {'returncode': 2}
+[8.876774] (smartbelt_segmentation) JobEnded: {'identifier': 'smartbelt_segmentation', 'rc': 2}
+[8.887775] (-) EventReactorShutdown: {}

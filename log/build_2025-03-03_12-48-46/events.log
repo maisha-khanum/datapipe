@@ -1,0 +1,198 @@
+[0.000000] (-) TimerEvent: {}
+[0.000685] (ros2_ws) JobQueued: {'identifier': 'ros2_ws', 'dependencies': OrderedDict()}
+[0.000921] (ros2_ws) JobStarted: {'identifier': 'ros2_ws'}
+[0.020328] (ros2_ws) JobProgress: {'identifier': 'ros2_ws', 'progress': 'cmake'}
+[0.023553] (ros2_ws) Command: {'cmd': ['/usr/bin/cmake', '/home/mkhanum/datapipe/ros2_ws', '-DCMAKE_INSTALL_PREFIX=/home/mkhanum/datapipe/install/ros2_ws'], 'cwd': '/home/mkhanum/datapipe/build/ros2_ws', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('USER', 'mkhanum'), ('GIT_ASKPASS', '/home/mkhanum/.vscode-server/bin/e54c774e0add60467559eb0d1e229c6452cf8447/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{61c54bbd-c2c6-5271-96e7-009a87ff44bf}'), ('HOME', '/home/mkhanum'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/mkhanum/datapipe/ros2_ws'), ('TERM_PROGRAM_VERSION', '1.97.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-ef23a5c1-4693-4236-928b-02f49ddf1ba5.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/mkhanum/.vscode-server/bin/e54c774e0add60467559eb0d1e229c6452cf8447/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/mkhanum/.vscode-server/bin/e54c774e0add60467559eb0d1e229c6452cf8447/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mkhanum'), ('NAME', 'Code'), ('WSL_INTEROP', '/run/WSL/519_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/mkhanum/.vscode-server/bin/e54c774e0add60467559eb0d1e229c6452cf8447/bin/remote-cli:/opt/ros/humble/bin:/home/mkhanum/miniconda3/bin:/home/mkhanum/miniconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Windows/System32/OpenSSH:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/MATLAB/R2022a/bin:/mnt/c/Program Files/MATLAB/R2020a/bin:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn:/mnt/c/Program Files/Microsoft SQL Server/120/DTS/Binn:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit:/mnt/c/Program Files/Wolfram Research/WolframScript:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0:/mnt/c/WINDOWS/System32/OpenSSH:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/mkhan/AppData/Local/Programs/Python/Python39/Scripts:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files (x86)/PharosSystems/Core:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/usbipd-win:/mnt/c/Users/mkhan/AppData/Local/Microsoft/WindowsApps:/mnt/c/ProgramData/mkhan/GitHubDesktop/bin:/mnt/c/Users/mkhan/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/mkhan/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files/Multipass/bin:/mnt/c/Users/mkhan/AppData/Roaming/TinyTeX/bin/windows:/mnt/c/Users/mkhan/AppData/Local/Programs/Python/Python39/Scripts:/snap/bin'), ('WT_SESSION', '70d29724-b221-4f1e-9e44-22464791ed93'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-ef7082a247.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/mkhanum/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/mkhanum/datapipe/build/ros2_ws'), ('CONDA_EXE', '/home/mkhanum/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('CONDA_PREFIX', '/home/mkhanum/miniconda3'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'ELECTRON_RUN_AS_NODE/w:WT_SESSION:WT_PROFILE_ID:'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.098946] (-) TimerEvent: {}
+[0.199428] (-) TimerEvent: {}
+[0.299901] (-) TimerEvent: {}
+[0.400376] (-) TimerEvent: {}
+[0.500980] (-) TimerEvent: {}
+[0.509772] (ros2_ws) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.601119] (-) TimerEvent: {}
+[0.701724] (-) TimerEvent: {}
+[0.802320] (-) TimerEvent: {}
+[0.902830] (-) TimerEvent: {}
+[1.003301] (-) TimerEvent: {}
+[1.103757] (-) TimerEvent: {}
+[1.204232] (-) TimerEvent: {}
+[1.304728] (-) TimerEvent: {}
+[1.397408] (ros2_ws) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.404812] (-) TimerEvent: {}
+[1.505194] (-) TimerEvent: {}
+[1.605672] (-) TimerEvent: {}
+[1.706106] (-) TimerEvent: {}
+[1.806591] (-) TimerEvent: {}
+[1.907138] (-) TimerEvent: {}
+[1.977533] (ros2_ws) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.007288] (-) TimerEvent: {}
+[2.107754] (-) TimerEvent: {}
+[2.208296] (-) TimerEvent: {}
+[2.221089] (ros2_ws) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.230246] (ros2_ws) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.230920] (ros2_ws) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.232116] (ros2_ws) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.237150] (ros2_ws) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.308451] (-) TimerEvent: {}
+[2.408958] (-) TimerEvent: {}
+[2.494576] (ros2_ws) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.502884] (ros2_ws) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.503267] (ros2_ws) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.503743] (ros2_ws) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.509059] (-) TimerEvent: {}
+[2.524767] (ros2_ws) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.609244] (-) TimerEvent: {}
+[2.709733] (-) TimerEvent: {}
+[2.810254] (-) TimerEvent: {}
+[2.910735] (-) TimerEvent: {}
+[3.011220] (-) TimerEvent: {}
+[3.111728] (-) TimerEvent: {}
+[3.212249] (-) TimerEvent: {}
+[3.256999] (ros2_ws) StdoutLine: {'line': b'-- Found Python3: /home/mkhanum/miniconda3/bin/python3 (found version "3.12.8") found components: Interpreter \n'}
+[3.312397] (-) TimerEvent: {}
+[3.412868] (-) TimerEvent: {}
+[3.415023] (ros2_ws) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[3.513030] (-) TimerEvent: {}
+[3.613526] (-) TimerEvent: {}
+[3.714000] (-) TimerEvent: {}
+[3.758445] (ros2_ws) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[3.768352] (ros2_ws) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[3.785408] (ros2_ws) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[3.814147] (-) TimerEvent: {}
+[3.815289] (ros2_ws) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.850944] (ros2_ws) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.914306] (-) TimerEvent: {}
+[3.948259] (ros2_ws) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[3.953896] (ros2_ws) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[4.014463] (-) TimerEvent: {}
+[4.114948] (-) TimerEvent: {}
+[4.215496] (-) TimerEvent: {}
+[4.316002] (-) TimerEvent: {}
+[4.416439] (-) TimerEvent: {}
+[4.516937] (-) TimerEvent: {}
+[4.617436] (-) TimerEvent: {}
+[4.717889] (-) TimerEvent: {}
+[4.818409] (-) TimerEvent: {}
+[4.918918] (-) TimerEvent: {}
+[5.019309] (-) TimerEvent: {}
+[5.119729] (-) TimerEvent: {}
+[5.220206] (-) TimerEvent: {}
+[5.320727] (-) TimerEvent: {}
+[5.421308] (-) TimerEvent: {}
+[5.521773] (-) TimerEvent: {}
+[5.622221] (-) TimerEvent: {}
+[5.722686] (-) TimerEvent: {}
+[5.823154] (-) TimerEvent: {}
+[5.923582] (-) TimerEvent: {}
+[6.023989] (-) TimerEvent: {}
+[6.124402] (-) TimerEvent: {}
+[6.224848] (-) TimerEvent: {}
+[6.325299] (-) TimerEvent: {}
+[6.339292] (ros2_ws) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[6.425463] (-) TimerEvent: {}
+[6.525989] (-) TimerEvent: {}
+[6.626468] (-) TimerEvent: {}
+[6.726909] (-) TimerEvent: {}
+[6.827405] (-) TimerEvent: {}
+[6.927906] (-) TimerEvent: {}
+[7.028473] (-) TimerEvent: {}
+[7.128977] (-) TimerEvent: {}
+[7.229600] (-) TimerEvent: {}
+[7.330157] (-) TimerEvent: {}
+[7.430722] (-) TimerEvent: {}
+[7.531289] (-) TimerEvent: {}
+[7.631790] (-) TimerEvent: {}
+[7.732328] (-) TimerEvent: {}
+[7.832834] (-) TimerEvent: {}
+[7.933407] (-) TimerEvent: {}
+[8.033985] (-) TimerEvent: {}
+[8.134601] (-) TimerEvent: {}
+[8.235234] (-) TimerEvent: {}
+[8.335871] (-) TimerEvent: {}
+[8.436461] (-) TimerEvent: {}
+[8.537105] (-) TimerEvent: {}
+[8.637644] (-) TimerEvent: {}
+[8.731222] (ros2_ws) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[8.737810] (-) TimerEvent: {}
+[8.838277] (-) TimerEvent: {}
+[8.938797] (-) TimerEvent: {}
+[9.039322] (-) TimerEvent: {}
+[9.139793] (-) TimerEvent: {}
+[9.240370] (-) TimerEvent: {}
+[9.340919] (-) TimerEvent: {}
+[9.441501] (-) TimerEvent: {}
+[9.541978] (-) TimerEvent: {}
+[9.642563] (-) TimerEvent: {}
+[9.743170] (-) TimerEvent: {}
+[9.843723] (-) TimerEvent: {}
+[9.944303] (-) TimerEvent: {}
+[10.044906] (-) TimerEvent: {}
+[10.145520] (-) TimerEvent: {}
+[10.246088] (-) TimerEvent: {}
+[10.346634] (-) TimerEvent: {}
+[10.447154] (-) TimerEvent: {}
+[10.547598] (-) TimerEvent: {}
+[10.648125] (-) TimerEvent: {}
+[10.748630] (-) TimerEvent: {}
+[10.849196] (-) TimerEvent: {}
+[10.949779] (-) TimerEvent: {}
+[11.050367] (-) TimerEvent: {}
+[11.150924] (-) TimerEvent: {}
+[11.251457] (-) TimerEvent: {}
+[11.352062] (-) TimerEvent: {}
+[11.452597] (-) TimerEvent: {}
+[11.553203] (-) TimerEvent: {}
+[11.653767] (-) TimerEvent: {}
+[11.754284] (-) TimerEvent: {}
+[11.854785] (-) TimerEvent: {}
+[11.955232] (-) TimerEvent: {}
+[12.055732] (-) TimerEvent: {}
+[12.156247] (-) TimerEvent: {}
+[12.256732] (-) TimerEvent: {}
+[12.357181] (-) TimerEvent: {}
+[12.457643] (-) TimerEvent: {}
+[12.558117] (-) TimerEvent: {}
+[12.658613] (-) TimerEvent: {}
+[12.759079] (-) TimerEvent: {}
+[12.859534] (-) TimerEvent: {}
+[12.960038] (-) TimerEvent: {}
+[13.060492] (-) TimerEvent: {}
+[13.160968] (-) TimerEvent: {}
+[13.261445] (-) TimerEvent: {}
+[13.330897] (ros2_ws) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[13.350102] (ros2_ws) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[13.361606] (-) TimerEvent: {}
+[13.462049] (-) TimerEvent: {}
+[13.562551] (-) TimerEvent: {}
+[13.574576] (ros2_ws) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[13.575134] (ros2_ws) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[13.662702] (-) TimerEvent: {}
+[13.763118] (-) TimerEvent: {}
+[13.808685] (ros2_ws) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[13.809944] (ros2_ws) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[13.863285] (-) TimerEvent: {}
+[13.913579] (ros2_ws) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[13.963444] (-) TimerEvent: {}
+[13.976765] (ros2_ws) StdoutLine: {'line': b'-- Found message_filters: 4.3.5 (/opt/ros/humble/share/message_filters/cmake)\n'}
+[14.021461] (ros2_ws) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[14.021747] (ros2_ws) StderrLine: {'line': b'  File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 22, in <module>\n'}
+[14.021823] (ros2_ws) StderrLine: {'line': b'    from catkin_pkg.package import parse_package_string\n'}
+[14.021884] (ros2_ws) StderrLine: {'line': b"ModuleNotFoundError: No module named 'catkin_pkg'\n"}
+[14.025337] (ros2_ws) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):\n'}
+[14.025510] (ros2_ws) StderrLine: {'line': b'  execute_process(/home/mkhanum/miniconda3/bin/python3\n'}
+[14.025637] (ros2_ws) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py\n'}
+[14.025821] (ros2_ws) StderrLine: {'line': b'  /home/mkhanum/datapipe/ros2_ws/package.xml\n'}
+[14.026005] (ros2_ws) StderrLine: {'line': b'  /home/mkhanum/datapipe/build/ros2_ws/ament_cmake_core/package.cmake)\n'}
+[14.026239] (ros2_ws) StderrLine: {'line': b'  returned error code 1\n'}
+[14.026305] (ros2_ws) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[14.026364] (ros2_ws) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)\n'}
+[14.026422] (ros2_ws) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package.cmake:63 (ament_package_xml)\n'}
+[14.026481] (ros2_ws) StderrLine: {'line': b'  CMakeLists.txt:21 (ament_package)\n'}
+[14.026567] (ros2_ws) StderrLine: {'line': b'\n'}
+[14.026625] (ros2_ws) StderrLine: {'line': b'\x1b[0m\n'}
+[14.026697] (ros2_ws) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[14.026803] (ros2_ws) StdoutLine: {'line': b'See also "/home/mkhanum/datapipe/build/ros2_ws/CMakeFiles/CMakeOutput.log".\n'}
+[14.037485] (ros2_ws) CommandEnded: {'returncode': 1}
+[14.063641] (-) TimerEvent: {}
+[14.070610] (ros2_ws) JobEnded: {'identifier': 'ros2_ws', 'rc': 1}
+[14.081695] (-) EventReactorShutdown: {}

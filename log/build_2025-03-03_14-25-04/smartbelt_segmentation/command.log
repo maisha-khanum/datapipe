@@ -1,0 +1,2 @@
+Invoking command in '/home/mkhanum/datapipe/build/smartbelt_segmentation': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/mkhanum/datapipe/build/smartbelt_segmentation -- -j16 -l16
+Invoked command in '/home/mkhanum/datapipe/build/smartbelt_segmentation' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/mkhanum/datapipe/build/smartbelt_segmentation -- -j16 -l16
