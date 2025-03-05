@@ -1,10 +1,17 @@
+# Need to use the GSAM env for this script
 import sys
+# REPO_PATH = "/afs/cs.stanford.edu/u/weizhuo2/Documents/gits/dinov2"
+GSAM_path = '/home/mkhanum/Grounded-SAM-2'
+sys.path.insert(1, GSAM_path)
+
 import cv2
 import torch
 import numpy as np
+from PIL import Image
 from sam2.build_sam import build_sam2
 from sam2.sam2_image_predictor import SAM2ImagePredictor
 from grounding_dino.groundingdino.util.inference import load_model, load_image, predict
+import grounding_dino.groundingdino.datasets.transforms as T
 from torchvision.ops import box_convert
 
 TEXT_PROMPT = "steps."
@@ -17,16 +24,31 @@ DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 BOX_THRESHOLD = 0.35
 TEXT_THRESHOLD = 0.25
 
-def run_gsam2(image_path, mask_path):
-    # Load Image
-    image = cv2.imread(image_path)
-    if image is None:
-        print("Failed to load image.")
-        return False
-    image = image[:, :, ::-1]  # Convert to RGB
+def load_image_cv(cv_image):
+    transform = T.Compose(
+        [
+            T.RandomResize([800], max_size=1333),
+            T.ToTensor(),
+            T.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225]),
+        ]
+    )
 
-    frame = np.asarray(image) # TODO, may need to replace with load_image()
-    image,_ = transform(image)
+    image = np.asarray(cv_image)
+    print(f"Type: {type(image)}, Shape: {image.shape}")
+    image_pil = Image.fromarray(cv_image) # convert cv2 image to PIL image
+    image_transformed, _ = transform(image_pil, None)
+    return image, image_transformed
+
+def run_gsam2(image_arr):
+    # # Load Image
+    # image = cv2.imread(image_path)
+    # if image is None:
+    #     print("Failed to load image.")
+    #     return False
+    # image = image[:, :, ::-1]  # Convert to RGB
+
+    # frame = np.asarray(image) # TODO, may need to replace with load_image()
+    # image,_ = transform(image)
 
     # Load Models
     sam2_model = build_sam2(SAM2_MODEL_CONFIG, SAM2_CHECKPOINT, device=DEVICE)
@@ -36,8 +58,14 @@ def run_gsam2(image_path, mask_path):
             model_checkpoint_path=GROUNDING_DINO_CHECKPOINT,
             device=DEVICE)
 
+    # Load Image
+    frame, image = load_image_cv(image_arr)
+
+    # print("PYTHON,")
+    # print(f"Frame size: {frame.shape}, Image size: {image.shape}", flush=True)
+
     # Run Segmentation
-    sam2_predictor.set_image(image)
+    sam2_predictor.set_image(frame)
     h, w, _ = frame.shape
     boxes, _, _ = predict(
         model=grounding_model,
@@ -64,20 +92,23 @@ def run_gsam2(image_path, mask_path):
     # Convert Masks to Single Channel
     seg_mask = np.zeros((h, w), dtype=np.uint8)
     for ch_idx in range(masks.shape[0]):
+        print("Mask found!")
         seg_mask[masks[ch_idx] > 0] = 255
 
     # Save Mask
-    cv2.imwrite(mask_path, seg_mask)
-    print("Mask saved successfully.")
-    return True
+    # cv2.imwrite(mask_path, seg_mask)
+    # print("Mask saved successfully.")
+    # return True
+
+    return seg_mask # numpy.ndarray (h, w)
 
 if __name__ == "__main__":
-    if len(sys.argv) != 3:
-        print("Usage: python3 run_gsam2.py <image_path> <mask_path>")
+    if len(sys.argv) != 2:
+        print("Usage: python3 run_gsam2.py <image_arr cv::Mat> ")
         sys.exit(1)
 
-    image_path = sys.argv[1]
-    mask_path = sys.argv[2]
+    image_arr = sys.argv[1]
+    # mask_path = sys.argv[2]
 
-    if not run_gsam2(image_path, mask_path):
+    if not run_gsam2(image_arr):
         sys.exit(1)

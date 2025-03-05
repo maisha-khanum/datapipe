@@ -5,8 +5,6 @@ GSAM_path = '/home/mkhanum/Grounded-SAM-2'
 sys.path.insert(1, GSAM_path)
 # sys.path.append(REPO_PATH)
 
-sys.path.append("/home/mkhanum/Grounded-SAM-2/grounding_dino")
-
 import numpy as np
 import numba as nb
 import matplotlib.pyplot as plt
@@ -243,6 +241,8 @@ class semantic_labeler:
         tqdm.write(f"\nProcessing frame...")
 
         frame, image = load_image(IMG_PATH)
+        print("PYTHON,")
+        print(f"Frame size: {frame.shape}, Image size: {image.shape}", flush=True)  
 
         # sam2_predictor.set_image(image_source)
 

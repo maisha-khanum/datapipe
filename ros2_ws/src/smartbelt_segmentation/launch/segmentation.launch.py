@@ -11,7 +11,7 @@ def generate_launch_description():
     )
 
     rosbag_player = ExecuteProcess(
-        cmd=["ros2", "bag", "play", LaunchConfiguration("bag_file")],
+        cmd=["ros2", "bag", "play", LaunchConfiguration("bag_file"), "--read-ahead-queue-size", "100"],  # Adjust the value if needed
         output="screen"
     )
 
@@ -27,7 +27,7 @@ def generate_launch_description():
     )
 
     rosbag_recorder = ExecuteProcess(
-        cmd=["ros2", "bag", "record", "-o", "/home/mkhanum/datapipe/Bags/processed_stair1", "/processed_d455/image_gsam2_mask", "/processed_d455/points_gsam2_mask"],
+        cmd=["ros2", "bag", "record", "--overwrite", "-o", "/home/mkhanum/datapipe/Bags/processed_stair1", "/processed_d455/image_gsam2_mask", "/processed_d455/points_gsam2_mask"],
         output="screen"
     )
 

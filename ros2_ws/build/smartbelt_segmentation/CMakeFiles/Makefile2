@@ -64,6 +64,7 @@ CMAKE_BINARY_DIR = /home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation
 
 # The main recursive "all" target.
 all: CMakeFiles/mk_matching_ptcld.dir/all
+all: CMakeFiles/mk_rgb_seg.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -74,6 +75,7 @@ preinstall:
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/smartbelt_segmentation_uninstall.dir/clean
 clean: CMakeFiles/mk_matching_ptcld.dir/clean
+clean: CMakeFiles/mk_rgb_seg.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -153,6 +155,32 @@ mk_matching_ptcld: CMakeFiles/mk_matching_ptcld.dir/rule
 CMakeFiles/mk_matching_ptcld.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mk_matching_ptcld.dir/build.make CMakeFiles/mk_matching_ptcld.dir/clean
 .PHONY : CMakeFiles/mk_matching_ptcld.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/mk_rgb_seg.dir
+
+# All Build rule for target.
+CMakeFiles/mk_rgb_seg.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mk_rgb_seg.dir/build.make CMakeFiles/mk_rgb_seg.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mk_rgb_seg.dir/build.make CMakeFiles/mk_rgb_seg.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation/CMakeFiles --progress-num=3,4 "Built target mk_rgb_seg"
+.PHONY : CMakeFiles/mk_rgb_seg.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/mk_rgb_seg.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/mk_rgb_seg.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation/CMakeFiles 0
+.PHONY : CMakeFiles/mk_rgb_seg.dir/rule
+
+# Convenience name for target.
+mk_rgb_seg: CMakeFiles/mk_rgb_seg.dir/rule
+.PHONY : mk_rgb_seg
+
+# clean rule for target.
+CMakeFiles/mk_rgb_seg.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mk_rgb_seg.dir/build.make CMakeFiles/mk_rgb_seg.dir/clean
+.PHONY : CMakeFiles/mk_rgb_seg.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

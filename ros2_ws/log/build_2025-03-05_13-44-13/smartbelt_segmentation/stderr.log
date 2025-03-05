@@ -1,0 +1,18 @@
+[0m** WARNING ** io features related to pcap will be disabled[0m
+[0m** WARNING ** io features related to png will be disabled[0m
+[01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_rgb_seg.cpp:[m[K In member function ‘[01m[Kvoid Matching_Pix_to_Ptcld::color_image_callback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_rgb_seg.cpp:204:18:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KMatching_Pix_to_Ptcld::run_gsam2(cv::Mat&)[m[K’
+  204 |         [01;31m[Krun_gsam2(color_img)[m[K;
+      |         [01;31m[K~~~~~~~~~^~~~~~~~~~~[m[K
+[01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_rgb_seg.cpp:161:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool Matching_Pix_to_Ptcld::run_gsam2(const string&, const string&)[m[K’
+  161 | bool [01;36m[KMatching_Pix_to_Ptcld[m[K::run_gsam2(const std::string& image_path, const std::string& mask_path) {
+      |      [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_rgb_seg.cpp:161:6:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_rgb_seg.cpp:223:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kmask[m[K’ was not declared in this scope; did you mean ‘[01m[Kumask[m[K’?
+  223 |         masked_img_gen(color_img, [01;31m[Kmask[m[K);
+      |                                   [01;31m[K^~~~[m[K
+      |                                   [32m[Kumask[m[K
+gmake[2]: *** [CMakeFiles/mk_rgb_seg.dir/build.make:76: CMakeFiles/mk_rgb_seg.dir/src/MK_rgb_seg.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/mk_rgb_seg.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

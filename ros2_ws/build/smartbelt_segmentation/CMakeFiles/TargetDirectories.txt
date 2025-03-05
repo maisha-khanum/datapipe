@@ -1,6 +1,7 @@
 /home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation/CMakeFiles/uninstall.dir
 /home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation/CMakeFiles/smartbelt_segmentation_uninstall.dir
 /home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation/CMakeFiles/mk_matching_ptcld.dir
+/home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation/CMakeFiles/mk_rgb_seg.dir
 /home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation/CMakeFiles/test.dir
 /home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation/CMakeFiles/edit_cache.dir
 /home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation/CMakeFiles/rebuild_cache.dir

@@ -167,6 +167,7 @@ void Matching_Pix_to_Ptcld::masked_img_gen(const cv::Mat& color_img, const cv::M
 	sensor_msgs::msg::Image ros_masked_image;
 	cv_bridge_masked_image.toImageMsg(ros_masked_image);
 	image_color_filt_pub_->publish(ros_masked_image);
+	RCLCPP_INFO(this->get_logger(), "Published ros_masked_img.");
 }
 
 bool Matching_Pix_to_Ptcld::run_gsam2(const std::string& image_path, const std::string& mask_path) {
@@ -222,8 +223,8 @@ void Matching_Pix_to_Ptcld::color_image_callback(const sensor_msgs::msg::Image::
 		RCLCPP_ERROR(this->get_logger(), "Failed to load segmentation mask.");
 		return;}
 
-	std::vector<cv::Point> mask_pixels = extract_mask_pixels(mask);
-	RCLCPP_INFO(this->get_logger(), "Extracted %lu mask pixels.", mask_pixels.size());
+	std::vector<cv::Point> mask_img_pixels_ = extract_mask_pixels(mask);
+	RCLCPP_INFO(this->get_logger(), "Extracted %lu mask pixels.", mask_img_pixels_.size());
 
 	masked_img_gen(color_img, mask);
 }
@@ -282,7 +283,7 @@ void Matching_Pix_to_Ptcld::pointcloud_callback(const sensor_msgs::msg::PointClo
 
 	std::vector<geometry_msgs::msg::PointStamped> points_in_camera_frame;
 
-	for (const auto& pixel : mask_img_pixels_){
+	for (const auto& pixel : mask_img_pixels_){ // TODO 
 		int u = pixel.x;
 		int v = pixel.y;
 

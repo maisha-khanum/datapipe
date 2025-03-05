@@ -310,7 +310,7 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install("TARGETS" "mk_matching_ptcld" "DESTINATION" "lib/smartbelt_segmentation")
+# install("TARGETS" "mk_matching_ptcld" "mk_rgb_seg" "DESTINATION" "lib/smartbelt_segmentation")
 include("/home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(DIRECTORY "launch" "DESTINATION" "share/smartbelt_segmentation")
