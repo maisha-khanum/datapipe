@@ -1,0 +1,20 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/mk_rgb_seg.dir/src/MK_rgb_seg.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/mk_matching_ptcld.dir/src/MK_matching_ptcld.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/mk_pc_seg.dir/src/MK_pc_seg.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/mk_rgb_seg_bag.dir/src/MK_rgb_seg_bag.cpp.o[0m
+[ 62%] [32m[1mLinking CXX executable mk_rgb_seg_bag[0m
+[ 75%] [32m[1mLinking CXX executable mk_pc_seg[0m
+[ 75%] Built target mk_rgb_seg_bag
+/usr/bin/ld: CMakeFiles/mk_pc_seg.dir/src/MK_pc_seg.cpp.o: in function `void rosbag2_cpp::Writer::write<std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void> > > >(std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void> > > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, rclcpp::Time const&)':
+MK_pc_seg.cpp:(.text._ZN11rosbag2_cpp6Writer5writeISt10shared_ptrIN11sensor_msgs3msg12PointCloud2_ISaIvEEEEEEvRKT_RKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKN6rclcpp4TimeE[_ZN11rosbag2_cpp6Writer5writeISt10shared_ptrIN11sensor_msgs3msg12PointCloud2_ISaIvEEEEEEvRKT_RKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKN6rclcpp4TimeE]+0x85): undefined reference to `char const* rosidl_generator_traits::name<std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void> > > >()'
+/usr/bin/ld: CMakeFiles/mk_pc_seg.dir/src/MK_pc_seg.cpp.o: in function `rclcpp::Serialization<std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void> > > >::Serialization()':
+MK_pc_seg.cpp:(.text._ZN6rclcpp13SerializationISt10shared_ptrIN11sensor_msgs3msg12PointCloud2_ISaIvEEEEEC2Ev[_ZN6rclcpp13SerializationISt10shared_ptrIN11sensor_msgs3msg12PointCloud2_ISaIvEEEEEC5Ev]+0x16): undefined reference to `rosidl_message_type_support_t const* rosidl_typesupport_cpp::get_message_type_support_handle<std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void> > > >()'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/mk_pc_seg.dir/build.make:369: mk_pc_seg] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/mk_pc_seg.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 87%] [32m[1mLinking CXX executable mk_rgb_seg[0m
+[ 87%] Built target mk_rgb_seg
+[100%] [32m[1mLinking CXX executable mk_matching_ptcld[0m
+[100%] Built target mk_matching_ptcld
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,25 @@
+<launch>
+    <arg name="bag_file" default="/home/mkhanum/datapipe/Bags/stair1"/>
+
+    <node pkg="rosbag2_player" exec="rosbag2_player" name="rosbag2_player" output="screen">
+        <param name="read_ahead_queue_size" value="1000"/>
+        <arg name="bag_filename" value="$(var bag_file)"/>
+    </node>
+
+    <node pkg="smartbelt_segmentation" exec="mk_matching_ptcld" name="mk_matching_ptcld_node" output="screen">
+        <param name="pt_srv_color_img_topic" value="/d455/color/image_raw"/>
+        <param name="pt_srv_depth_img_cam_info_topic" value="/d455/depth/camera_info"/>
+        <param name="pt_srv_reg_pt_cld_topic" value="/d455/depth/color/points"/>
+    </node>
+
+    <node pkg="rosbag2_recorder" exec="ros2 bag record" name="record_processed_topics" output="screen">
+        <param name="storage_id" value="sqlite3"/>
+        <param name="topic_polling_interval" value="100"/>
+        <param name="all" value="false"/>
+        <param name="output_dir" value="/home/mkhanum/datapipe/Bags"/>
+        <param name="compression_mode" value="none"/>
+        <param name="single_recording" value="false"/>
+        <remap from="/processed_d455/image_gsam2_mask" to="/processed_d455/image_gsam2_mask"/>
+        <remap from="/processed_d455/points_gsam2_mask" to="/processed_d455/points_gsam2_mask"/>
+    </node>
+</launch>

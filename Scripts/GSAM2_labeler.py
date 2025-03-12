@@ -17,6 +17,7 @@ import supervision as sv
 import pycocotools.mask as mask_util
 from pathlib import Path
 from torchvision.ops import box_convert
+import time
 
 from typing import Any, Tuple
 from PIL import Image
@@ -249,6 +250,8 @@ class semantic_labeler:
         # Load the frame into the SAM2 predictor
         self.sam2_predictor.set_image(frame)
 
+        start_time = time.time()
+
         # Predict bounding boxes and masks using Grounding DINO
         h, w, _ = frame.shape
         boxes, confidences, labels = predict(
@@ -269,6 +272,12 @@ class semantic_labeler:
             box=input_boxes,
             multimask_output=False,
         )
+        end_time = time.time()
+        execution_time = end_time - start_time
+
+        # Print the time taken
+        print(f"Time taken to run prediction: {execution_time:.4f} seconds")
+
         if masks.ndim == 4:
             masks = masks.squeeze(1)
 

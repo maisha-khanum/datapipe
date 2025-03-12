@@ -1,0 +1,14 @@
+[0.026s] Invoking command in '/home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(GSAM2Env) /usr/bin/cmake --build /home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation -- -j16 -l16
+[0.204s] [35m[1mConsolidate compiler generated dependencies of target mk_matching_ptcld[0m
+[0.205s] [35m[1mConsolidate compiler generated dependencies of target mk_rgb_seg[0m
+[0.217s] [ 16%] [32mBuilding CXX object CMakeFiles/mk_rgb_seg_bag.dir/src/MK_rgb_seg_bag.cpp.o[0m
+[0.251s] [ 50%] Built target mk_rgb_seg
+[0.257s] [ 83%] Built target mk_matching_ptcld
+[0.923s] [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_rgb_seg_bag.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Krosbag2_cpp/reader.hpp: No such file or directory
+[0.924s]     2 | #include [01;31m[K<rosbag2_cpp/reader.hpp>[m[K
+[0.924s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.924s] compilation terminated.
+[0.926s] gmake[2]: *** [CMakeFiles/mk_rgb_seg_bag.dir/build.make:76: CMakeFiles/mk_rgb_seg_bag.dir/src/MK_rgb_seg_bag.cpp.o] Error 1
+[0.926s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/mk_rgb_seg_bag.dir/all] Error 2
+[0.926s] gmake: *** [Makefile:146: all] Error 2
+[0.929s] Invoked command in '/home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(GSAM2Env) /usr/bin/cmake --build /home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation -- -j16 -l16

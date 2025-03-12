@@ -1,0 +1,38 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/mk_matching_ptcld.dir/src/MK_matching_ptcld.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/mk_rgb_seg_bag.dir/src/MK_rgb_seg_bag.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/mk_pc_seg.dir/src/MK_pc_seg.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/mk_rgb_seg.dir/src/MK_rgb_seg.cpp.o[0m
+[ 62%] [32m[1mLinking CXX executable mk_rgb_seg_bag[0m
+[ 75%] [32m[1mLinking CXX executable mk_pc_seg[0m
+[ 75%] Built target mk_pc_seg
+[ 75%] Built target mk_rgb_seg_bag
+[ 87%] [32m[1mLinking CXX executable mk_rgb_seg[0m
+[ 87%] Built target mk_rgb_seg
+[100%] [32m[1mLinking CXX executable mk_matching_ptcld[0m
+[100%] Built target mk_matching_ptcld
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/lib/smartbelt_segmentation/mk_matching_ptcld
+-- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/lib/smartbelt_segmentation/mk_rgb_seg
+-- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/lib/smartbelt_segmentation/mk_rgb_seg_bag
+-- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/lib/smartbelt_segmentation/mk_pc_seg
+-- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/launch/__pycache__/downsample.launch.cpython-310.pyc
+-- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/launch/downsample.launch.py
+-- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/launch/rgb_segmentation.launch.py
+-- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/launch/segmentation.launch.py
+-- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/launch/segmentation.launch.xml
+-- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/ament_index/resource_index/package_run_dependencies/smartbelt_segmentation
+-- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/ament_index/resource_index/parent_prefix_path/smartbelt_segmentation
+-- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/environment/path.sh
+-- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/environment/path.dsv
+-- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/local_setup.bash
+-- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/local_setup.sh
+-- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/local_setup.zsh
+-- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/local_setup.dsv
+-- Symlinking: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/package.dsv
+-- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/ament_index/resource_index/packages/smartbelt_segmentation
+-- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/cmake/smartbelt_segmentationConfig.cmake
+-- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/cmake/smartbelt_segmentationConfig-version.cmake
+-- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/package.xml

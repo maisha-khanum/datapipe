@@ -32,7 +32,6 @@
 #include "tf2/exceptions.h"
 #include <tf2_geometry_msgs/tf2_geometry_msgs.hpp> //necessary for doTransform
 
-
 #include <opencv2/opencv.hpp>
 #include "opencv2/core/core.hpp"
 #include "opencv2/highgui/highgui.hpp"
@@ -72,30 +71,31 @@ public:
 	Matching_Pix_to_Ptcld(); //constructor declaration
 
 	// Make callback functions for subscribers
-	void info_callback(const sensor_msgs::msg::CameraInfo::SharedPtr msg);
+	// void info_callback(const sensor_msgs::msg::CameraInfo::SharedPtr msg);
 	void color_image_callback(const sensor_msgs::msg::Image::SharedPtr msg);
 	void masked_img_gen(const cv::Mat& color_img, const cv::Mat& mask);
-	// bool run_gsam2(const std::string& image_path, const std::string& mask_path);
-	bool run_gsam2(const cv::Mat& image_arr);
+	bool run_gsam2(const std::string& image_path, const std::string& mask_path);
+	// bool run_gsam2(const cv::Mat& image_arr);
 	std::vector<cv::Point> extract_mask_pixels(const cv::Mat& mask);
 
 private:
 	rclcpp::QoS qos_; //message reliability
+	int message_counter_;
 
 	// Publisher declarations
 	rclcpp::Publisher<sensor_msgs::msg::Image>::SharedPtr image_color_filt_pub_;
 
 	//Subscriber declaration
-	rclcpp::Subscription<sensor_msgs::msg::CameraInfo>::SharedPtr cam_info_sub_;
+	// rclcpp::Subscription<sensor_msgs::msg::CameraInfo>::SharedPtr cam_info_sub_;
 	rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr rgb_image_sub_;
 
 	std::vector<geometry_msgs::msg::Point> mask_img_pixels_;
 
 	std::string color_image_topic_;
-	std::string depth_img_camera_info_;
+	// std::string depth_img_camera_info_;
 
 	image_geometry::PinholeCameraModel camera_model_;
-	bool depth_cam_info_ready_;
+	// bool depth_cam_info_ready_;
 
 	// TF Listener
 	std::unique_ptr<tf2_ros::Buffer> tf_buffer_;
@@ -103,33 +103,36 @@ private:
 };
 
 Matching_Pix_to_Ptcld::Matching_Pix_to_Ptcld() 
-    : Node("Matching_Pix_to_Ptcld"), qos_(2)
+    : Node("Matching_Pix_to_Ptcld"), qos_(2), message_counter_(0)
 {
 	tf_buffer_ = std::make_unique<tf2_ros::Buffer>(this->get_clock());
 	tf_listener_ = std::make_shared<tf2_ros::TransformListener>(*tf_buffer_);
 
 	this->declare_parameter<std::string>("pt_srv_color_img_topic", "/d455/color/image_raw");
-	this->declare_parameter<std::string>("pt_srv_depth_img_cam_info_topic", "/d455/depth/camera_info");
+	// this->declare_parameter<std::string>("pt_srv_depth_img_cam_info_topic", "/d455/depth/camera_info");
 
 	//   std::string color_image_topic_;
 	this->get_parameter("pt_srv_color_img_topic", color_image_topic_);
 
 	//   std::string depth_img_camera_info_;
-	this->get_parameter("pt_srv_depth_img_cam_info_topic", depth_img_camera_info_);
+	// this->get_parameter("pt_srv_depth_img_cam_info_topic", depth_img_camera_info_);
 
 
 	qos_.reliability(rclcpp::ReliabilityPolicy::BestEffort);
+    // qos_.history(rclcpp::QoSHistoryPolicy::KeepLast);
+    // qos_.depth(1000);
 
 	image_color_filt_pub_ = this->create_publisher<sensor_msgs::msg::Image>("/processed_d455/image_gsam2_mask", 1);
 
-	cam_info_sub_ = this->create_subscription<sensor_msgs::msg::CameraInfo>(
-		depth_img_camera_info_, qos_, std::bind(&Matching_Pix_to_Ptcld::info_callback, this, std::placeholders::_1));
+	// cam_info_sub_ = this->create_subscription<sensor_msgs::msg::CameraInfo>(
+	// 	depth_img_camera_info_, qos_, std::bind(&Matching_Pix_to_Ptcld::info_callback, this, std::placeholders::_1));
 	
 	rgb_image_sub_ = this->create_subscription<sensor_msgs::msg::Image>(
 		color_image_topic_, qos_, std::bind(&Matching_Pix_to_Ptcld::color_image_callback, this, std::placeholders::_1));
 
-	depth_cam_info_ready_ = false;
+	// depth_cam_info_ready_ = false;
 }
+
 
 void Matching_Pix_to_Ptcld::masked_img_gen(const cv::Mat& color_img, const cv::Mat& mask) {
 	if (color_img.empty() || mask.empty()) {
@@ -159,12 +162,10 @@ void Matching_Pix_to_Ptcld::masked_img_gen(const cv::Mat& color_img, const cv::M
 	RCLCPP_INFO(this->get_logger(), "Published ros_masked_img.");
 }
 
-// bool Matching_Pix_to_Ptcld::run_gsam2(const std::string& image_path, const std::string& mask_path) {
-bool Matching_Pix_to_Ptcld::run_gsam2(const cv::Mat& image_arr) {
+bool Matching_Pix_to_Ptcld::run_gsam2(const std::string& image_path, const std::string& mask_path) {
     std::string python_path = "/home/mkhanum/miniconda3/envs/GSAM2Env/bin/python"; //Replace with your python path
     std::string script_path = "/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/scripts/run_gsam2.py";
-    // std::string command = python_path + " " + script_path + " " + image_path + " " + mask_path;
-	std::string command = python_path + " " + script_path + " " + image_arr;
+    std::string command = python_path + " " + script_path + " " + image_path + " " + mask_path;
     int ret_code = std::system(command.c_str());
     // return (ret_code == 0);
 
@@ -198,41 +199,47 @@ void Matching_Pix_to_Ptcld::color_image_callback(const sensor_msgs::msg::Image::
 		return;}
 
 	cv::Mat color_img = color_img_ptr->image;
-	RCLCPP_INFO(this->get_logger(), "Color image shape: rows=%d, cols=%d, channels=%d", 
-            color_img.rows, color_img.cols, color_img.channels());
-
 	std::string image_path = "/tmp/frame.png";
 	std::string mask_path = "/tmp/mask.png";
 
-	run_gsam2(color_img);
+	if (!cv::imwrite(image_path, color_img)){
+		RCLCPP_ERROR(this->get_logger(), "Failed to save image as PNG.");
+		return;}
 
-	// if (!cv::imwrite(image_path, color_img)){
-	// 	RCLCPP_ERROR(this->get_logger(), "Failed to save image as PNG.");
-	// 	return;}
+	// Log the message number being processed
+	message_counter_++;
+	RCLCPP_INFO(this->get_logger(), "Processing message number: %d", message_counter_);
 
-	// if (!run_gsam2(image_path, mask_path)){
-	// 	RCLCPP_ERROR(this->get_logger(), "GSAM2 segmentation failed.");
-	// 	return;}
+	// // Display the image
+	// cv::imshow("Captured Image", color_img);
+	// cv::waitKey(0);
 
-	// cv::Mat mask = cv::imread(mask_path, cv::IMREAD_GRAYSCALE);
+	if (!run_gsam2(image_path, mask_path)){
+		RCLCPP_ERROR(this->get_logger(), "GSAM2 segmentation failed.");
+		return;}
 
-	// if (mask.empty()){
-	// 	RCLCPP_ERROR(this->get_logger(), "Failed to load segmentation mask.");
-	// 	return;}
+	cv::Mat mask = cv::imread(mask_path, cv::IMREAD_GRAYSCALE);
+	if (mask.empty()){
+		RCLCPP_ERROR(this->get_logger(), "Failed to load segmentation mask.");
+		return;}
+	
+	// Display the image
+	// cv::imshow("Captured Image", mask);
+	// cv::waitKey(0);
 
-	// std::vector<cv::Point> mask_img_pixels_ = extract_mask_pixels(mask);
+	std::vector<cv::Point> mask_img_pixels_ = extract_mask_pixels(mask);
 	RCLCPP_INFO(this->get_logger(), "Extracted %lu mask pixels.", mask_img_pixels_.size());
 
-	// masked_img_gen(color_img, mask);
+	masked_img_gen(color_img, mask);
 }
 
 
 
-void Matching_Pix_to_Ptcld::info_callback(const sensor_msgs::msg::CameraInfo::SharedPtr msg){
-	//create a camera model from the camera info
-	camera_model_.fromCameraInfo(msg);
-	depth_cam_info_ready_ = true;	
-}
+// void Matching_Pix_to_Ptcld::info_callback(const sensor_msgs::msg::CameraInfo::SharedPtr msg){
+// 	//create a camera model from the camera info
+// 	camera_model_.fromCameraInfo(msg);
+// 	depth_cam_info_ready_ = true;	
+// }
 
 int main(int argc, char **argv)
 {

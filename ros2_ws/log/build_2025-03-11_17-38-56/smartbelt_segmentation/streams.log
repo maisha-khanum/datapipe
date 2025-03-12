@@ -1,0 +1,42 @@
+[0.017s] Invoking command in '/home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation --clean-first -- -j16 -l16
+[0.142s] [ 50%] [32mBuilding CXX object CMakeFiles/mk_rgb_seg.dir/src/MK_rgb_seg.cpp.o[0m
+[0.143s] [ 50%] [32mBuilding CXX object CMakeFiles/mk_matching_ptcld.dir/src/MK_matching_ptcld.cpp.o[0m
+[0.143s] [ 50%] [32mBuilding CXX object CMakeFiles/mk_pc_seg.dir/src/MK_pc_seg.cpp.o[0m
+[0.143s] [ 50%] [32mBuilding CXX object CMakeFiles/mk_rgb_seg_bag.dir/src/MK_rgb_seg_bag.cpp.o[0m
+[8.462s] [ 62%] [32m[1mLinking CXX executable mk_rgb_seg_bag[0m
+[8.823s] [ 75%] [32m[1mLinking CXX executable mk_pc_seg[0m
+[9.423s] [ 75%] Built target mk_rgb_seg_bag
+[9.901s] [ 75%] Built target mk_pc_seg
+[20.922s] [ 87%] [32m[1mLinking CXX executable mk_rgb_seg[0m
+[22.167s] [ 87%] Built target mk_rgb_seg
+[28.260s] [100%] [32m[1mLinking CXX executable mk_matching_ptcld[0m
+[30.102s] [100%] Built target mk_matching_ptcld
+[30.115s] Invoked command in '/home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation --clean-first -- -j16 -l16
+[30.130s] Invoking command in '/home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation
+[30.139s] -- Install configuration: ""
+[30.142s] -- Execute custom install script
+[30.144s] -- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/lib/smartbelt_segmentation/mk_matching_ptcld
+[30.144s] -- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/lib/smartbelt_segmentation/mk_rgb_seg
+[30.144s] -- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/lib/smartbelt_segmentation/mk_rgb_seg_bag
+[30.145s] -- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/lib/smartbelt_segmentation/mk_pc_seg
+[30.146s] -- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/launch/__pycache__/downsample.launch.cpython-310.pyc
+[30.146s] -- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/launch/downsample.launch.py
+[30.146s] -- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/launch/rgb_segmentation.launch.py
+[30.147s] -- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/launch/segmentation.launch.py
+[30.147s] -- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/launch/segmentation.launch.xml
+[30.147s] -- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/ament_index/resource_index/package_run_dependencies/smartbelt_segmentation
+[30.147s] -- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/ament_index/resource_index/parent_prefix_path/smartbelt_segmentation
+[30.148s] -- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/environment/ament_prefix_path.sh
+[30.148s] -- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/environment/ament_prefix_path.dsv
+[30.149s] -- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/environment/path.sh
+[30.149s] -- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/environment/path.dsv
+[30.150s] -- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/local_setup.bash
+[30.150s] -- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/local_setup.sh
+[30.150s] -- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/local_setup.zsh
+[30.150s] -- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/local_setup.dsv
+[30.150s] -- Symlinking: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/package.dsv
+[30.163s] -- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/ament_index/resource_index/packages/smartbelt_segmentation
+[30.163s] -- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/cmake/smartbelt_segmentationConfig.cmake
+[30.163s] -- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/cmake/smartbelt_segmentationConfig-version.cmake
+[30.163s] -- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/package.xml
+[30.166s] Invoked command in '/home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation

@@ -1,0 +1,76 @@
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found image_geometry: 3.2.1 (/opt/ros/humble/share/image_geometry/cmake)
+-- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)
+-- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)
+-- Found tf2_eigen: 0.25.12 (/opt/ros/humble/share/tf2_eigen/cmake)
+-- Found tf2_geometry_msgs: 0.25.12 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+-- Found Eigen3: TRUE (found version "3.4.0") 
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+-- Found image_transport: 3.1.10 (/opt/ros/humble/share/image_transport/cmake)
+-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[0m** WARNING ** io features related to pcap will be disabled[0m
+[0m** WARNING ** io features related to png will be disabled[0m
+-- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") 
+-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+-- looking for PCL_COMMON
+-- looking for PCL_OCTREE
+-- looking for PCL_IO
+-- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+-- Found rosbag2_cpp: 0.15.13 (/opt/ros/humble/share/rosbag2_cpp/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation
+[35m[1mConsolidate compiler generated dependencies of target mk_matching_ptcld[0m
+[35m[1mConsolidate compiler generated dependencies of target mk_rgb_seg[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/mk_rgb_seg_bag.dir/src/MK_rgb_seg_bag.cpp.o[0m
+[ 50%] Built target mk_matching_ptcld
+[ 83%] Built target mk_rgb_seg
+[01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_rgb_seg_bag.cpp:[m[K In member function ‘[01m[Kvoid ROSBagProcessor::process()[m[K’:
+[01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_rgb_seg_bag.cpp:66:30:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krosbag2_cpp::Writer::write(const char [15], rclcpp::SerializedMessage&, rcutils_time_point_value_t&)[m[K’
+   66 |                 [01;31m[Kwriter_.write("segmented_mask", serialized_output, bag_message->time_stamp)[m[K;
+      |                 [01;31m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_rgb_seg_bag.cpp:3[m[K:
+[01m[K/opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/writer.hpp:191:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT> void rosbag2_cpp::Writer::write(const MessageT&, const string&, const rclcpp::Time&)[m[K’
+  191 |   void [01;36m[Kwrite[m[K(
+      |        [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/writer.hpp:191:8:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_rgb_seg_bag.cpp:66:49:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kserialized_output[m[K’ (type ‘[01m[Krclcpp::SerializedMessage[m[K’) to type ‘[01m[Kconst string&[m[K’ {aka ‘[01m[Kconst std::__cxx11::basic_string<char>&[m[K’}
+   66 |                 writer_.write("segmented_mask", [01;36m[Kserialized_output[m[K, bag_message->time_stamp);
+      |                                                 [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_rgb_seg_bag.cpp:3[m[K:
+[01m[K/opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/writer.hpp:122:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rosbag2_cpp::Writer::write(std::shared_ptr<rosbag2_storage::SerializedBagMessage>)[m[K’
+  122 |   void [01;36m[Kwrite[m[K(std::shared_ptr<rosbag2_storage::SerializedBagMessage> message);
+      |        [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/writer.hpp:122:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[01m[K/opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/writer.hpp:134:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rosbag2_cpp::Writer::write(std::shared_ptr<rosbag2_storage::SerializedBagMessage>, const string&, const string&, const string&)[m[K’
+  134 |   void [01;36m[Kwrite[m[K(
+      |        [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/writer.hpp:135:60:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst char [15][m[K’ to ‘[01m[Kstd::shared_ptr<rosbag2_storage::SerializedBagMessage>[m[K’
+  135 |     [01;36m[Kstd::shared_ptr<rosbag2_storage::SerializedBagMessage> message[m[K,
+      |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/writer.hpp:156:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rosbag2_cpp::Writer::write(const rclcpp::SerializedMessage&, const string&, const string&, const rclcpp::Time&)[m[K’
+  156 |   void [01;36m[Kwrite[m[K(
+      |        [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/writer.hpp:156:8:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 3 provided
+[01m[K/opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/writer.hpp:174:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rosbag2_cpp::Writer::write(std::shared_ptr<rclcpp::SerializedMessage>, const string&, const string&, const rclcpp::Time&)[m[K’
+  174 |   void [01;36m[Kwrite[m[K(
+      |        [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/writer.hpp:174:8:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 3 provided
+gmake[2]: *** [CMakeFiles/mk_rgb_seg_bag.dir/build.make:76: CMakeFiles/mk_rgb_seg_bag.dir/src/MK_rgb_seg_bag.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/mk_rgb_seg_bag.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

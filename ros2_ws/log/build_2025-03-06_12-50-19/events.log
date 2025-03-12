@@ -1,0 +1,531 @@
+[0.000000] (-) TimerEvent: {}
+[0.000455] (smartbelt_segmentation) JobQueued: {'identifier': 'smartbelt_segmentation', 'dependencies': OrderedDict()}
+[0.000614] (smartbelt_segmentation) JobStarted: {'identifier': 'smartbelt_segmentation'}
+[0.016728] (smartbelt_segmentation) JobProgress: {'identifier': 'smartbelt_segmentation', 'progress': 'cmake'}
+[0.019211] (smartbelt_segmentation) Command: {'cmd': ['/usr/bin/cmake', '/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation', '-DCMAKE_INSTALL_PREFIX=/home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation'], 'cwd': '/home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mkhanum'), ('GIT_ASKPASS', '/home/mkhanum/.vscode-server/bin/6609ac3d66f4eade5cf376d1cb76f13985724bcb/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/mkhanum'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/mkhanum'), ('TERM_PROGRAM_VERSION', '1.98.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-7c2d8611-e4a3-4af5-950f-c27bd2307206.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/mkhanum/.vscode-server/bin/6609ac3d66f4eade5cf376d1cb76f13985724bcb/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/mkhanum/.vscode-server/bin/6609ac3d66f4eade5cf376d1cb76f13985724bcb/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mkhanum'), ('NAME', 'maisha'), ('WSL_INTEROP', '/run/WSL/317_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/mkhanum/.vscode-server/bin/6609ac3d66f4eade5cf376d1cb76f13985724bcb/bin/remote-cli:/opt/ros/humble/bin:/home/mkhanum/miniconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Windows/System32/OpenSSH:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/MATLAB/R2022a/bin:/mnt/c/Program Files/MATLAB/R2020a/bin:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn:/mnt/c/Program Files/Microsoft SQL Server/120/DTS/Binn:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit:/mnt/c/Program Files/Wolfram Research/WolframScript:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0:/mnt/c/WINDOWS/System32/OpenSSH:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/mkhan/AppData/Local/Programs/Python/Python39/Scripts:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files (x86)/PharosSystems/Core:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/usbipd-win:/mnt/c/Users/mkhan/AppData/Local/Microsoft/WindowsApps:/mnt/c/ProgramData/mkhan/GitHubDesktop/bin:/mnt/c/Users/mkhan/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/mkhan/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files/Multipass/bin:/mnt/c/Users/mkhan/AppData/Roaming/TinyTeX/bin/windows:/mnt/c/Users/mkhan/AppData/Local/Programs/Python/Python39/Scripts:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-ef7082a247.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/mkhanum/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation'), ('CONDA_EXE', '/home/mkhanum/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.092221] (smartbelt_segmentation) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.098466] (-) TimerEvent: {}
+[0.198957] (-) TimerEvent: {}
+[0.242699] (smartbelt_segmentation) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.272502] (smartbelt_segmentation) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.299086] (-) TimerEvent: {}
+[0.399499] (-) TimerEvent: {}
+[0.499955] (-) TimerEvent: {}
+[0.520718] (smartbelt_segmentation) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.525794] (smartbelt_segmentation) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.537993] (smartbelt_segmentation) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.553620] (smartbelt_segmentation) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.571806] (smartbelt_segmentation) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.600102] (-) TimerEvent: {}
+[0.626763] (smartbelt_segmentation) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.630301] (smartbelt_segmentation) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.700177] (-) TimerEvent: {}
+[0.800589] (-) TimerEvent: {}
+[0.900997] (-) TimerEvent: {}
+[1.001413] (-) TimerEvent: {}
+[1.101896] (-) TimerEvent: {}
+[1.202439] (-) TimerEvent: {}
+[1.302911] (-) TimerEvent: {}
+[1.403422] (-) TimerEvent: {}
+[1.504003] (-) TimerEvent: {}
+[1.604606] (-) TimerEvent: {}
+[1.705238] (-) TimerEvent: {}
+[1.805861] (-) TimerEvent: {}
+[1.906447] (-) TimerEvent: {}
+[2.007035] (-) TimerEvent: {}
+[2.107612] (-) TimerEvent: {}
+[2.208106] (-) TimerEvent: {}
+[2.308558] (-) TimerEvent: {}
+[2.409064] (-) TimerEvent: {}
+[2.509546] (-) TimerEvent: {}
+[2.610079] (-) TimerEvent: {}
+[2.710561] (-) TimerEvent: {}
+[2.810984] (-) TimerEvent: {}
+[2.911416] (-) TimerEvent: {}
+[3.011912] (-) TimerEvent: {}
+[3.112446] (-) TimerEvent: {}
+[3.213048] (-) TimerEvent: {}
+[3.313521] (-) TimerEvent: {}
+[3.414024] (-) TimerEvent: {}
+[3.514564] (-) TimerEvent: {}
+[3.615092] (-) TimerEvent: {}
+[3.715640] (-) TimerEvent: {}
+[3.816104] (-) TimerEvent: {}
+[3.916676] (-) TimerEvent: {}
+[4.017334] (-) TimerEvent: {}
+[4.117970] (-) TimerEvent: {}
+[4.218581] (-) TimerEvent: {}
+[4.319120] (-) TimerEvent: {}
+[4.419663] (-) TimerEvent: {}
+[4.520252] (-) TimerEvent: {}
+[4.620663] (-) TimerEvent: {}
+[4.721118] (-) TimerEvent: {}
+[4.821672] (-) TimerEvent: {}
+[4.922164] (-) TimerEvent: {}
+[5.022799] (-) TimerEvent: {}
+[5.123431] (-) TimerEvent: {}
+[5.224129] (-) TimerEvent: {}
+[5.324676] (-) TimerEvent: {}
+[5.425300] (-) TimerEvent: {}
+[5.525812] (-) TimerEvent: {}
+[5.626350] (-) TimerEvent: {}
+[5.727028] (-) TimerEvent: {}
+[5.827652] (-) TimerEvent: {}
+[5.928167] (-) TimerEvent: {}
+[6.028684] (-) TimerEvent: {}
+[6.129162] (-) TimerEvent: {}
+[6.229697] (-) TimerEvent: {}
+[6.330215] (-) TimerEvent: {}
+[6.430754] (-) TimerEvent: {}
+[6.531231] (-) TimerEvent: {}
+[6.631739] (-) TimerEvent: {}
+[6.732227] (-) TimerEvent: {}
+[6.832684] (-) TimerEvent: {}
+[6.933175] (-) TimerEvent: {}
+[7.033640] (-) TimerEvent: {}
+[7.134067] (-) TimerEvent: {}
+[7.234533] (-) TimerEvent: {}
+[7.334962] (-) TimerEvent: {}
+[7.435451] (-) TimerEvent: {}
+[7.535917] (-) TimerEvent: {}
+[7.636413] (-) TimerEvent: {}
+[7.736914] (-) TimerEvent: {}
+[7.837433] (-) TimerEvent: {}
+[7.937995] (-) TimerEvent: {}
+[8.038554] (-) TimerEvent: {}
+[8.138998] (-) TimerEvent: {}
+[8.239520] (-) TimerEvent: {}
+[8.339955] (-) TimerEvent: {}
+[8.440401] (-) TimerEvent: {}
+[8.540878] (-) TimerEvent: {}
+[8.641352] (-) TimerEvent: {}
+[8.741748] (-) TimerEvent: {}
+[8.842156] (-) TimerEvent: {}
+[8.942613] (-) TimerEvent: {}
+[9.043059] (-) TimerEvent: {}
+[9.143494] (-) TimerEvent: {}
+[9.243923] (-) TimerEvent: {}
+[9.344375] (-) TimerEvent: {}
+[9.444827] (-) TimerEvent: {}
+[9.545298] (-) TimerEvent: {}
+[9.577311] (smartbelt_segmentation) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[9.645382] (-) TimerEvent: {}
+[9.669482] (smartbelt_segmentation) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[9.709291] (smartbelt_segmentation) StdoutLine: {'line': b'-- Found image_geometry: 3.2.1 (/opt/ros/humble/share/image_geometry/cmake)\n'}
+[9.719285] (smartbelt_segmentation) StdoutLine: {'line': b'-- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)\n'}
+[9.727748] (smartbelt_segmentation) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[9.745475] (-) TimerEvent: {}
+[9.845794] (-) TimerEvent: {}
+[9.850743] (smartbelt_segmentation) StdoutLine: {'line': b'-- Found tf2_eigen: 0.25.12 (/opt/ros/humble/share/tf2_eigen/cmake)\n'}
+[9.858119] (smartbelt_segmentation) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.12 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[9.864342] (smartbelt_segmentation) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[9.867450] (smartbelt_segmentation) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[9.867637] (smartbelt_segmentation) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[9.869462] (smartbelt_segmentation) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[9.877734] (smartbelt_segmentation) StdoutLine: {'line': b'-- Found image_transport: 3.1.10 (/opt/ros/humble/share/image_transport/cmake)\n'}
+[9.945884] (-) TimerEvent: {}
+[10.046238] (-) TimerEvent: {}
+[10.146664] (-) TimerEvent: {}
+[10.247137] (-) TimerEvent: {}
+[10.347572] (-) TimerEvent: {}
+[10.448020] (-) TimerEvent: {}
+[10.548484] (-) TimerEvent: {}
+[10.648933] (-) TimerEvent: {}
+[10.749405] (-) TimerEvent: {}
+[10.849869] (-) TimerEvent: {}
+[10.950324] (-) TimerEvent: {}
+[11.050813] (-) TimerEvent: {}
+[11.151291] (-) TimerEvent: {}
+[11.251767] (-) TimerEvent: {}
+[11.352173] (-) TimerEvent: {}
+[11.452571] (-) TimerEvent: {}
+[11.552975] (-) TimerEvent: {}
+[11.653408] (-) TimerEvent: {}
+[11.753827] (-) TimerEvent: {}
+[11.854257] (-) TimerEvent: {}
+[11.954840] (-) TimerEvent: {}
+[11.965405] (smartbelt_segmentation) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[12.003119] (smartbelt_segmentation) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[12.009656] (smartbelt_segmentation) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[12.010262] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to pcap will be disabled\x1b[0m\n'}
+[12.010472] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to png will be disabled\x1b[0m\n'}
+[12.054929] (-) TimerEvent: {}
+[12.155318] (-) TimerEvent: {}
+[12.255730] (-) TimerEvent: {}
+[12.356262] (-) TimerEvent: {}
+[12.456652] (-) TimerEvent: {}
+[12.557091] (-) TimerEvent: {}
+[12.657746] (-) TimerEvent: {}
+[12.759254] (-) TimerEvent: {}
+[12.860868] (-) TimerEvent: {}
+[12.962448] (-) TimerEvent: {}
+[13.063777] (-) TimerEvent: {}
+[13.167990] (-) TimerEvent: {}
+[13.269846] (-) TimerEvent: {}
+[13.373847] (-) TimerEvent: {}
+[13.477924] (-) TimerEvent: {}
+[13.582085] (-) TimerEvent: {}
+[13.686198] (-) TimerEvent: {}
+[13.786981] (-) TimerEvent: {}
+[13.887796] (-) TimerEvent: {}
+[13.989479] (-) TimerEvent: {}
+[14.091258] (-) TimerEvent: {}
+[14.192656] (-) TimerEvent: {}
+[14.293407] (smartbelt_segmentation) StdoutLine: {'line': b'-- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") \n'}
+[14.293688] (-) TimerEvent: {}
+[14.397716] (-) TimerEvent: {}
+[14.502585] (-) TimerEvent: {}
+[14.607420] (-) TimerEvent: {}
+[14.708489] (-) TimerEvent: {}
+[14.811698] (-) TimerEvent: {}
+[14.912250] (-) TimerEvent: {}
+[15.013182] (-) TimerEvent: {}
+[15.116482] (-) TimerEvent: {}
+[15.219853] (-) TimerEvent: {}
+[15.323167] (-) TimerEvent: {}
+[15.426791] (-) TimerEvent: {}
+[15.530273] (-) TimerEvent: {}
+[15.632102] (-) TimerEvent: {}
+[15.736071] (-) TimerEvent: {}
+[15.836723] (-) TimerEvent: {}
+[15.937434] (-) TimerEvent: {}
+[16.038242] (-) TimerEvent: {}
+[16.138972] (-) TimerEvent: {}
+[16.241871] (-) TimerEvent: {}
+[16.344752] (-) TimerEvent: {}
+[16.447530] (-) TimerEvent: {}
+[16.548050] (-) TimerEvent: {}
+[16.648606] (-) TimerEvent: {}
+[16.749038] (-) TimerEvent: {}
+[16.849450] (-) TimerEvent: {}
+[16.949884] (-) TimerEvent: {}
+[17.050343] (-) TimerEvent: {}
+[17.150764] (-) TimerEvent: {}
+[17.251175] (-) TimerEvent: {}
+[17.351566] (-) TimerEvent: {}
+[17.451981] (-) TimerEvent: {}
+[17.552402] (-) TimerEvent: {}
+[17.652792] (-) TimerEvent: {}
+[17.753214] (-) TimerEvent: {}
+[17.790544] (smartbelt_segmentation) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[17.790918] (smartbelt_segmentation) StdoutLine: {'line': b'-- looking for PCL_COMMON\n'}
+[17.791211] (smartbelt_segmentation) StdoutLine: {'line': b'-- looking for PCL_OCTREE\n'}
+[17.791483] (smartbelt_segmentation) StdoutLine: {'line': b'-- looking for PCL_IO\n'}
+[17.795675] (smartbelt_segmentation) StdoutLine: {'line': b'-- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)\n'}
+[17.831376] (smartbelt_segmentation) StdoutLine: {'line': b'-- Found rosbag2_cpp: 0.15.13 (/opt/ros/humble/share/rosbag2_cpp/cmake)\n'}
+[17.853286] (-) TimerEvent: {}
+[17.928550] (smartbelt_segmentation) StdoutLine: {'line': b'-- Configuring done\n'}
+[17.953485] (-) TimerEvent: {}
+[18.036612] (smartbelt_segmentation) StdoutLine: {'line': b'-- Generating done\n'}
+[18.049390] (smartbelt_segmentation) StdoutLine: {'line': b'-- Build files have been written to: /home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation\n'}
+[18.053555] (-) TimerEvent: {}
+[18.062884] (smartbelt_segmentation) CommandEnded: {'returncode': 0}
+[18.063702] (smartbelt_segmentation) JobProgress: {'identifier': 'smartbelt_segmentation', 'progress': 'build'}
+[18.065248] (smartbelt_segmentation) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation', '--clean-first', '--', '-j16', '-l16'], 'cwd': '/home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mkhanum'), ('GIT_ASKPASS', '/home/mkhanum/.vscode-server/bin/6609ac3d66f4eade5cf376d1cb76f13985724bcb/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/mkhanum'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/mkhanum'), ('TERM_PROGRAM_VERSION', '1.98.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-7c2d8611-e4a3-4af5-950f-c27bd2307206.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/mkhanum/.vscode-server/bin/6609ac3d66f4eade5cf376d1cb76f13985724bcb/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/mkhanum/.vscode-server/bin/6609ac3d66f4eade5cf376d1cb76f13985724bcb/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mkhanum'), ('NAME', 'maisha'), ('WSL_INTEROP', '/run/WSL/317_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/mkhanum/.vscode-server/bin/6609ac3d66f4eade5cf376d1cb76f13985724bcb/bin/remote-cli:/opt/ros/humble/bin:/home/mkhanum/miniconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Windows/System32/OpenSSH:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/MATLAB/R2022a/bin:/mnt/c/Program Files/MATLAB/R2020a/bin:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn:/mnt/c/Program Files/Microsoft SQL Server/120/DTS/Binn:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit:/mnt/c/Program Files/Wolfram Research/WolframScript:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0:/mnt/c/WINDOWS/System32/OpenSSH:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/mkhan/AppData/Local/Programs/Python/Python39/Scripts:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files (x86)/PharosSystems/Core:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/usbipd-win:/mnt/c/Users/mkhan/AppData/Local/Microsoft/WindowsApps:/mnt/c/ProgramData/mkhan/GitHubDesktop/bin:/mnt/c/Users/mkhan/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/mkhan/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files/Multipass/bin:/mnt/c/Users/mkhan/AppData/Roaming/TinyTeX/bin/windows:/mnt/c/Users/mkhan/AppData/Local/Programs/Python/Python39/Scripts:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-ef7082a247.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/mkhanum/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation'), ('CONDA_EXE', '/home/mkhanum/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[18.150938] (smartbelt_segmentation) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/mk_rgb_seg.dir/src/MK_rgb_seg.cpp.o\x1b[0m\n'}
+[18.152267] (smartbelt_segmentation) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/mk_matching_ptcld.dir/src/MK_matching_ptcld.cpp.o\x1b[0m\n'}
+[18.153664] (-) TimerEvent: {}
+[18.154642] (smartbelt_segmentation) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/mk_rgb_seg_bag.dir/src/MK_rgb_seg_bag.cpp.o\x1b[0m\n'}
+[18.253821] (-) TimerEvent: {}
+[18.354221] (-) TimerEvent: {}
+[18.454651] (-) TimerEvent: {}
+[18.555094] (-) TimerEvent: {}
+[18.655530] (-) TimerEvent: {}
+[18.755972] (-) TimerEvent: {}
+[18.856336] (-) TimerEvent: {}
+[18.956948] (-) TimerEvent: {}
+[19.058719] (-) TimerEvent: {}
+[19.160802] (-) TimerEvent: {}
+[19.262889] (-) TimerEvent: {}
+[19.364971] (-) TimerEvent: {}
+[19.467060] (-) TimerEvent: {}
+[19.567693] (-) TimerEvent: {}
+[19.669037] (-) TimerEvent: {}
+[19.769755] (-) TimerEvent: {}
+[19.871703] (-) TimerEvent: {}
+[19.972168] (-) TimerEvent: {}
+[20.072869] (-) TimerEvent: {}
+[20.175367] (-) TimerEvent: {}
+[20.277830] (-) TimerEvent: {}
+[20.380310] (-) TimerEvent: {}
+[20.482874] (-) TimerEvent: {}
+[20.585412] (-) TimerEvent: {}
+[20.687790] (-) TimerEvent: {}
+[20.790036] (-) TimerEvent: {}
+[20.892054] (-) TimerEvent: {}
+[20.994263] (-) TimerEvent: {}
+[21.095363] (-) TimerEvent: {}
+[21.197559] (-) TimerEvent: {}
+[21.299803] (-) TimerEvent: {}
+[21.402087] (-) TimerEvent: {}
+[21.504348] (-) TimerEvent: {}
+[21.605272] (-) TimerEvent: {}
+[21.707321] (-) TimerEvent: {}
+[21.809270] (-) TimerEvent: {}
+[21.911288] (-) TimerEvent: {}
+[22.011812] (-) TimerEvent: {}
+[22.113538] (-) TimerEvent: {}
+[22.215395] (-) TimerEvent: {}
+[22.317450] (-) TimerEvent: {}
+[22.419485] (-) TimerEvent: {}
+[22.520163] (-) TimerEvent: {}
+[22.621315] (-) TimerEvent: {}
+[22.723210] (-) TimerEvent: {}
+[22.825032] (-) TimerEvent: {}
+[22.926878] (-) TimerEvent: {}
+[23.028705] (-) TimerEvent: {}
+[23.130465] (-) TimerEvent: {}
+[23.232453] (-) TimerEvent: {}
+[23.334272] (-) TimerEvent: {}
+[23.436104] (-) TimerEvent: {}
+[23.538010] (-) TimerEvent: {}
+[23.639282] (-) TimerEvent: {}
+[23.740997] (-) TimerEvent: {}
+[23.842657] (-) TimerEvent: {}
+[23.943557] (-) TimerEvent: {}
+[24.044102] (-) TimerEvent: {}
+[24.144976] (-) TimerEvent: {}
+[24.246632] (-) TimerEvent: {}
+[24.348350] (-) TimerEvent: {}
+[24.450081] (-) TimerEvent: {}
+[24.551057] (-) TimerEvent: {}
+[24.651617] (-) TimerEvent: {}
+[24.752019] (-) TimerEvent: {}
+[24.852471] (-) TimerEvent: {}
+[24.952973] (-) TimerEvent: {}
+[24.970523] (smartbelt_segmentation) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX executable mk_rgb_seg_bag\x1b[0m\n'}
+[25.053151] (-) TimerEvent: {}
+[25.153779] (-) TimerEvent: {}
+[25.254355] (-) TimerEvent: {}
+[25.354892] (-) TimerEvent: {}
+[25.455415] (-) TimerEvent: {}
+[25.555952] (-) TimerEvent: {}
+[25.656418] (-) TimerEvent: {}
+[25.756928] (-) TimerEvent: {}
+[25.857428] (-) TimerEvent: {}
+[25.958042] (-) TimerEvent: {}
+[26.058668] (-) TimerEvent: {}
+[26.159166] (-) TimerEvent: {}
+[26.259611] (-) TimerEvent: {}
+[26.360572] (-) TimerEvent: {}
+[26.461479] (-) TimerEvent: {}
+[26.468023] (smartbelt_segmentation) StdoutLine: {'line': b'[ 66%] Built target mk_rgb_seg_bag\n'}
+[26.562038] (-) TimerEvent: {}
+[26.662955] (-) TimerEvent: {}
+[26.763824] (-) TimerEvent: {}
+[26.864649] (-) TimerEvent: {}
+[26.965537] (-) TimerEvent: {}
+[27.066442] (-) TimerEvent: {}
+[27.167352] (-) TimerEvent: {}
+[27.268154] (-) TimerEvent: {}
+[27.369001] (-) TimerEvent: {}
+[27.469865] (-) TimerEvent: {}
+[27.570713] (-) TimerEvent: {}
+[27.671643] (-) TimerEvent: {}
+[27.772604] (-) TimerEvent: {}
+[27.873474] (-) TimerEvent: {}
+[27.974298] (-) TimerEvent: {}
+[28.075145] (-) TimerEvent: {}
+[28.175722] (-) TimerEvent: {}
+[28.276523] (-) TimerEvent: {}
+[28.377698] (-) TimerEvent: {}
+[28.478394] (-) TimerEvent: {}
+[28.579781] (-) TimerEvent: {}
+[28.680538] (-) TimerEvent: {}
+[28.781480] (-) TimerEvent: {}
+[28.882137] (-) TimerEvent: {}
+[28.982772] (-) TimerEvent: {}
+[29.083936] (-) TimerEvent: {}
+[29.185071] (-) TimerEvent: {}
+[29.286311] (-) TimerEvent: {}
+[29.387440] (-) TimerEvent: {}
+[29.488590] (-) TimerEvent: {}
+[29.589708] (-) TimerEvent: {}
+[29.690866] (-) TimerEvent: {}
+[29.791882] (-) TimerEvent: {}
+[29.892361] (-) TimerEvent: {}
+[29.992872] (-) TimerEvent: {}
+[30.093669] (-) TimerEvent: {}
+[30.194841] (-) TimerEvent: {}
+[30.295493] (-) TimerEvent: {}
+[30.396332] (-) TimerEvent: {}
+[30.497392] (-) TimerEvent: {}
+[30.598038] (-) TimerEvent: {}
+[30.698945] (-) TimerEvent: {}
+[30.799797] (-) TimerEvent: {}
+[30.900639] (-) TimerEvent: {}
+[31.001480] (-) TimerEvent: {}
+[31.102378] (-) TimerEvent: {}
+[31.203203] (-) TimerEvent: {}
+[31.304010] (-) TimerEvent: {}
+[31.404821] (-) TimerEvent: {}
+[31.505601] (-) TimerEvent: {}
+[31.606163] (-) TimerEvent: {}
+[31.707014] (-) TimerEvent: {}
+[31.807939] (-) TimerEvent: {}
+[31.908724] (-) TimerEvent: {}
+[32.009549] (-) TimerEvent: {}
+[32.110404] (-) TimerEvent: {}
+[32.210889] (-) TimerEvent: {}
+[32.311384] (-) TimerEvent: {}
+[32.412131] (-) TimerEvent: {}
+[32.512952] (-) TimerEvent: {}
+[32.613403] (-) TimerEvent: {}
+[32.713880] (-) TimerEvent: {}
+[32.814413] (-) TimerEvent: {}
+[32.914955] (-) TimerEvent: {}
+[33.015364] (-) TimerEvent: {}
+[33.115999] (-) TimerEvent: {}
+[33.216476] (-) TimerEvent: {}
+[33.316844] (-) TimerEvent: {}
+[33.417244] (-) TimerEvent: {}
+[33.517703] (-) TimerEvent: {}
+[33.618160] (-) TimerEvent: {}
+[33.718599] (-) TimerEvent: {}
+[33.819008] (-) TimerEvent: {}
+[33.919423] (-) TimerEvent: {}
+[34.019881] (-) TimerEvent: {}
+[34.120405] (-) TimerEvent: {}
+[34.220894] (-) TimerEvent: {}
+[34.321304] (-) TimerEvent: {}
+[34.421672] (-) TimerEvent: {}
+[34.522080] (-) TimerEvent: {}
+[34.622482] (-) TimerEvent: {}
+[34.723086] (-) TimerEvent: {}
+[34.823737] (-) TimerEvent: {}
+[34.924248] (-) TimerEvent: {}
+[35.024904] (-) TimerEvent: {}
+[35.125495] (-) TimerEvent: {}
+[35.226166] (-) TimerEvent: {}
+[35.326802] (-) TimerEvent: {}
+[35.427413] (-) TimerEvent: {}
+[35.528007] (-) TimerEvent: {}
+[35.628621] (-) TimerEvent: {}
+[35.729187] (-) TimerEvent: {}
+[35.829799] (-) TimerEvent: {}
+[35.930431] (-) TimerEvent: {}
+[36.031003] (-) TimerEvent: {}
+[36.131585] (-) TimerEvent: {}
+[36.232172] (-) TimerEvent: {}
+[36.332731] (-) TimerEvent: {}
+[36.433154] (-) TimerEvent: {}
+[36.533674] (-) TimerEvent: {}
+[36.634216] (-) TimerEvent: {}
+[36.644673] (smartbelt_segmentation) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX executable mk_rgb_seg\x1b[0m\n'}
+[36.734438] (-) TimerEvent: {}
+[36.835113] (-) TimerEvent: {}
+[36.935693] (-) TimerEvent: {}
+[37.036339] (-) TimerEvent: {}
+[37.136858] (-) TimerEvent: {}
+[37.237461] (-) TimerEvent: {}
+[37.337890] (-) TimerEvent: {}
+[37.438405] (-) TimerEvent: {}
+[37.539021] (-) TimerEvent: {}
+[37.639537] (-) TimerEvent: {}
+[37.740103] (-) TimerEvent: {}
+[37.757782] (smartbelt_segmentation) StdoutLine: {'line': b'[ 83%] Built target mk_rgb_seg\n'}
+[37.840348] (-) TimerEvent: {}
+[37.940853] (-) TimerEvent: {}
+[38.041383] (-) TimerEvent: {}
+[38.141908] (-) TimerEvent: {}
+[38.242329] (-) TimerEvent: {}
+[38.342779] (-) TimerEvent: {}
+[38.443231] (-) TimerEvent: {}
+[38.543739] (-) TimerEvent: {}
+[38.644360] (-) TimerEvent: {}
+[38.744889] (-) TimerEvent: {}
+[38.845443] (-) TimerEvent: {}
+[38.945909] (-) TimerEvent: {}
+[39.046532] (-) TimerEvent: {}
+[39.147164] (-) TimerEvent: {}
+[39.247760] (-) TimerEvent: {}
+[39.348322] (-) TimerEvent: {}
+[39.448913] (-) TimerEvent: {}
+[39.549498] (-) TimerEvent: {}
+[39.650206] (-) TimerEvent: {}
+[39.750753] (-) TimerEvent: {}
+[39.851337] (-) TimerEvent: {}
+[39.951784] (-) TimerEvent: {}
+[40.052313] (-) TimerEvent: {}
+[40.152984] (-) TimerEvent: {}
+[40.253668] (-) TimerEvent: {}
+[40.354327] (-) TimerEvent: {}
+[40.454782] (-) TimerEvent: {}
+[40.555365] (-) TimerEvent: {}
+[40.655876] (-) TimerEvent: {}
+[40.756379] (-) TimerEvent: {}
+[40.856831] (-) TimerEvent: {}
+[40.957303] (-) TimerEvent: {}
+[41.057736] (-) TimerEvent: {}
+[41.158174] (-) TimerEvent: {}
+[41.258565] (-) TimerEvent: {}
+[41.359000] (-) TimerEvent: {}
+[41.459373] (-) TimerEvent: {}
+[41.559809] (-) TimerEvent: {}
+[41.660212] (-) TimerEvent: {}
+[41.760644] (-) TimerEvent: {}
+[41.861039] (-) TimerEvent: {}
+[41.961436] (-) TimerEvent: {}
+[42.061874] (-) TimerEvent: {}
+[42.162366] (-) TimerEvent: {}
+[42.262784] (-) TimerEvent: {}
+[42.363179] (-) TimerEvent: {}
+[42.463620] (-) TimerEvent: {}
+[42.564068] (-) TimerEvent: {}
+[42.664558] (-) TimerEvent: {}
+[42.765047] (-) TimerEvent: {}
+[42.865519] (-) TimerEvent: {}
+[42.965930] (-) TimerEvent: {}
+[43.066325] (-) TimerEvent: {}
+[43.166732] (-) TimerEvent: {}
+[43.267166] (-) TimerEvent: {}
+[43.367613] (-) TimerEvent: {}
+[43.468114] (-) TimerEvent: {}
+[43.491441] (smartbelt_segmentation) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable mk_matching_ptcld\x1b[0m\n'}
+[43.568241] (-) TimerEvent: {}
+[43.668691] (-) TimerEvent: {}
+[43.769158] (-) TimerEvent: {}
+[43.869614] (-) TimerEvent: {}
+[43.970106] (-) TimerEvent: {}
+[44.070561] (-) TimerEvent: {}
+[44.171123] (-) TimerEvent: {}
+[44.271672] (-) TimerEvent: {}
+[44.372186] (-) TimerEvent: {}
+[44.472765] (-) TimerEvent: {}
+[44.573273] (-) TimerEvent: {}
+[44.673845] (-) TimerEvent: {}
+[44.774468] (-) TimerEvent: {}
+[44.874985] (-) TimerEvent: {}
+[44.951646] (smartbelt_segmentation) StdoutLine: {'line': b'[100%] Built target mk_matching_ptcld\n'}
+[44.961229] (smartbelt_segmentation) CommandEnded: {'returncode': 0}
+[44.962244] (smartbelt_segmentation) JobProgress: {'identifier': 'smartbelt_segmentation', 'progress': 'install'}
+[44.971814] (smartbelt_segmentation) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation'], 'cwd': '/home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mkhanum'), ('GIT_ASKPASS', '/home/mkhanum/.vscode-server/bin/6609ac3d66f4eade5cf376d1cb76f13985724bcb/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/mkhanum'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/mkhanum'), ('TERM_PROGRAM_VERSION', '1.98.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-7c2d8611-e4a3-4af5-950f-c27bd2307206.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/mkhanum/.vscode-server/bin/6609ac3d66f4eade5cf376d1cb76f13985724bcb/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/mkhanum/.vscode-server/bin/6609ac3d66f4eade5cf376d1cb76f13985724bcb/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mkhanum'), ('NAME', 'maisha'), ('WSL_INTEROP', '/run/WSL/317_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/mkhanum/.vscode-server/bin/6609ac3d66f4eade5cf376d1cb76f13985724bcb/bin/remote-cli:/opt/ros/humble/bin:/home/mkhanum/miniconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Windows/System32/OpenSSH:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/MATLAB/R2022a/bin:/mnt/c/Program Files/MATLAB/R2020a/bin:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn:/mnt/c/Program Files/Microsoft SQL Server/120/DTS/Binn:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit:/mnt/c/Program Files/Wolfram Research/WolframScript:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0:/mnt/c/WINDOWS/System32/OpenSSH:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/mkhan/AppData/Local/Programs/Python/Python39/Scripts:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files (x86)/PharosSystems/Core:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/usbipd-win:/mnt/c/Users/mkhan/AppData/Local/Microsoft/WindowsApps:/mnt/c/ProgramData/mkhan/GitHubDesktop/bin:/mnt/c/Users/mkhan/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/mkhan/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files/Multipass/bin:/mnt/c/Users/mkhan/AppData/Roaming/TinyTeX/bin/windows:/mnt/c/Users/mkhan/AppData/Local/Programs/Python/Python39/Scripts:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-ef7082a247.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/mkhanum/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation'), ('CONDA_EXE', '/home/mkhanum/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[44.975100] (-) TimerEvent: {}
+[44.977577] (smartbelt_segmentation) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[44.978083] (smartbelt_segmentation) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[44.978376] (smartbelt_segmentation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/lib/smartbelt_segmentation/mk_matching_ptcld\n'}
+[44.978717] (smartbelt_segmentation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/lib/smartbelt_segmentation/mk_rgb_seg\n'}
+[44.979116] (smartbelt_segmentation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/lib/smartbelt_segmentation/mk_rgb_seg_bag\n'}
+[44.979360] (smartbelt_segmentation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/launch/__pycache__/downsample.launch.cpython-310.pyc\n'}
+[44.979745] (smartbelt_segmentation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/launch/downsample.launch.py\n'}
+[44.980020] (smartbelt_segmentation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/launch/rgb_segmentation.launch.py\n'}
+[44.980185] (smartbelt_segmentation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/launch/segmentation.launch.py\n'}
+[44.980597] (smartbelt_segmentation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/launch/segmentation.launch.xml\n'}
+[44.980881] (smartbelt_segmentation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/ament_index/resource_index/package_run_dependencies/smartbelt_segmentation\n'}
+[44.981022] (smartbelt_segmentation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/ament_index/resource_index/parent_prefix_path/smartbelt_segmentation\n'}
+[44.981109] (smartbelt_segmentation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/environment/ament_prefix_path.sh\n'}
+[44.981241] (smartbelt_segmentation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/environment/ament_prefix_path.dsv\n'}
+[44.981378] (smartbelt_segmentation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/environment/path.sh\n'}
+[44.981553] (smartbelt_segmentation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/environment/path.dsv\n'}
+[44.981713] (smartbelt_segmentation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/local_setup.bash\n'}
+[44.981878] (smartbelt_segmentation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/local_setup.sh\n'}
+[44.982144] (smartbelt_segmentation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/local_setup.zsh\n'}
+[44.982540] (smartbelt_segmentation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/local_setup.dsv\n'}
+[44.982648] (smartbelt_segmentation) StdoutLine: {'line': b'-- Symlinking: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/package.dsv\n'}
+[44.989496] (smartbelt_segmentation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/ament_index/resource_index/packages/smartbelt_segmentation\n'}
+[44.989926] (smartbelt_segmentation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/cmake/smartbelt_segmentationConfig.cmake\n'}
+[44.990279] (smartbelt_segmentation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/cmake/smartbelt_segmentationConfig-version.cmake\n'}
+[44.990489] (smartbelt_segmentation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation/share/smartbelt_segmentation/package.xml\n'}
+[44.992245] (smartbelt_segmentation) CommandEnded: {'returncode': 0}
+[45.019371] (smartbelt_segmentation) JobEnded: {'identifier': 'smartbelt_segmentation', 'rc': 0}
+[45.021116] (-) EventReactorShutdown: {}

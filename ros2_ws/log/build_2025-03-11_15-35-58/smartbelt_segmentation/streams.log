@@ -1,0 +1,44 @@
+[0.054s] Invoking command in '/home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation --clean-first -- -j16 -l16
+[0.814s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.074s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.103s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[1.465s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.471s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.484s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.508s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.535s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.618s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.623s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[12.321s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[12.425s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[12.479s] -- Found image_geometry: 3.2.1 (/opt/ros/humble/share/image_geometry/cmake)
+[12.501s] -- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)
+[12.512s] -- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)
+[12.689s] -- Found tf2_eigen: 0.25.12 (/opt/ros/humble/share/tf2_eigen/cmake)
+[12.696s] -- Found tf2_geometry_msgs: 0.25.12 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[12.704s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[12.706s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[12.706s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[12.709s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[12.719s] -- Found image_transport: 3.1.10 (/opt/ros/humble/share/image_transport/cmake)
+[15.278s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[15.326s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[15.335s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[15.335s] [0m** WARNING ** io features related to pcap will be disabled[0m
+[15.335s] [0m** WARNING ** io features related to png will be disabled[0m
+[18.292s] -- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") 
+[22.508s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[22.508s] -- looking for PCL_COMMON
+[22.508s] -- looking for PCL_OCTREE
+[22.508s] -- looking for PCL_IO
+[22.511s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[22.550s] -- Found rosbag2_cpp: 0.15.13 (/opt/ros/humble/share/rosbag2_cpp/cmake)
+[22.597s] [31mCMake Error at CMakeLists.txt:79 (target_link_libraries):
+[22.597s]   Cannot specify link libraries for target "mk_pc_seg" which is not built by
+[22.597s]   this project.
+[22.598s] 
+[22.598s] [0m
+[22.598s] -- Configuring incomplete, errors occurred!
+[22.598s] See also "/home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation/CMakeFiles/CMakeOutput.log".
+[22.617s] gmake: *** [Makefile:349: cmake_check_build_system] Error 1
+[22.625s] Invoked command in '/home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation --clean-first -- -j16 -l16

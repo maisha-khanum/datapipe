@@ -1,0 +1,41 @@
+[0m** WARNING ** io features related to pcap will be disabled[0m
+[0m** WARNING ** io features related to png will be disabled[0m
+[01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:[m[K In member function ‘[01m[Kvoid BagProcessor::process_bags()[m[K’:
+[01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:62:31:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krosbag2_cpp::Writer::write(std::__shared_ptr_access<tf2_msgs::msg::TFMessage_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::element_type&, const char [11], rclcpp::Time, rclcpp::QoS&)[m[K’
+   62 |                 [01;31m[Kwriter_->write(*tf_msg, "/tf_static", rclcpp::Time(bag_message->time_stamp), qos_profile)[m[K;
+      |                 [01;31m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:3[m[K:
+[01m[K/opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/writer.hpp:191:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT> void rosbag2_cpp::Writer::write(const MessageT&, const string&, const rclcpp::Time&)[m[K’
+  191 |   void [01;36m[Kwrite[m[K(
+      |        [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/writer.hpp:191:8:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:62:31:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 4 provided
+   62 |                 [01;36m[Kwriter_->write(*tf_msg, "/tf_static", rclcpp::Time(bag_message->time_stamp), qos_profile)[m[K;
+      |                 [01;36m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:3[m[K:
+[01m[K/opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/writer.hpp:122:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rosbag2_cpp::Writer::write(std::shared_ptr<rosbag2_storage::SerializedBagMessage>)[m[K’
+  122 |   void [01;36m[Kwrite[m[K(std::shared_ptr<rosbag2_storage::SerializedBagMessage> message);
+      |        [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/writer.hpp:122:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 4 provided
+[01m[K/opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/writer.hpp:134:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rosbag2_cpp::Writer::write(std::shared_ptr<rosbag2_storage::SerializedBagMessage>, const string&, const string&, const string&)[m[K’
+  134 |   void [01;36m[Kwrite[m[K(
+      |        [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/writer.hpp:135:60:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::__shared_ptr_access<tf2_msgs::msg::TFMessage_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::element_type[m[K’ {aka ‘[01m[Ktf2_msgs::msg::TFMessage_<std::allocator<void> >[m[K’} to ‘[01m[Kstd::shared_ptr<rosbag2_storage::SerializedBagMessage>[m[K’
+  135 |     [01;36m[Kstd::shared_ptr<rosbag2_storage::SerializedBagMessage> message[m[K,
+      |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/writer.hpp:156:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rosbag2_cpp::Writer::write(const rclcpp::SerializedMessage&, const string&, const string&, const rclcpp::Time&)[m[K’
+  156 |   void [01;36m[Kwrite[m[K(
+      |        [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/writer.hpp:157:39:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::__shared_ptr_access<tf2_msgs::msg::TFMessage_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::element_type[m[K’ {aka ‘[01m[Ktf2_msgs::msg::TFMessage_<std::allocator<void> >[m[K’} to ‘[01m[Kconst rclcpp::SerializedMessage&[m[K’
+  157 |     [01;36m[Kconst rclcpp::SerializedMessage & message[m[K,
+      |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/writer.hpp:174:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rosbag2_cpp::Writer::write(std::shared_ptr<rclcpp::SerializedMessage>, const string&, const string&, const rclcpp::Time&)[m[K’
+  174 |   void [01;36m[Kwrite[m[K(
+      |        [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/writer.hpp:175:48:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::__shared_ptr_access<tf2_msgs::msg::TFMessage_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::element_type[m[K’ {aka ‘[01m[Ktf2_msgs::msg::TFMessage_<std::allocator<void> >[m[K’} to ‘[01m[Kstd::shared_ptr<rclcpp::SerializedMessage>[m[K’
+  175 |     [01;36m[Kstd::shared_ptr<rclcpp::SerializedMessage> message[m[K,
+      |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/mk_pc_seg.dir/build.make:76: CMakeFiles/mk_pc_seg.dir/src/MK_pc_seg.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/mk_pc_seg.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

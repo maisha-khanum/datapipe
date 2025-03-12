@@ -1,0 +1,20 @@
+[0.020s] Invoking command in '/home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation --clean-first -- -j16 -l16
+[0.142s] [ 50%] [32mBuilding CXX object CMakeFiles/mk_pc_seg.dir/src/MK_pc_seg.cpp.o[0m
+[0.142s] [ 50%] [32mBuilding CXX object CMakeFiles/mk_rgb_seg_bag.dir/src/MK_rgb_seg_bag.cpp.o[0m
+[0.143s] [ 50%] [32mBuilding CXX object CMakeFiles/mk_rgb_seg.dir/src/MK_rgb_seg.cpp.o[0m
+[0.143s] [ 50%] [32mBuilding CXX object CMakeFiles/mk_matching_ptcld.dir/src/MK_matching_ptcld.cpp.o[0m
+[5.643s] [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:[m[K In member function ‘[01m[Kvoid BagProcessor::process_bags()[m[K’:
+[5.643s] [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:50:28:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K->[m[K’ token
+[5.643s]    50 |                     writer_[01;31m[K->[m[Kwrite(segmented_cloud, "/segmented_pointcloud", cloud_msg->header.stamp);
+[5.643s]       |                            [01;31m[K^~[m[K
+[7.795s] gmake[2]: *** [CMakeFiles/mk_pc_seg.dir/build.make:76: CMakeFiles/mk_pc_seg.dir/src/MK_pc_seg.cpp.o] Error 1
+[7.796s] gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/mk_pc_seg.dir/all] Error 2
+[7.796s] gmake[1]: *** Waiting for unfinished jobs....
+[8.110s] [ 62%] [32m[1mLinking CXX executable mk_rgb_seg_bag[0m
+[8.940s] [ 62%] Built target mk_rgb_seg_bag
+[20.480s] [ 75%] [32m[1mLinking CXX executable mk_rgb_seg[0m
+[21.829s] [ 75%] Built target mk_rgb_seg
+[28.966s] [ 87%] [32m[1mLinking CXX executable mk_matching_ptcld[0m
+[31.021s] [ 87%] Built target mk_matching_ptcld
+[31.022s] gmake: *** [Makefile:146: all] Error 2
+[31.026s] Invoked command in '/home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation --clean-first -- -j16 -l16

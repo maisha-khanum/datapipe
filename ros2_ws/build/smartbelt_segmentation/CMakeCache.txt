@@ -767,7 +767,7 @@ ZLIB_LIBRARY_DEBUG:FILEPATH=ZLIB_LIBRARY_DEBUG-NOTFOUND
 ZLIB_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libz.so
 
 //Path to a library.
-_lib:FILEPATH=/opt/ros/humble/lib/libpcl_msgs__rosidl_typesupport_fastrtps_cpp.so
+_lib:FILEPATH=/opt/ros/humble/lib/librosbag2_storage.so
 
 //The directory containing a CMake configuration file for action_msgs.
 action_msgs_DIR:PATH=/opt/ros/humble/share/action_msgs/cmake
@@ -1000,6 +1000,12 @@ rmw_implementation_DIR:PATH=/opt/ros/humble/share/rmw_implementation/cmake
 //The directory containing a CMake configuration file for rmw_implementation_cmake.
 rmw_implementation_cmake_DIR:PATH=/opt/ros/humble/share/rmw_implementation_cmake/cmake
 
+//The directory containing a CMake configuration file for rosbag2_cpp.
+rosbag2_cpp_DIR:PATH=/opt/ros/humble/share/rosbag2_cpp/cmake
+
+//The directory containing a CMake configuration file for rosbag2_storage.
+rosbag2_storage_DIR:PATH=/opt/ros/humble/share/rosbag2_storage/cmake
+
 //The directory containing a CMake configuration file for rosgraph_msgs.
 rosgraph_msgs_DIR:PATH=/opt/ros/humble/share/rosgraph_msgs/cmake
 
@@ -1096,8 +1102,14 @@ unique_identifier_msgs_DIR:PATH=/opt/ros/humble/share/unique_identifier_msgs/cma
 //utf8cpp include directory
 utf8cpp_INCLUDE_DIR:PATH=/usr/include/utf8cpp
 
+//The directory containing a CMake configuration file for yaml-cpp.
+yaml-cpp_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/yaml-cpp
+
 //The directory containing a CMake configuration file for yaml.
 yaml_DIR:PATH=/opt/ros/humble/cmake
+
+//The directory containing a CMake configuration file for yaml_cpp_vendor.
+yaml_cpp_vendor_DIR:PATH=/opt/ros/humble/share/yaml_cpp_vendor/cmake
 
 
 ########################

@@ -1,0 +1,20 @@
+[0.016s] Invoking command in '/home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation --clean-first -- -j16 -l16
+[0.141s] [ 12%] [32mBuilding CXX object CMakeFiles/mk_rgb_seg.dir/src/MK_rgb_seg.cpp.o[0m
+[0.142s] [ 25%] [32mBuilding CXX object CMakeFiles/mk_rgb_seg_bag.dir/src/MK_rgb_seg_bag.cpp.o[0m
+[0.143s] [ 37%] [32mBuilding CXX object CMakeFiles/mk_pc_seg.dir/src/MK_pc_seg.cpp.o[0m
+[0.143s] [ 50%] [32mBuilding CXX object CMakeFiles/mk_matching_ptcld.dir/src/MK_matching_ptcld.cpp.o[0m
+[0.609s] [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:10:10:[m[K [01;31m[Kfatal error: [m[Ktf2_msgs/msg/tf_static_message.hpp: No such file or directory
+[0.609s]    10 | #include [01;31m[K<tf2_msgs/msg/tf_static_message.hpp>[m[K
+[0.609s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.609s] compilation terminated.
+[0.614s] gmake[2]: *** [CMakeFiles/mk_pc_seg.dir/build.make:76: CMakeFiles/mk_pc_seg.dir/src/MK_pc_seg.cpp.o] Error 1
+[0.614s] gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/mk_pc_seg.dir/all] Error 2
+[0.614s] gmake[1]: *** Waiting for unfinished jobs....
+[7.938s] [ 62%] [32m[1mLinking CXX executable mk_rgb_seg_bag[0m
+[8.934s] [ 62%] Built target mk_rgb_seg_bag
+[21.595s] [ 75%] [32m[1mLinking CXX executable mk_rgb_seg[0m
+[22.850s] [ 75%] Built target mk_rgb_seg
+[29.916s] [ 87%] [32m[1mLinking CXX executable mk_matching_ptcld[0m
+[31.750s] [ 87%] Built target mk_matching_ptcld
+[31.751s] gmake: *** [Makefile:146: all] Error 2
+[31.756s] Invoked command in '/home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation --clean-first -- -j16 -l16

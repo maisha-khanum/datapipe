@@ -223,6 +223,32 @@ mk_rgb_seg/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mk_rgb_seg.dir/build.make CMakeFiles/mk_rgb_seg.dir/build
 .PHONY : mk_rgb_seg/fast
 
+#=============================================================================
+# Target rules for targets named mk_rgb_seg_bag
+
+# Build rule for target.
+mk_rgb_seg_bag: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mk_rgb_seg_bag
+.PHONY : mk_rgb_seg_bag
+
+# fast build rule for target.
+mk_rgb_seg_bag/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mk_rgb_seg_bag.dir/build.make CMakeFiles/mk_rgb_seg_bag.dir/build
+.PHONY : mk_rgb_seg_bag/fast
+
+#=============================================================================
+# Target rules for targets named mk_pc_seg
+
+# Build rule for target.
+mk_pc_seg: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mk_pc_seg
+.PHONY : mk_pc_seg
+
+# fast build rule for target.
+mk_pc_seg/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mk_pc_seg.dir/build.make CMakeFiles/mk_pc_seg.dir/build
+.PHONY : mk_pc_seg/fast
+
 src/MK_matching_ptcld.o: src/MK_matching_ptcld.cpp.o
 .PHONY : src/MK_matching_ptcld.o
 
@@ -246,6 +272,30 @@ src/MK_matching_ptcld.s: src/MK_matching_ptcld.cpp.s
 src/MK_matching_ptcld.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mk_matching_ptcld.dir/build.make CMakeFiles/mk_matching_ptcld.dir/src/MK_matching_ptcld.cpp.s
 .PHONY : src/MK_matching_ptcld.cpp.s
+
+src/MK_pc_seg.o: src/MK_pc_seg.cpp.o
+.PHONY : src/MK_pc_seg.o
+
+# target to build an object file
+src/MK_pc_seg.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mk_pc_seg.dir/build.make CMakeFiles/mk_pc_seg.dir/src/MK_pc_seg.cpp.o
+.PHONY : src/MK_pc_seg.cpp.o
+
+src/MK_pc_seg.i: src/MK_pc_seg.cpp.i
+.PHONY : src/MK_pc_seg.i
+
+# target to preprocess a source file
+src/MK_pc_seg.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mk_pc_seg.dir/build.make CMakeFiles/mk_pc_seg.dir/src/MK_pc_seg.cpp.i
+.PHONY : src/MK_pc_seg.cpp.i
+
+src/MK_pc_seg.s: src/MK_pc_seg.cpp.s
+.PHONY : src/MK_pc_seg.s
+
+# target to generate assembly for a file
+src/MK_pc_seg.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mk_pc_seg.dir/build.make CMakeFiles/mk_pc_seg.dir/src/MK_pc_seg.cpp.s
+.PHONY : src/MK_pc_seg.cpp.s
 
 src/MK_rgb_seg.o: src/MK_rgb_seg.cpp.o
 .PHONY : src/MK_rgb_seg.o
@@ -271,6 +321,30 @@ src/MK_rgb_seg.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mk_rgb_seg.dir/build.make CMakeFiles/mk_rgb_seg.dir/src/MK_rgb_seg.cpp.s
 .PHONY : src/MK_rgb_seg.cpp.s
 
+src/MK_rgb_seg_bag.o: src/MK_rgb_seg_bag.cpp.o
+.PHONY : src/MK_rgb_seg_bag.o
+
+# target to build an object file
+src/MK_rgb_seg_bag.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mk_rgb_seg_bag.dir/build.make CMakeFiles/mk_rgb_seg_bag.dir/src/MK_rgb_seg_bag.cpp.o
+.PHONY : src/MK_rgb_seg_bag.cpp.o
+
+src/MK_rgb_seg_bag.i: src/MK_rgb_seg_bag.cpp.i
+.PHONY : src/MK_rgb_seg_bag.i
+
+# target to preprocess a source file
+src/MK_rgb_seg_bag.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mk_rgb_seg_bag.dir/build.make CMakeFiles/mk_rgb_seg_bag.dir/src/MK_rgb_seg_bag.cpp.i
+.PHONY : src/MK_rgb_seg_bag.cpp.i
+
+src/MK_rgb_seg_bag.s: src/MK_rgb_seg_bag.cpp.s
+.PHONY : src/MK_rgb_seg_bag.s
+
+# target to generate assembly for a file
+src/MK_rgb_seg_bag.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mk_rgb_seg_bag.dir/build.make CMakeFiles/mk_rgb_seg_bag.dir/src/MK_rgb_seg_bag.cpp.s
+.PHONY : src/MK_rgb_seg_bag.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -287,13 +361,21 @@ help:
 	@echo "... smartbelt_segmentation_uninstall"
 	@echo "... uninstall"
 	@echo "... mk_matching_ptcld"
+	@echo "... mk_pc_seg"
 	@echo "... mk_rgb_seg"
+	@echo "... mk_rgb_seg_bag"
 	@echo "... src/MK_matching_ptcld.o"
 	@echo "... src/MK_matching_ptcld.i"
 	@echo "... src/MK_matching_ptcld.s"
+	@echo "... src/MK_pc_seg.o"
+	@echo "... src/MK_pc_seg.i"
+	@echo "... src/MK_pc_seg.s"
 	@echo "... src/MK_rgb_seg.o"
 	@echo "... src/MK_rgb_seg.i"
 	@echo "... src/MK_rgb_seg.s"
+	@echo "... src/MK_rgb_seg_bag.o"
+	@echo "... src/MK_rgb_seg_bag.i"
+	@echo "... src/MK_rgb_seg_bag.s"
 .PHONY : help
 
 

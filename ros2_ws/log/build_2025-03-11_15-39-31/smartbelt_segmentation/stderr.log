@@ -1,0 +1,187 @@
+[0m** WARNING ** io features related to pcap will be disabled[0m
+[0m** WARNING ** io features related to png will be disabled[0m
+[01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:[m[K In member function ‘[01m[Kvoid BagProcessor::process_bags()[m[K’:
+[01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:25:78:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Kstd::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::unordered_map() [with _Key = rclcpp::Time; _Tp = std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >; _Hash = std::hash<rclcpp::Time>; _Pred = std::equal_to<rclcpp::Time>; _Alloc = std::allocator<std::pair<const rclcpp::Time, std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > > > >][m[K’
+   25 |         std::unordered_map<rclcpp::Time, sensor_msgs::msg::Image::SharedPtr> [01;31m[Kmask_msgs[m[K;
+      |                                                                              [01;31m[K^~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/unordered_map:47[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:23[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/unordered_map.h:141:7:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::unordered_map() [with _Key = rclcpp::Time; _Tp = std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >; _Hash = std::hash<rclcpp::Time>; _Pred = std::equal_to<rclcpp::Time>; _Alloc = std::allocator<std::pair<const rclcpp::Time, std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > > > >][m[K’ is implicitly deleted because the default definition would be ill-formed:
+  141 |       [01;36m[Kunordered_map[m[K() = default;
+      |       [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unordered_map.h:141:7:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Kstd::_Hashtable<_Key, _Value, _Alloc, _ExtractKey, _Equal, _Hash, _RangeHash, _Unused, _RehashPolicy, _Traits>::_Hashtable() [with _Key = rclcpp::Time; _Value = std::pair<const rclcpp::Time, std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > > >; _Alloc = std::allocator<std::pair<const rclcpp::Time, std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > > > >; _ExtractKey = std::__detail::_Select1st; _Equal = std::equal_to<rclcpp::Time>; _Hash = std::hash<rclcpp::Time>; _RangeHash = std::__detail::_Mod_range_hashing; _Unused = std::__detail::_Default_ranged_hash; _RehashPolicy = std::__detail::_Prime_rehash_policy; _Traits = std::__detail::_Hashtable_traits<true, false, true>][m[K’
+In file included from [01m[K/usr/include/c++/11/unordered_map:46[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:23[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/hashtable.h:528:7:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::_Hashtable<_Key, _Value, _Alloc, _ExtractKey, _Equal, _Hash, _RangeHash, _Unused, _RehashPolicy, _Traits>::_Hashtable() [with _Key = rclcpp::Time; _Value = std::pair<const rclcpp::Time, std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > > >; _Alloc = std::allocator<std::pair<const rclcpp::Time, std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > > > >; _ExtractKey = std::__detail::_Select1st; _Equal = std::equal_to<rclcpp::Time>; _Hash = std::hash<rclcpp::Time>; _RangeHash = std::__detail::_Mod_range_hashing; _Unused = std::__detail::_Default_ranged_hash; _RehashPolicy = std::__detail::_Prime_rehash_policy; _Traits = std::__detail::_Hashtable_traits<true, false, true>][m[K’ is implicitly deleted because the default definition would be ill-formed:
+  528 |       [01;36m[K_Hashtable[m[K() = default;
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/hashtable.h:528:7:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Kstd::__detail::_Hashtable_base<_Key, _Value, _ExtractKey, _Equal, _Hash, _RangeHash, _Unused, _Traits>::_Hashtable_base() [with _Key = rclcpp::Time; _Value = std::pair<const rclcpp::Time, std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > > >; _ExtractKey = std::__detail::_Select1st; _Equal = std::equal_to<rclcpp::Time>; _Hash = std::hash<rclcpp::Time>; _RangeHash = std::__detail::_Mod_range_hashing; _Unused = std::__detail::_Default_ranged_hash; _Traits = std::__detail::_Hashtable_traits<true, false, true>][m[K’
+In file included from [01m[K/usr/include/c++/11/bits/hashtable.h:35[m[K,
+                 from [01m[K/usr/include/c++/11/unordered_map:46[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:23[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/hashtable_policy.h:1604:7:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::__detail::_Hashtable_base<_Key, _Value, _ExtractKey, _Equal, _Hash, _RangeHash, _Unused, _Traits>::_Hashtable_base() [with _Key = rclcpp::Time; _Value = std::pair<const rclcpp::Time, std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > > >; _ExtractKey = std::__detail::_Select1st; _Equal = std::equal_to<rclcpp::Time>; _Hash = std::hash<rclcpp::Time>; _RangeHash = std::__detail::_Mod_range_hashing; _Unused = std::__detail::_Default_ranged_hash; _Traits = std::__detail::_Hashtable_traits<true, false, true>][m[K’ is implicitly deleted because the default definition would be ill-formed:
+ 1604 |       [01;36m[K_Hashtable_base[m[K() = default;
+      |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/hashtable_policy.h:1604:7:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Kstd::__detail::_Hash_code_base<_Key, _Value, _ExtractKey, _Hash, _RangeHash, _Unused, __cache_hash_code>::_Hash_code_base() [with _Key = rclcpp::Time; _Value = std::pair<const rclcpp::Time, std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > > >; _ExtractKey = std::__detail::_Select1st; _Hash = std::hash<rclcpp::Time>; _RangeHash = std::__detail::_Mod_range_hashing; _Unused = std::__detail::_Default_ranged_hash; bool __cache_hash_code = true][m[K’
+/usr/include/c++/11/bits/hashtable_policy.h: In instantiation of ‘[01m[Kstd::__detail::_Hashtable_ebo_helper<_Nm, _Tp, true>::_Hashtable_ebo_helper() [with int _Nm = 1; _Tp = std::hash<rclcpp::Time>][m[K’:
+[01m[K/usr/include/c++/11/bits/hashtable_policy.h:1210:7:[m[K   required from here
+[01m[K/usr/include/c++/11/bits/hashtable_policy.h:1127:49:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Kstd::hash<rclcpp::Time>::hash()[m[K’
+ 1127 |       _Hashtable_ebo_helper() noexcept(noexcept([01;31m[K_Tp()[m[K)) : _Tp() { }
+      |                                                 [01;31m[K^~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/bits/unique_ptr.h:39[m[K,
+                 from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/functional_hash.h:102:12:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::hash<rclcpp::Time>::hash()[m[K’ is implicitly deleted because the default definition would be ill-formed:
+  102 |     struct [01;36m[Khash[m[K : __hash_enum<_Tp>
+      |            [01;36m[K^~~~[m[K
+[01m[K/usr/include/c++/11/bits/functional_hash.h:102:12:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd::__hash_enum<rclcpp::Time, false>::__hash_enum()[m[K’
+[01m[K/usr/include/c++/11/bits/functional_hash.h:83:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::__hash_enum<_Tp, <anonymous> >::__hash_enum(std::__hash_enum<_Tp, <anonymous> >&&) [with _Tp = rclcpp::Time; bool <anonymous> = false][m[K’
+   83 |       [01;36m[K__hash_enum[m[K(__hash_enum&&);
+      |       [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/functional_hash.h:83:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/usr/include/c++/11/bits/functional_hash.h:102:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::__hash_enum<_Tp, <anonymous> >::~__hash_enum() [with _Tp = rclcpp::Time; bool <anonymous> = false][m[K’ is private within this context
+  102 |     struct [01;31m[Khash[m[K : __hash_enum<_Tp>
+      |            [01;31m[K^~~~[m[K
+[01m[K/usr/include/c++/11/bits/functional_hash.h:84:7:[m[K [01;36m[Knote: [m[Kdeclared private here
+   84 |       [01;36m[K~[m[K__hash_enum();
+      |       [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/11/bits/hashtable.h:35[m[K,
+                 from [01m[K/usr/include/c++/11/unordered_map:46[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:23[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/hashtable_policy.h:1210:7:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::__detail::_Hash_code_base<_Key, _Value, _ExtractKey, _Hash, _RangeHash, _Unused, __cache_hash_code>::_Hash_code_base() [with _Key = rclcpp::Time; _Value = std::pair<const rclcpp::Time, std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > > >; _ExtractKey = std::__detail::_Select1st; _Hash = std::hash<rclcpp::Time>; _RangeHash = std::__detail::_Mod_range_hashing; _Unused = std::__detail::_Default_ranged_hash; bool __cache_hash_code = true][m[K’ is implicitly deleted because the default definition would be ill-formed:
+ 1210 |       [01;36m[K_Hash_code_base[m[K() = default;
+      |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/hashtable_policy.h:1210:7:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Kstd::__detail::_Hashtable_ebo_helper<1, std::hash<rclcpp::Time>, true>::~_Hashtable_ebo_helper()[m[K’
+[01m[K/usr/include/c++/11/bits/hashtable_policy.h:1124:12:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::__detail::_Hashtable_ebo_helper<1, std::hash<rclcpp::Time>, true>::~_Hashtable_ebo_helper()[m[K’ is implicitly deleted because the default definition would be ill-formed:
+ 1124 |     struct [01;36m[K_Hashtable_ebo_helper<_Nm, _Tp, true>[m[K
+      |            [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/hashtable_policy.h:1124:12:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Kstd::hash<rclcpp::Time>::~hash()[m[K’
+In file included from [01m[K/usr/include/c++/11/bits/unique_ptr.h:39[m[K,
+                 from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/functional_hash.h:102:12:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::hash<rclcpp::Time>::~hash()[m[K’ is implicitly deleted because the default definition would be ill-formed:
+  102 |     struct [01;36m[Khash[m[K : __hash_enum<_Tp>
+      |            [01;36m[K^~~~[m[K
+[01m[K/usr/include/c++/11/bits/functional_hash.h:102:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::__hash_enum<_Tp, <anonymous> >::~__hash_enum() [with _Tp = rclcpp::Time; bool <anonymous> = false][m[K’ is private within this context
+[01m[K/usr/include/c++/11/bits/functional_hash.h:84:7:[m[K [01;36m[Knote: [m[Kdeclared private here
+   84 |       [01;36m[K~[m[K__hash_enum();
+      |       [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/11/bits/hashtable.h:35[m[K,
+                 from [01m[K/usr/include/c++/11/unordered_map:46[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:23[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/hashtable_policy.h:1604:7:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Kstd::__detail::_Hash_code_base<rclcpp::Time, std::pair<const rclcpp::Time, std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > > >, std::__detail::_Select1st, std::hash<rclcpp::Time>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, true>::~_Hash_code_base()[m[K’
+ 1604 |       [01;31m[K_Hashtable_base[m[K() = default;
+      |       [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/hashtable_policy.h:1188:12:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::__detail::_Hash_code_base<rclcpp::Time, std::pair<const rclcpp::Time, std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > > >, std::__detail::_Select1st, std::hash<rclcpp::Time>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, true>::~_Hash_code_base()[m[K’ is implicitly deleted because the default definition would be ill-formed:
+ 1188 |     struct [01;36m[K_Hash_code_base[m[K
+      |            [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/hashtable_policy.h:1188:12:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Kstd::__detail::_Hashtable_ebo_helper<1, std::hash<rclcpp::Time>, true>::~_Hashtable_ebo_helper()[m[K’
+In file included from [01m[K/usr/include/c++/11/unordered_map:46[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:23[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/hashtable.h:528:7:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Kstd::__detail::_Hashtable_base<rclcpp::Time, std::pair<const rclcpp::Time, std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > > >, std::__detail::_Select1st, std::equal_to<rclcpp::Time>, std::hash<rclcpp::Time>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Hashtable_traits<true, false, true> >::~_Hashtable_base()[m[K’
+  528 |       [01;31m[K_Hashtable[m[K() = default;
+      |       [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/bits/hashtable.h:35[m[K,
+                 from [01m[K/usr/include/c++/11/unordered_map:46[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:23[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/hashtable_policy.h:1561:12:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::__detail::_Hashtable_base<rclcpp::Time, std::pair<const rclcpp::Time, std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > > >, std::__detail::_Select1st, std::equal_to<rclcpp::Time>, std::hash<rclcpp::Time>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Hashtable_traits<true, false, true> >::~_Hashtable_base()[m[K’ is implicitly deleted because the default definition would be ill-formed:
+ 1561 |     struct [01;36m[K_Hashtable_base[m[K
+      |            [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/hashtable_policy.h:1561:12:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Kstd::__detail::_Hash_code_base<rclcpp::Time, std::pair<const rclcpp::Time, std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > > >, std::__detail::_Select1st, std::hash<rclcpp::Time>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, true>::~_Hash_code_base()[m[K’
+In file included from [01m[K/usr/include/c++/11/unordered_map:46[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:23[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/hashtable.h:528:7:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Kconstexpr std::_Enable_default_constructor<false, _Tag>::_Enable_default_constructor() [with _Tag = std::__detail::_Hash_node_base][m[K’
+  528 |       [01;31m[K_Hashtable[m[K() = default;
+      |       [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/bits/hashtable.h:36[m[K,
+                 from [01m[K/usr/include/c++/11/unordered_map:46[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:23[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/enable_special_members.h:113:15:[m[K [01;36m[Knote: [m[Kdeclared here
+  113 |     constexpr [01;36m[K_Enable_default_constructor[m[K() noexcept = delete;
+      |               [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:32:48:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::shared_ptr<rcutils_uint8_array_s>*[m[K’ to ‘[01m[Kconst rclcpp::SerializedMessage*[m[K’
+   32 |                 serializer.deserialize_message([01;31m[K&bag_message->serialized_data[m[K, img_msg.get());
+      |                                                [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                [01;31m[K|[m[K
+      |                                                [01;31m[Kstd::shared_ptr<rcutils_uint8_array_s>*[m[K
+In file included from [01m[K/opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/reader.hpp:23[m[K,
+                 from [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:2[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/serialization.hpp:75:31:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid rclcpp::SerializationBase::deserialize_message(const rclcpp::SerializedMessage*, void*) const[m[K’
+   75 |     [01;36m[Kconst SerializedMessage * serialized_message[m[K, void * ros_message) const;
+      |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:42:48:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::shared_ptr<rcutils_uint8_array_s>*[m[K’ to ‘[01m[Kconst rclcpp::SerializedMessage*[m[K’
+   42 |                 serializer.deserialize_message([01;31m[K&bag_message->serialized_data[m[K, cloud_msg.get());
+      |                                                [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                [01;31m[K|[m[K
+      |                                                [01;31m[Kstd::shared_ptr<rcutils_uint8_array_s>*[m[K
+In file included from [01m[K/opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/reader.hpp:23[m[K,
+                 from [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:2[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/serialization.hpp:75:31:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid rclcpp::SerializationBase::deserialize_message(const rclcpp::SerializedMessage*, void*) const[m[K’
+   75 |     [01;36m[Kconst SerializedMessage * serialized_message[m[K, void * ros_message) const;
+      |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:44:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::unordered_map<rclcpp::Time, std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > > >[m[K’ has no member named ‘[01m[Klower_bound[m[K’
+   44 |                 auto it = mask_msgs.[01;31m[Klower_bound[m[K(cloud_msg->header.stamp);
+      |                                     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:48:28:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K->[m[K’ token
+   48 |                     writer_[01;31m[K->[m[Kwrite(segmented_cloud, "/segmented_pointcloud", cloud_msg->header.stamp);
+      |                            [01;31m[K^~[m[K
+In file included from [01m[K/usr/include/c++/11/unordered_map:46[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:23[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:1[m[K:
+/usr/include/c++/11/bits/hashtable.h: In instantiation of ‘[01m[Kstd::_Hashtable<_Key, _Value, _Alloc, _ExtractKey, _Equal, _Hash, _RangeHash, _Unused, _RehashPolicy, _Traits>::~_Hashtable() [with _Key = rclcpp::Time; _Value = std::pair<const rclcpp::Time, std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > > >; _Alloc = std::allocator<std::pair<const rclcpp::Time, std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > > > >; _ExtractKey = std::__detail::_Select1st; _Equal = std::equal_to<rclcpp::Time>; _Hash = std::hash<rclcpp::Time>; _RangeHash = std::__detail::_Mod_range_hashing; _Unused = std::__detail::_Default_ranged_hash; _RehashPolicy = std::__detail::_Prime_rehash_policy; _Traits = std::__detail::_Hashtable_traits<true, false, true>][m[K’:
+[01m[K/usr/include/c++/11/bits/unordered_map.h:102:11:[m[K   required from here
+[01m[K/usr/include/c++/11/bits/hashtable.h:1534:5:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Kstd::__detail::_Hashtable_base<rclcpp::Time, std::pair<const rclcpp::Time, std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > > >, std::__detail::_Select1st, std::equal_to<rclcpp::Time>, std::hash<rclcpp::Time>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Hashtable_traits<true, false, true> >::~_Hashtable_base()[m[K’
+ 1534 |     [01;31m[K}[m[K
+      |     [01;31m[K^[m[K
+In file included from [01m[K/usr/include/c++/11/bits/hashtable.h:35[m[K,
+                 from [01m[K/usr/include/c++/11/unordered_map:46[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:23[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:1[m[K:
+/usr/include/c++/11/bits/hashtable_policy.h: In instantiation of ‘[01m[Kstd::__detail::_Hash_code_base<_Key, _Value, _ExtractKey, _Hash, _RangeHash, _Unused, __cache_hash_code>::__hash_code std::__detail::_Hash_code_base<_Key, _Value, _ExtractKey, _Hash, _RangeHash, _Unused, __cache_hash_code>::_M_hash_code(const _Key&) const [with _Key = rclcpp::Time; _Value = std::pair<const rclcpp::Time, std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > > >; _ExtractKey = std::__detail::_Select1st; _Hash = std::hash<rclcpp::Time>; _RangeHash = std::__detail::_Mod_range_hashing; _Unused = std::__detail::_Default_ranged_hash; bool __cache_hash_code = true; std::__detail::_Hash_code_base<_Key, _Value, _ExtractKey, _Hash, _RangeHash, _Unused, __cache_hash_code>::__hash_code = long unsigned int][m[K’:
+[01m[K/usr/include/c++/11/bits/hashtable_policy.h:729:45:[m[K   required from ‘[01m[Kstd::__detail::_Map_base<_Key, _Pair, _Alloc, std::__detail::_Select1st, _Equal, _Hash, _RangeHash, _Unused, _RehashPolicy, _Traits, true>::mapped_type& std::__detail::_Map_base<_Key, _Pair, _Alloc, std::__detail::_Select1st, _Equal, _Hash, _RangeHash, _Unused, _RehashPolicy, _Traits, true>::operator[](std::__detail::_Map_base<_Key, _Pair, _Alloc, std::__detail::_Select1st, _Equal, _Hash, _RangeHash, _Unused, _RehashPolicy, _Traits, true>::key_type&&) [with _Key = rclcpp::Time; _Pair = std::pair<const rclcpp::Time, std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > > >; _Alloc = std::allocator<std::pair<const rclcpp::Time, std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > > > >; _Equal = std::equal_to<rclcpp::Time>; _Hash = std::hash<rclcpp::Time>; _RangeHash = std::__detail::_Mod_range_hashing; _Unused = std::__detail::_Default_ranged_hash; _RehashPolicy = std::__detail::_Prime_rehash_policy; _Traits = std::__detail::_Hashtable_traits<true, false, true>; std::__detail::_Map_base<_Key, _Pair, _Alloc, std::__detail::_Select1st, _Equal, _Hash, _RangeHash, _Unused, _RehashPolicy, _Traits, true>::mapped_type = std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >; std::__detail::_Map_base<_Key, _Pair, _Alloc, std::__detail::_Select1st, _Equal, _Hash, _RangeHash, _Unused, _RehashPolicy, _Traits, true>::key_type = rclcpp::Time][m[K’
+[01m[K/usr/include/c++/11/bits/unordered_map.h:984:20:[m[K   required from ‘[01m[Kstd::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::mapped_type& std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::operator[](std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::key_type&&) [with _Key = rclcpp::Time; _Tp = std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >; _Hash = std::hash<rclcpp::Time>; _Pred = std::equal_to<rclcpp::Time>; _Alloc = std::allocator<std::pair<const rclcpp::Time, std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > > > >; std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::mapped_type = std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >; std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>::key_type = rclcpp::Time][m[K’
+[01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:33:48:[m[K   required from here
+[01m[K/usr/include/c++/11/bits/hashtable_policy.h:1217:23:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: hash function must be invocable with an argument of key type
+ 1217 |         static_assert([01;31m[K__is_invocable<const _Hash&, const _Key&>{}[m[K,
+      |                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/hashtable_policy.h:1217:23:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::__is_invocable<const std::hash<rclcpp::Time>&, const rclcpp::Time&>{}[m[K’ evaluates to false
+[01m[K/usr/include/c++/11/bits/hashtable_policy.h:1219:25:[m[K [01;31m[Kerror: [m[Kno match for call to ‘[01m[K(const std::hash<rclcpp::Time>) (const rclcpp::Time&)[m[K’
+ 1219 |         return [01;31m[K_M_hash()(__k)[m[K;
+      |                [01;31m[K~~~~~~~~~^~~~~[m[K
+gmake[2]: *** [CMakeFiles/mk_pc_seg.dir/build.make:76: CMakeFiles/mk_pc_seg.dir/src/MK_pc_seg.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/mk_pc_seg.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,40 @@
+[0.014s] Invoking command in '/home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation --clean-first -- -j16 -l16
+[0.150s] [ 25%] [32mBuilding CXX object CMakeFiles/mk_rgb_seg_bag.dir/src/MK_rgb_seg_bag.cpp.o[0m
+[0.151s] [ 25%] [32mBuilding CXX object CMakeFiles/mk_rgb_seg.dir/src/MK_rgb_seg.cpp.o[0m
+[0.151s] [ 37%] [32mBuilding CXX object CMakeFiles/mk_matching_ptcld.dir/src/MK_matching_ptcld.cpp.o[0m
+[0.151s] [ 50%] [32mBuilding CXX object CMakeFiles/mk_pc_seg.dir/src/MK_pc_seg.cpp.o[0m
+[6.127s] [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:[m[K In member function ‘[01m[Kvoid BagProcessor::process_bags()[m[K’:
+[6.127s] [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:32:48:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::shared_ptr<rcutils_uint8_array_s>*[m[K’ to ‘[01m[Kconst rclcpp::SerializedMessage*[m[K’
+[6.127s]    32 |                 serializer.deserialize_message([01;31m[K&bag_message->serialized_data[m[K, img_msg.get());
+[6.127s]       |                                                [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.127s]       |                                                [01;31m[K|[m[K
+[6.127s]       |                                                [01;31m[Kstd::shared_ptr<rcutils_uint8_array_s>*[m[K
+[6.127s] In file included from [01m[K/opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/reader.hpp:23[m[K,
+[6.127s]                  from [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:2[m[K:
+[6.127s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/serialization.hpp:75:31:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid rclcpp::SerializationBase::deserialize_message(const rclcpp::SerializedMessage*, void*) const[m[K’
+[6.127s]    75 |     [01;36m[Kconst SerializedMessage * serialized_message[m[K, void * ros_message) const;
+[6.127s]       |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[6.132s] [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:42:48:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::shared_ptr<rcutils_uint8_array_s>*[m[K’ to ‘[01m[Kconst rclcpp::SerializedMessage*[m[K’
+[6.132s]    42 |                 serializer.deserialize_message([01;31m[K&bag_message->serialized_data[m[K, cloud_msg.get());
+[6.133s]       |                                                [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.133s]       |                                                [01;31m[K|[m[K
+[6.133s]       |                                                [01;31m[Kstd::shared_ptr<rcutils_uint8_array_s>*[m[K
+[6.133s] In file included from [01m[K/opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/reader.hpp:23[m[K,
+[6.133s]                  from [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:2[m[K:
+[6.133s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/serialization.hpp:75:31:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid rclcpp::SerializationBase::deserialize_message(const rclcpp::SerializedMessage*, void*) const[m[K’
+[6.133s]    75 |     [01;36m[Kconst SerializedMessage * serialized_message[m[K, void * ros_message) const;
+[6.133s]       |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[6.135s] [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:48:28:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K->[m[K’ token
+[6.136s]    48 |                     writer_[01;31m[K->[m[Kwrite(segmented_cloud, "/segmented_pointcloud", cloud_msg->header.stamp);
+[6.136s]       |                            [01;31m[K^~[m[K
+[8.647s] gmake[2]: *** [CMakeFiles/mk_pc_seg.dir/build.make:76: CMakeFiles/mk_pc_seg.dir/src/MK_pc_seg.cpp.o] Error 1
+[8.647s] gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/mk_pc_seg.dir/all] Error 2
+[8.647s] gmake[1]: *** Waiting for unfinished jobs....
+[8.891s] [ 62%] [32m[1mLinking CXX executable mk_rgb_seg_bag[0m
+[9.860s] [ 62%] Built target mk_rgb_seg_bag
+[21.357s] [ 75%] [32m[1mLinking CXX executable mk_rgb_seg[0m
+[22.740s] [ 75%] Built target mk_rgb_seg
+[29.675s] [ 87%] [32m[1mLinking CXX executable mk_matching_ptcld[0m
+[31.587s] [ 87%] Built target mk_matching_ptcld
+[31.588s] gmake: *** [Makefile:146: all] Error 2
+[31.592s] Invoked command in '/home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation --clean-first -- -j16 -l16

@@ -1,0 +1,47 @@
+[0.067s] Invoking command in '/home/mkhanum/datapipe/build/smartbelt_segmentation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mkhanum/datapipe/build/smartbelt_segmentation --clean-first -- -j16 -l16
+[0.792s] [ 12%] [32mBuilding CXX object CMakeFiles/mk_matching_ptcld.dir/src/MK_matching_ptcld.cpp.o[0m
+[0.795s] [ 25%] [32mBuilding CXX object CMakeFiles/mk_rgb_seg.dir/src/MK_rgb_seg.cpp.o[0m
+[0.796s] [ 37%] [32mBuilding CXX object CMakeFiles/mk_pc_seg.dir/src/MK_pc_seg.cpp.o[0m
+[0.815s] [ 50%] [32mBuilding CXX object CMakeFiles/mk_rgb_seg_bag.dir/src/MK_rgb_seg_bag.cpp.o[0m
+[35.102s] [ 75%] [32m[1mLinking CXX executable mk_pc_seg[0m
+[35.102s] [ 75%] [32m[1mLinking CXX executable mk_rgb_seg_bag[0m
+[38.238s] [ 75%] Built target mk_rgb_seg_bag
+[38.291s] [ 75%] Built target mk_pc_seg
+[57.235s] [ 87%] [32m[1mLinking CXX executable mk_rgb_seg[0m
+[59.254s] [ 87%] Built target mk_rgb_seg
+[70.118s] [100%] [32m[1mLinking CXX executable mk_matching_ptcld[0m
+[72.512s] [100%] Built target mk_matching_ptcld
+[72.528s] Invoked command in '/home/mkhanum/datapipe/build/smartbelt_segmentation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mkhanum/datapipe/build/smartbelt_segmentation --clean-first -- -j16 -l16
+[72.544s] Invoking command in '/home/mkhanum/datapipe/build/smartbelt_segmentation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mkhanum/datapipe/build/smartbelt_segmentation
+[72.555s] -- Install configuration: ""
+[72.562s] -- Installing: /home/mkhanum/datapipe/install/smartbelt_segmentation/lib/smartbelt_segmentation/mk_matching_ptcld
+[72.575s] -- Set runtime path of "/home/mkhanum/datapipe/install/smartbelt_segmentation/lib/smartbelt_segmentation/mk_matching_ptcld" to ""
+[72.576s] -- Installing: /home/mkhanum/datapipe/install/smartbelt_segmentation/lib/smartbelt_segmentation/mk_rgb_seg
+[72.582s] -- Set runtime path of "/home/mkhanum/datapipe/install/smartbelt_segmentation/lib/smartbelt_segmentation/mk_rgb_seg" to ""
+[72.584s] -- Installing: /home/mkhanum/datapipe/install/smartbelt_segmentation/lib/smartbelt_segmentation/mk_rgb_seg_bag
+[72.586s] -- Set runtime path of "/home/mkhanum/datapipe/install/smartbelt_segmentation/lib/smartbelt_segmentation/mk_rgb_seg_bag" to ""
+[72.589s] -- Installing: /home/mkhanum/datapipe/install/smartbelt_segmentation/lib/smartbelt_segmentation/mk_pc_seg
+[72.594s] -- Set runtime path of "/home/mkhanum/datapipe/install/smartbelt_segmentation/lib/smartbelt_segmentation/mk_pc_seg" to ""
+[72.594s] -- Up-to-date: /home/mkhanum/datapipe/install/smartbelt_segmentation/share/smartbelt_segmentation/launch
+[72.594s] -- Up-to-date: /home/mkhanum/datapipe/install/smartbelt_segmentation/share/smartbelt_segmentation/launch/downsample.launch.py
+[72.594s] -- Up-to-date: /home/mkhanum/datapipe/install/smartbelt_segmentation/share/smartbelt_segmentation/launch/segmentation.launch.py
+[72.595s] -- Up-to-date: /home/mkhanum/datapipe/install/smartbelt_segmentation/share/smartbelt_segmentation/launch/rgb_segmentation.launch.py
+[72.595s] -- Up-to-date: /home/mkhanum/datapipe/install/smartbelt_segmentation/share/smartbelt_segmentation/launch/__pycache__
+[72.595s] -- Up-to-date: /home/mkhanum/datapipe/install/smartbelt_segmentation/share/smartbelt_segmentation/launch/__pycache__/downsample.launch.cpython-310.pyc
+[72.595s] -- Up-to-date: /home/mkhanum/datapipe/install/smartbelt_segmentation/share/smartbelt_segmentation/launch/segmentation.launch.xml
+[72.595s] -- Up-to-date: /home/mkhanum/datapipe/install/smartbelt_segmentation/share/ament_index/resource_index/package_run_dependencies/smartbelt_segmentation
+[72.596s] -- Up-to-date: /home/mkhanum/datapipe/install/smartbelt_segmentation/share/ament_index/resource_index/parent_prefix_path/smartbelt_segmentation
+[72.596s] -- Up-to-date: /home/mkhanum/datapipe/install/smartbelt_segmentation/share/smartbelt_segmentation/environment/ament_prefix_path.sh
+[72.596s] -- Up-to-date: /home/mkhanum/datapipe/install/smartbelt_segmentation/share/smartbelt_segmentation/environment/ament_prefix_path.dsv
+[72.596s] -- Up-to-date: /home/mkhanum/datapipe/install/smartbelt_segmentation/share/smartbelt_segmentation/environment/path.sh
+[72.596s] -- Up-to-date: /home/mkhanum/datapipe/install/smartbelt_segmentation/share/smartbelt_segmentation/environment/path.dsv
+[72.596s] -- Up-to-date: /home/mkhanum/datapipe/install/smartbelt_segmentation/share/smartbelt_segmentation/local_setup.bash
+[72.596s] -- Up-to-date: /home/mkhanum/datapipe/install/smartbelt_segmentation/share/smartbelt_segmentation/local_setup.sh
+[72.596s] -- Up-to-date: /home/mkhanum/datapipe/install/smartbelt_segmentation/share/smartbelt_segmentation/local_setup.zsh
+[72.596s] -- Up-to-date: /home/mkhanum/datapipe/install/smartbelt_segmentation/share/smartbelt_segmentation/local_setup.dsv
+[72.596s] -- Installing: /home/mkhanum/datapipe/install/smartbelt_segmentation/share/smartbelt_segmentation/package.dsv
+[72.597s] -- Up-to-date: /home/mkhanum/datapipe/install/smartbelt_segmentation/share/ament_index/resource_index/packages/smartbelt_segmentation
+[72.597s] -- Up-to-date: /home/mkhanum/datapipe/install/smartbelt_segmentation/share/smartbelt_segmentation/cmake/smartbelt_segmentationConfig.cmake
+[72.597s] -- Up-to-date: /home/mkhanum/datapipe/install/smartbelt_segmentation/share/smartbelt_segmentation/cmake/smartbelt_segmentationConfig-version.cmake
+[72.597s] -- Up-to-date: /home/mkhanum/datapipe/install/smartbelt_segmentation/share/smartbelt_segmentation/package.xml
+[72.603s] Invoked command in '/home/mkhanum/datapipe/build/smartbelt_segmentation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mkhanum/datapipe/build/smartbelt_segmentation

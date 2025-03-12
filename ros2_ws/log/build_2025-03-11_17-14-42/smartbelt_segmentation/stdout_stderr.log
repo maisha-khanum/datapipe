@@ -1,0 +1,23 @@
+[ 37%] [32mBuilding CXX object CMakeFiles/mk_matching_ptcld.dir/src/MK_matching_ptcld.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/mk_rgb_seg_bag.dir/src/MK_rgb_seg_bag.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/mk_rgb_seg.dir/src/MK_rgb_seg.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/mk_pc_seg.dir/src/MK_pc_seg.cpp.o[0m
+In file included from [01m[K/opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/reader.hpp:23[m[K,
+                 from [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:2[m[K:
+/opt/ros/humble/include/rclcpp/rclcpp/serialization.hpp: In instantiation of ‘[01m[Krclcpp::Serialization<MessageT>::Serialization() [with MessageT = rclcpp::SerializedMessage][m[K’:
+[01m[K/opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/writer.hpp:198:37:[m[K   required from ‘[01m[Kvoid rosbag2_cpp::Writer::write(const MessageT&, const string&, const rclcpp::Time&) [with MessageT = rclcpp::SerializedMessage; std::string = std::__cxx11::basic_string<char>][m[K’
+[01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:56:31:[m[K   required from here
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/serialization.hpp:91:7:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: Serialization of serialized message to serialized message is not possible.
+   91 |       [01;31m[K!serialization_traits::is_serialized_message_class<MessageT>::value[m[K,
+      |       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/serialization.hpp:91:7:[m[K [01;36m[Knote: [m[K‘[01m[K!(bool)std::integral_constant<bool, true>::value[m[K’ evaluates to false
+gmake[2]: *** [CMakeFiles/mk_pc_seg.dir/build.make:76: CMakeFiles/mk_pc_seg.dir/src/MK_pc_seg.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/mk_pc_seg.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 62%] [32m[1mLinking CXX executable mk_rgb_seg_bag[0m
+[ 62%] Built target mk_rgb_seg_bag
+[ 75%] [32m[1mLinking CXX executable mk_rgb_seg[0m
+[ 75%] Built target mk_rgb_seg
+[ 87%] [32m[1mLinking CXX executable mk_matching_ptcld[0m
+[ 87%] Built target mk_matching_ptcld
+gmake: *** [Makefile:146: all] Error 2

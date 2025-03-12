@@ -1,0 +1,10 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/mk_rgb_seg_bag.dir/src/MK_rgb_seg_bag.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/mk_rgb_seg.dir/src/MK_rgb_seg.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/mk_matching_ptcld.dir/src/MK_matching_ptcld.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/mk_pc_seg.dir/src/MK_pc_seg.cpp.o[0m
+[ 62%] [32m[1mLinking CXX executable mk_rgb_seg_bag[0m
+[ 62%] Built target mk_rgb_seg_bag
+[ 75%] [32m[1mLinking CXX executable mk_rgb_seg[0m
+[ 75%] Built target mk_rgb_seg
+[ 87%] [32m[1mLinking CXX executable mk_matching_ptcld[0m
+[ 87%] Built target mk_matching_ptcld

@@ -1,0 +1,22 @@
+[0.022s] Invoking command in '/home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation --clean-first -- -j16 -l16
+[0.197s] [ 25%] [32mBuilding CXX object CMakeFiles/mk_rgb_seg.dir/src/MK_rgb_seg.cpp.o[0m
+[0.197s] [ 25%] [32mBuilding CXX object CMakeFiles/mk_matching_ptcld.dir/src/MK_matching_ptcld.cpp.o[0m
+[0.199s] [ 37%] [32mBuilding CXX object CMakeFiles/mk_pc_seg.dir/src/MK_pc_seg.cpp.o[0m
+[0.199s] [ 50%] [32mBuilding CXX object CMakeFiles/mk_rgb_seg_bag.dir/src/MK_rgb_seg_bag.cpp.o[0m
+[10.000s] [ 62%] [32m[1mLinking CXX executable mk_rgb_seg_bag[0m
+[10.430s] [ 75%] [32m[1mLinking CXX executable mk_pc_seg[0m
+[11.369s] /usr/bin/ld: CMakeFiles/mk_pc_seg.dir/src/MK_pc_seg.cpp.o: in function `void rosbag2_cpp::Writer::write<rcutils_uint8_array_s>(rcutils_uint8_array_s const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, rclcpp::Time const&)':
+[11.369s] MK_pc_seg.cpp:(.text._ZN11rosbag2_cpp6Writer5writeI21rcutils_uint8_array_sEEvRKT_RKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKN6rclcpp4TimeE[_ZN11rosbag2_cpp6Writer5writeI21rcutils_uint8_array_sEEvRKT_RKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKN6rclcpp4TimeE]+0x85): undefined reference to `char const* rosidl_generator_traits::name<rcutils_uint8_array_s>()'
+[11.369s] /usr/bin/ld: CMakeFiles/mk_pc_seg.dir/src/MK_pc_seg.cpp.o: in function `rclcpp::Serialization<rcutils_uint8_array_s>::Serialization()':
+[11.369s] MK_pc_seg.cpp:(.text._ZN6rclcpp13SerializationI21rcutils_uint8_array_sEC2Ev[_ZN6rclcpp13SerializationI21rcutils_uint8_array_sEC5Ev]+0x16): undefined reference to `rosidl_message_type_support_t const* rosidl_typesupport_cpp::get_message_type_support_handle<rcutils_uint8_array_s>()'
+[11.378s] [ 75%] Built target mk_rgb_seg_bag
+[11.416s] collect2: error: ld returned 1 exit status
+[11.418s] gmake[2]: *** [CMakeFiles/mk_pc_seg.dir/build.make:369: mk_pc_seg] Error 1
+[11.418s] gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/mk_pc_seg.dir/all] Error 2
+[11.418s] gmake[1]: *** Waiting for unfinished jobs....
+[22.152s] [ 87%] [32m[1mLinking CXX executable mk_rgb_seg[0m
+[23.523s] [ 87%] Built target mk_rgb_seg
+[30.423s] [100%] [32m[1mLinking CXX executable mk_matching_ptcld[0m
+[32.250s] [100%] Built target mk_matching_ptcld
+[32.251s] gmake: *** [Makefile:146: all] Error 2
+[32.257s] Invoked command in '/home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation --clean-first -- -j16 -l16

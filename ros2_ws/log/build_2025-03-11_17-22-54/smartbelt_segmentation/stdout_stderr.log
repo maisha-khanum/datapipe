@@ -1,0 +1,37 @@
+[ 12%] [32mBuilding CXX object CMakeFiles/mk_matching_ptcld.dir/src/MK_matching_ptcld.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/mk_rgb_seg_bag.dir/src/MK_rgb_seg_bag.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/mk_rgb_seg.dir/src/MK_rgb_seg.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/mk_pc_seg.dir/src/MK_pc_seg.cpp.o[0m
+[01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:[m[K In member function ‘[01m[Kvoid BagProcessor::process_bags()[m[K’:
+[01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:54:36:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   54 |                 auto tf_msg = std::[01;31m[Kmake_shared<tf2_msgs/msg/TFMessage>[m[K();
+      |                                    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:54:71:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<<expression error> >()[m[K’
+   54 |                 auto tf_msg = [01;31m[Kstd::make_shared<tf2_msgs/msg/TFMessage>()[m[K;
+      |                               [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+  875 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:54:71:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   54 |                 auto tf_msg = [01;31m[Kstd::make_shared<tf2_msgs/msg/TFMessage>()[m[K;
+      |                               [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:56:61:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   56 |                 rclcpp::Serialization<tf2_msgs/msg/TFMessage[01;31m[K>[m[K serializer;
+      |                                                             [01;31m[K^[m[K
+[01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:57:28:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kdeserialize_message[m[K’ in ‘[01m[Kserializer[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+   57 |                 serializer.[01;31m[Kdeserialize_message[m[K(&serialized_msg, tf_msg.get());
+      |                            [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/mk_pc_seg.dir/build.make:76: CMakeFiles/mk_pc_seg.dir/src/MK_pc_seg.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/mk_pc_seg.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 62%] [32m[1mLinking CXX executable mk_rgb_seg_bag[0m
+[ 62%] Built target mk_rgb_seg_bag
+[ 75%] [32m[1mLinking CXX executable mk_rgb_seg[0m
+[ 75%] Built target mk_rgb_seg
+[ 87%] [32m[1mLinking CXX executable mk_matching_ptcld[0m
+[ 87%] Built target mk_matching_ptcld
+gmake: *** [Makefile:146: all] Error 2

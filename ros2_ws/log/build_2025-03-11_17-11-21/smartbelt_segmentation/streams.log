@@ -1,0 +1,84 @@
+[0.016s] Invoking command in '/home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation --clean-first -- -j16 -l16
+[0.109s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.259s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.267s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.549s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.552s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.558s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.568s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.581s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.617s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.618s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[10.318s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[10.376s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[10.410s] -- Found image_geometry: 3.2.1 (/opt/ros/humble/share/image_geometry/cmake)
+[10.419s] -- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)
+[10.423s] -- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)
+[10.510s] -- Found tf2_eigen: 0.25.12 (/opt/ros/humble/share/tf2_eigen/cmake)
+[10.513s] -- Found tf2_geometry_msgs: 0.25.12 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[10.517s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[10.518s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[10.518s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[10.520s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[10.527s] -- Found image_transport: 3.1.10 (/opt/ros/humble/share/image_transport/cmake)
+[12.883s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[12.908s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[12.915s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[12.915s] [0m** WARNING ** io features related to pcap will be disabled[0m
+[12.915s] [0m** WARNING ** io features related to png will be disabled[0m
+[15.270s] -- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") 
+[19.118s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[19.119s] -- looking for PCL_COMMON
+[19.119s] -- looking for PCL_OCTREE
+[19.119s] -- looking for PCL_IO
+[19.121s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[19.145s] -- Found rosbag2_cpp: 0.15.13 (/opt/ros/humble/share/rosbag2_cpp/cmake)
+[19.272s] -- Configuring done
+[19.361s] -- Generating done
+[19.387s] -- Build files have been written to: /home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation
+[19.437s] [ 25%] [32mBuilding CXX object CMakeFiles/mk_rgb_seg.dir/src/MK_rgb_seg.cpp.o[0m
+[19.437s] [ 25%] [32mBuilding CXX object CMakeFiles/mk_matching_ptcld.dir/src/MK_matching_ptcld.cpp.o[0m
+[19.437s] [ 37%] [32mBuilding CXX object CMakeFiles/mk_rgb_seg_bag.dir/src/MK_rgb_seg_bag.cpp.o[0m
+[19.437s] [ 50%] [32mBuilding CXX object CMakeFiles/mk_pc_seg.dir/src/MK_pc_seg.cpp.o[0m
+[25.399s] [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:[m[K In member function ‘[01m[Kvoid BagProcessor::process_bags()[m[K’:
+[25.400s] [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:54:31:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krosbag2_cpp::Writer::write(std::__shared_ptr_access<rcutils_uint8_array_s, __gnu_cxx::_S_atomic, false, false>::element_type&, std::string&, rcutils_time_point_value_t&)[m[K’
+[25.400s]    54 |                 [01;31m[Kwriter_->write(*bag_message->serialized_data, bag_message->topic_name, bag_message->time_stamp)[m[K;
+[25.400s]       |                 [01;31m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[25.400s] In file included from [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:3[m[K:
+[25.400s] [01m[K/opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/writer.hpp:191:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT> void rosbag2_cpp::Writer::write(const MessageT&, const string&, const rclcpp::Time&)[m[K’
+[25.400s]   191 |   void [01;36m[Kwrite[m[K(
+[25.400s]       |        [01;36m[K^~~~~[m[K
+[25.401s] [01m[K/opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/writer.hpp:191:8:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[25.401s] [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:54:101:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K((std::__shared_ptr_access<rosbag2_storage::SerializedBagMessage, __gnu_cxx::_S_atomic, false, false>*)(& bag_message))->std::__shared_ptr_access<rosbag2_storage::SerializedBagMessage, __gnu_cxx::_S_atomic, false, false>::operator->()->rosbag2_storage::SerializedBagMessage::time_stamp[m[K’ (type ‘[01m[Krcutils_time_point_value_t[m[K’ {aka ‘[01m[Klong int[m[K’}) to type ‘[01m[Kconst rclcpp::Time&[m[K’
+[25.401s]    54 |                 writer_->write(*bag_message->serialized_data, bag_message->topic_name, [01;36m[Kbag_message->time_stamp[m[K);
+[25.401s]       |                                                                                        [01;36m[K~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[25.401s] In file included from [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:3[m[K:
+[25.401s] [01m[K/opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/writer.hpp:122:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rosbag2_cpp::Writer::write(std::shared_ptr<rosbag2_storage::SerializedBagMessage>)[m[K’
+[25.401s]   122 |   void [01;36m[Kwrite[m[K(std::shared_ptr<rosbag2_storage::SerializedBagMessage> message);
+[25.401s]       |        [01;36m[K^~~~~[m[K
+[25.401s] [01m[K/opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/writer.hpp:122:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[25.401s] [01m[K/opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/writer.hpp:134:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rosbag2_cpp::Writer::write(std::shared_ptr<rosbag2_storage::SerializedBagMessage>, const string&, const string&, const string&)[m[K’
+[25.402s]   134 |   void [01;36m[Kwrite[m[K(
+[25.402s]       |        [01;36m[K^~~~~[m[K
+[25.402s] [01m[K/opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/writer.hpp:135:60:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::__shared_ptr_access<rcutils_uint8_array_s, __gnu_cxx::_S_atomic, false, false>::element_type[m[K’ {aka ‘[01m[Krcutils_uint8_array_s[m[K’} to ‘[01m[Kstd::shared_ptr<rosbag2_storage::SerializedBagMessage>[m[K’
+[25.402s]   135 |     [01;36m[Kstd::shared_ptr<rosbag2_storage::SerializedBagMessage> message[m[K,
+[25.402s]       |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[25.402s] [01m[K/opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/writer.hpp:156:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rosbag2_cpp::Writer::write(const rclcpp::SerializedMessage&, const string&, const string&, const rclcpp::Time&)[m[K’
+[25.402s]   156 |   void [01;36m[Kwrite[m[K(
+[25.402s]       |        [01;36m[K^~~~~[m[K
+[25.402s] [01m[K/opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/writer.hpp:156:8:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 3 provided
+[25.402s] [01m[K/opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/writer.hpp:174:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rosbag2_cpp::Writer::write(std::shared_ptr<rclcpp::SerializedMessage>, const string&, const string&, const rclcpp::Time&)[m[K’
+[25.402s]   174 |   void [01;36m[Kwrite[m[K(
+[25.402s]       |        [01;36m[K^~~~~[m[K
+[25.402s] [01m[K/opt/ros/humble/include/rosbag2_cpp/rosbag2_cpp/writer.hpp:174:8:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 3 provided
+[27.969s] gmake[2]: *** [CMakeFiles/mk_pc_seg.dir/build.make:76: CMakeFiles/mk_pc_seg.dir/src/MK_pc_seg.cpp.o] Error 1
+[27.969s] gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/mk_pc_seg.dir/all] Error 2
+[27.969s] gmake[1]: *** Waiting for unfinished jobs....
+[28.264s] [ 62%] [32m[1mLinking CXX executable mk_rgb_seg_bag[0m
+[29.248s] [ 62%] Built target mk_rgb_seg_bag
+[40.513s] [ 75%] [32m[1mLinking CXX executable mk_rgb_seg[0m
+[41.895s] [ 75%] Built target mk_rgb_seg
+[48.875s] [ 87%] [32m[1mLinking CXX executable mk_matching_ptcld[0m
+[50.657s] [ 87%] Built target mk_matching_ptcld
+[50.658s] gmake: *** [Makefile:146: all] Error 2
+[50.663s] Invoked command in '/home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation --clean-first -- -j16 -l16
