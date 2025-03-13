@@ -1,0 +1,45 @@
+[0.036s] Invoking command in '/home/mkhanum/datapipe/build/smartbelt_segmentation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mkhanum/datapipe/build/smartbelt_segmentation --clean-first -- -j16 -l16
+[0.282s] [ 25%] [32mBuilding CXX object CMakeFiles/mk_matching_ptcld.dir/src/MK_matching_ptcld.cpp.o[0m
+[0.283s] [ 25%] [32mBuilding CXX object CMakeFiles/mk_rgb_seg.dir/src/MK_rgb_seg.cpp.o[0m
+[0.285s] [ 37%] [32mBuilding CXX object CMakeFiles/mk_rgb_seg_bag.dir/src/MK_rgb_seg_bag.cpp.o[0m
+[0.287s] [ 50%] [32mBuilding CXX object CMakeFiles/mk_pc_seg.dir/src/MK_pc_seg.cpp.o[0m
+[6.532s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[6.532s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[6.532s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[6.533s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[6.533s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[6.533s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[6.533s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[6.533s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[6.533s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[6.533s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[6.533s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[6.533s]                  from [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:1[m[K:
+[6.533s] [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:[m[K In member function ‘[01m[Kvoid BagProcessor::process_bags()[m[K’:
+[6.533s] [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:75:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcloud_msg[m[K’ was not declared in this scope; did you mean ‘[01m[Kcloud_msgs[m[K’?
+[6.533s]    75 |         [01;31m[Kcloud_msg[m[K[0]->header.frame_id.c_str(),
+[6.534s]       |         [01;31m[K^~~~~~~~~[m[K
+[6.543s] [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:80:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kcloud_msg[m[K’ was not declared in this scope; did you mean ‘[01m[Kcloud_msgs[m[K’?
+[6.544s]    80 |             [01;31m[Kcloud_msg[m[K[0]->width, cloud_msg[0]->height, cloud_msg[0]->is_dense);
+[6.544s]       |             [01;31m[K^~~~~~~~~[m[K
+[6.554s] [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:84:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kcloud_msg[m[K’ was not declared in this scope; did you mean ‘[01m[Kcloud_msgs[m[K’?
+[6.554s]    84 |             [01;31m[Kcloud_msg[m[K[0]->point_step, cloud_msg[0]->row_step, cloud_msg[0]->data.size());
+[6.555s]       |             [01;31m[K^~~~~~~~~[m[K
+[6.566s] [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:87:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kcloud_msg[m[K’ was not declared in this scope; did you mean ‘[01m[Kcloud_msgs[m[K’?
+[6.566s]    87 |             "Fields (%zu):", [01;31m[Kcloud_msg[m[K[0]->fields.size());
+[6.566s]       |                              [01;31m[K^~~~~~~~~[m[K
+[6.576s] [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:89:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kcloud_msg[m[K’ was not declared in this scope; did you mean ‘[01m[Kcloud_msgs[m[K’?
+[6.576s]    89 |         for (const auto& field : [01;31m[Kcloud_msg[m[K->fields) {
+[6.576s]       |                                  [01;31m[K^~~~~~~~~[m[K
+[6.576s]       |                                  [32m[Kcloud_msgs[m[K
+[8.869s] gmake[2]: *** [CMakeFiles/mk_pc_seg.dir/build.make:76: CMakeFiles/mk_pc_seg.dir/src/MK_pc_seg.cpp.o] Error 1
+[8.869s] gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/mk_pc_seg.dir/all] Error 2
+[8.869s] gmake[1]: *** Waiting for unfinished jobs....
+[9.069s] [ 62%] [32m[1mLinking CXX executable mk_rgb_seg_bag[0m
+[10.454s] [ 62%] Built target mk_rgb_seg_bag
+[20.407s] [ 75%] [32m[1mLinking CXX executable mk_rgb_seg[0m
+[21.551s] [ 75%] Built target mk_rgb_seg
+[27.252s] [ 87%] [32m[1mLinking CXX executable mk_matching_ptcld[0m
+[28.901s] [ 87%] Built target mk_matching_ptcld
+[28.902s] gmake: *** [Makefile:146: all] Error 2
+[28.906s] Invoked command in '/home/mkhanum/datapipe/build/smartbelt_segmentation' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mkhanum/datapipe/build/smartbelt_segmentation --clean-first -- -j16 -l16

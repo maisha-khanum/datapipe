@@ -1,0 +1,76 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/mk_pc_seg.dir/src/MK_pc_seg.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/mk_rgb_seg.dir/src/MK_rgb_seg.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/mk_rgb_seg_bag.dir/src/MK_rgb_seg_bag.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/mk_matching_ptcld.dir/src/MK_matching_ptcld.cpp.o[0m
+[01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:174:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kimage_geometry[m[K’ does not name a type
+  174 |         const [01;31m[Kimage_geometry[m[K::PinholeCameraModel& camera_model) { // Pass the camera model
+      |               [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:174:49:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+  174 |         const image_geometry::PinholeCameraModel[01;31m[K&[m[K camera_model) { // Pass the camera model
+      |                                                 [01;31m[K^[m[K
+[01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:174:49:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+  174 |         const image_geometry::PinholeCameraModel[01;31m[K&[m[K camera_model) { // Pass the camera model
+      |                                                 [01;31m[K^[m[K
+      |                                                 [32m[K)[m[K
+[01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:171:56:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+  171 |     sensor_msgs::msg::PointCloud2::SharedPtr apply_mask[01;36m[K([m[K
+      |                                                        [01;36m[K^[m[K
+[01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:174:49:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+  174 |         const image_geometry::PinholeCameraModel[01;31m[K&[m[K camera_model) { // Pass the camera model
+      |                                                 [01;31m[K^[m[K
+      |                                                  [32m[K;[m[K
+[01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:174:51:[m[K [01;31m[Kerror: [m[K‘[01m[Kcamera_model[m[K’ does not name a type
+  174 |         const image_geometry::PinholeCameraModel& [01;31m[Kcamera_model[m[K) { // Pass the camera model
+      |                                                   [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:[m[K In member function ‘[01m[Kvoid BagProcessor::process_bags()[m[K’:
+[01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:30:39:[m[K [01;31m[Kerror: [m[K‘[01m[KCameraInfo[m[K’ is not a member of ‘[01m[Ksensor_msgs::msg[m[K’
+   30 |         std::vector<sensor_msgs::msg::[01;31m[KCameraInfo[m[K::SharedPtr> camera_info_msgs;
+      |                                       [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:30:60:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   30 |         std::vector<sensor_msgs::msg::CameraInfo::SharedPtr[01;31m[K>[m[K camera_info_msgs;
+      |                                                            [01;31m[K^[m[K
+[01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:30:60:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:68:75:[m[K [01;31m[Kerror: [m[K‘[01m[KCameraInfo[m[K’ is not a member of ‘[01m[Ksensor_msgs::msg[m[K’
+   68 |                 auto camera_info_msg = std::make_shared<sensor_msgs::msg::[01;31m[KCameraInfo[m[K>();
+      |                                                                           [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:68:86:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<<expression error> >()[m[K’
+   68 |                 auto camera_info_msg = [01;31m[Kstd::make_shared<sensor_msgs::msg::CameraInfo>()[m[K;
+      |                                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+  875 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:68:86:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   68 |                 auto camera_info_msg = [01;31m[Kstd::make_shared<sensor_msgs::msg::CameraInfo>()[m[K;
+      |                                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:70:57:[m[K [01;31m[Kerror: [m[K‘[01m[KCameraInfo[m[K’ is not a member of ‘[01m[Ksensor_msgs::msg[m[K’
+   70 |                 rclcpp::Serialization<sensor_msgs::msg::[01;31m[KCameraInfo[m[K> serializer;
+      |                                                         [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:70:67:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   70 |                 rclcpp::Serialization<sensor_msgs::msg::CameraInfo[01;31m[K>[m[K serializer;
+      |                                                                   [01;31m[K^[m[K
+[01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:71:28:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kdeserialize_message[m[K’ in ‘[01m[Kserializer[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+   71 |                 serializer.[01;31m[Kdeserialize_message[m[K(&serialized_msg, camera_info_msg.get());
+      |                            [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:73:34:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kpush_back[m[K’ in ‘[01m[Kcamera_info_msgs[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+   73 |                 camera_info_msgs.[01;31m[Kpush_back[m[K(camera_info_msg);
+      |                                  [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:109:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kcamera_model_[m[K’ was not declared in this scope
+  109 |             [01;31m[Kcamera_model_[m[K.fromCameraInfo(camera_info_msgs[i]);
+      |             [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:109:58:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[Kint[size_t {aka long unsigned int}][m[K’ for array subscript
+  109 |             camera_model_.fromCameraInfo(camera_info_msgs[01;31m[K[[m[Ki]);
+      |                                                          [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/mk_pc_seg.dir/build.make:76: CMakeFiles/mk_pc_seg.dir/src/MK_pc_seg.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/mk_pc_seg.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 62%] [32m[1mLinking CXX executable mk_rgb_seg_bag[0m
+[ 62%] Built target mk_rgb_seg_bag
+[ 75%] [32m[1mLinking CXX executable mk_rgb_seg[0m
+[ 75%] Built target mk_rgb_seg
+[ 87%] [32m[1mLinking CXX executable mk_matching_ptcld[0m
+[ 87%] Built target mk_matching_ptcld
+gmake: *** [Makefile:146: all] Error 2

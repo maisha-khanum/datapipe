@@ -7,6 +7,8 @@
 #include <opencv2/opencv.hpp>
 #include <vector>
 #include <tf2_msgs/msg/tf_message.hpp>
+#include <image_geometry/pinhole_camera_model.h>
+
 // #include <tf2_msgs/msg/tf_static_message.hpp>
 
 class BagProcessor : public rclcpp::Node {
@@ -18,6 +20,7 @@ public:
 
 private:
     std::shared_ptr<rosbag2_cpp::Writer> writer_;
+    image_geometry::PinholeCameraModel camera_model_;
 
     void process_bags() {
         rosbag2_cpp::Reader reader_mask, reader_cloud;
@@ -27,6 +30,7 @@ private:
 
         std::vector<sensor_msgs::msg::Image::SharedPtr> mask_msgs;
         std::vector<sensor_msgs::msg::PointCloud2::SharedPtr> cloud_msgs;
+        std::vector<sensor_msgs::msg::CameraInfo::SharedPtr> camera_info_msgs;
 
         // Read all mask messages
         while (reader_mask.has_next()) {
@@ -63,12 +67,39 @@ private:
 
                 RCLCPP_INFO(this->get_logger(), "Wrote TF_STATIC data.");
             } 
-            // else if (bag_message->topic_name == "/tf") {
-            //     writer_->write(*bag_message->serialized_data, bag_message->topic_name, rclcpp::Time(bag_message->time_stamp));
-            //     RCLCPP_INFO(this->get_logger(), "Wrote TF data.");
-            // }
+            else if (bag_message->topic_name == "/d455/depth/camera_info") {
+                auto camera_info_msg = std::make_shared<sensor_msgs::msg::CameraInfo>();
+                rclcpp::SerializedMessage serialized_msg(*bag_message->serialized_data);
+                rclcpp::Serialization<sensor_msgs::msg::CameraInfo> serializer;
+                serializer.deserialize_message(&serialized_msg, camera_info_msg.get());
+                // camera_model_.fromCameraInfo(camera_info_msg);
+                camera_info_msgs.push_back(camera_info_msg);
+            }
         }
 
+        // Use cloud_msg instead of cloud
+        RCLCPP_INFO(this->get_logger(),
+        "Header: frame_id=%s, stamp=%d.%d", 
+        cloud_msgs[0]->header.frame_id.c_str(),
+        cloud_msgs[0]->header.stamp.sec, cloud_msgs[0]->header.stamp.nanosec);
+        
+        RCLCPP_INFO(this->get_logger(),
+            "Width: %d, Height: %d, is_dense: %d", 
+            cloud_msgs[0]->width, cloud_msgs[0]->height, cloud_msgs[0]->is_dense);
+        
+        RCLCPP_INFO(this->get_logger(),
+            "Point Step: %d, Row Step: %d, Data Size: %zu", 
+            cloud_msgs[0]->point_step, cloud_msgs[0]->row_step, cloud_msgs[0]->data.size());
+        
+        RCLCPP_INFO(this->get_logger(),
+            "Fields (%zu):", cloud_msgs[0]->fields.size());
+        
+        RCLCPP_INFO(this->get_logger(),
+        "MASK Width: %d, Height: %d", 
+        mask_msgs[0]->width, mask_msgs[0]->height);
+        
+
+            
         // Print vector sizes
         RCLCPP_INFO(this->get_logger(), "Mask messages vector size: %zu", mask_msgs.size());
         RCLCPP_INFO(this->get_logger(), "Cloud messages vector size: %zu", cloud_msgs.size());
@@ -78,7 +109,8 @@ private:
         RCLCPP_INFO(this->get_logger(), "Processing %zu pairs of messages.", num_pairs);
 
         for (size_t i = 0; i < num_pairs; ++i) {
-            auto segmented_cloud = apply_mask(cloud_msgs[i], mask_msgs[i]);
+            camera_model_.fromCameraInfo(camera_info_msgs[i]);
+            auto segmented_cloud = apply_mask(cloud_msgs[i], mask_msgs[i], camera_model_);
             writer_->write(*segmented_cloud, "/segmented_pointcloud", cloud_msgs[i]->header.stamp);
             RCLCPP_INFO(this->get_logger(), "Processed pair %zu of %zu.", i + 1, num_pairs);
         }
@@ -86,145 +118,57 @@ private:
         RCLCPP_INFO(this->get_logger(), "Finished processing all pairs.");
     }
 
-    // sensor_msgs::msg::PointCloud2::SharedPtr apply_mask(
-    //     const sensor_msgs::msg::PointCloud2::SharedPtr& cloud,
-    //     const sensor_msgs::msg::Image::SharedPtr& mask) {
-    //     // Convert mask to OpenCV image
-    //     cv_bridge::CvImagePtr cv_ptr = cv_bridge::toCvCopy(mask, "mono8");
-    //     cv::Mat mask_mat = cv_ptr->image;
-
-    //     std::vector<cv::Point> mask_pixels;
-    //     for (int y = 0; y < mask_mat.rows; ++y) {
-    //         for (int x = 0; x < mask_mat.cols; ++x) {
-    //             if (mask_mat.at<uchar>(y, x) > 0) {
-    //                 mask_pixels.emplace_back(x, y);
-    //             }
-    //         }
-    //     }
-
-        
-    //     // Process point cloud using the mask (dummy implementation)
-    //     // auto filtered_cloud = std::make_shared<sensor_msgs::msg::PointCloud2>(*cloud);
-    //     // Apply filtering logic based on mask_mat
-
-
-    //     std::vector<geometry_msgs::msg::PointStamped> points_in_camera_frame; // TODO
-
-    //     for (const auto& pixel : mask_pixels){ // TODO 
-    //         int u = pixel.x;
-    //         int v = pixel.y;
-    
-    //         int index = v * msg->width + u;
-    //         if (index >= cloud->points.size()){
-    //             RCLCPP_WARN(this->get_logger(), "Skipping pixel (%d, %d) - out of bounds", u, v);
-    //             continue;
-    //         }
-    
-    //         pcl::PointXYZ point = cloud->points[index];
-    
-    //         if (!std::isfinite(point.x) || !std::isfinite(point.y) || !std::isfinite(point.z)){
-    //             RCLCPP_WARN(this->get_logger(), "Skipping invalid point at pixel (%d, %d)", u, v);
-    //             continue;
-    //         }
-    
-    //         geometry_msgs::msg::PointStamped point_msg;
-    //         point_msg.header = msg->header;
-    //         point_msg.point.x = point.x;
-    //         point_msg.point.y = point.y;
-    //         point_msg.point.z = point.z;
-    
-    //         points_in_camera_frame.push_back(point_msg);
-    //     }
-        
-    //     return filtered_cloud;
-    // }
-
-
     sensor_msgs::msg::PointCloud2::SharedPtr apply_mask(
         const sensor_msgs::msg::PointCloud2::SharedPtr& cloud,
-        const sensor_msgs::msg::Image::SharedPtr& mask) {
+        const sensor_msgs::msg::Image::SharedPtr& mask,
+        const image_geometry::PinholeCameraModel& camera_model) { // Pass the camera model
     
         // Convert mask to OpenCV format
         cv_bridge::CvImagePtr cv_ptr = cv_bridge::toCvCopy(mask, "mono8");
         cv::Mat mask_mat = cv_ptr->image;
     
-        // Prepare a new filtered point cloud
-        auto filtered_cloud = std::make_shared<sensor_msgs::msg::PointCloud2>();
-        filtered_cloud->header = cloud->header;
-        filtered_cloud->height = 1; // Unorganized point cloud
-        filtered_cloud->is_dense = false;
+        auto filtered_cloud = std::make_shared<sensor_msgs::msg::PointCloud2>(*cloud);
+        filtered_cloud->data.clear();
+        filtered_cloud->width = 0;
     
-        // Copy point cloud metadata
-        filtered_cloud->fields = cloud->fields;
-        filtered_cloud->point_step = cloud->point_step;
-        filtered_cloud->row_step = cloud->point_step; // Since height = 1
-        filtered_cloud->is_bigendian = cloud->is_bigendian;
+        // Get camera intrinsic parameters from the camera model
+        cv::Mat camera_matrix = cv::Mat(camera_model.intrinsicMatrix());
+        cv::Mat dist_coeffs = cv::Mat(camera_model.distortionCoeffs());
     
-        // Use a vector to store valid points
-        std::vector<uint8_t> filtered_data;
+        for (size_t i = 0; i < cloud->width; ++i) {
+            const uint8_t* point_data = &cloud->data[i * cloud->point_step];
     
-        // Iterate through the mask and extract valid points
-        for (int v = 0; v < mask_mat.rows; ++v) {
-            for (int u = 0; u < mask_mat.cols; ++u) {
-                if (mask_mat.at<uchar>(v, u) > 0) { // If mask pixel is valid
-                    int index = v * cloud->width + u;
-                    if (index * cloud->point_step >= cloud->data.size()) {
-                        // RCLCPP_WARN(rclcpp::get_logger("apply_mask"), 
-                        //     "Skipping pixel (%d, %d) - out of bounds", u, v);
-                        continue;
+            // Extract x, y, z from point_data (adjust based on your point cloud format)
+            float x, y, z;
+            memcpy(&x, point_data + 0 * sizeof(float), sizeof(float)); // Adjust offsets as needed
+            memcpy(&y, point_data + 1 * sizeof(float), sizeof(float));
+            memcpy(&z, point_data + 2 * sizeof(float), sizeof(float));
+    
+            cv::Point3f point3d(x, y, z);
+    
+            std::vector<cv::Point2f> projected_points;
+            cv::projectPoints(std::vector<cv::Point3f>{point3d}, cv::Mat::zeros(3, 1, CV_64F), cv::Mat::zeros(3, 1, CV_64F), camera_matrix, dist_coeffs, projected_points);
+    
+            if (!projected_points.empty()) {
+                cv::Point2f projected_point = projected_points[0];
+                int u = static_cast<int>(projected_point.x);
+                int v = static_cast<int>(projected_point.y);
+    
+                if (u >= 0 && u < mask_mat.cols && v >= 0 && v < mask_mat.rows) {
+                    if (mask_mat.at<uchar>(v, u) > 0) {
+                        filtered_cloud->data.insert(filtered_cloud->data.end(), point_data, point_data + cloud->point_step);
+                        filtered_cloud->width++;
                     }
-                    // Copy the corresponding point data
-                    const uint8_t* src_ptr = &cloud->data[index * cloud->point_step];
-                    filtered_data.insert(filtered_data.end(), src_ptr, src_ptr + cloud->point_step);
                 }
             }
         }
     
-        // Assign filtered data to the new cloud
-        filtered_cloud->data = std::move(filtered_data);
-        filtered_cloud->width = filtered_cloud->data.size() / filtered_cloud->point_step;
-        filtered_cloud->row_step = filtered_cloud->width * filtered_cloud->point_step;
+        filtered_cloud->row_step = filtered_cloud->width * cloud->point_step;
     
         return filtered_cloud;
     }
     
 };
-
-
-// void Matching_Pix_to_Ptcld::pointcloud_callback(const sensor_msgs::msg::PointCloud2::SharedPtr msg){
-// 	pcl::PointCloud<pcl::PointXYZ>::Ptr cloud(new pcl::PointCloud<pcl::PointXYZ>);
-// 	pcl::fromROSMsg(*msg, *cloud);
-
-// 	std::vector<geometry_msgs::msg::PointStamped> points_in_camera_frame;
-
-// 	for (const auto& pixel : mask_img_pixels_){ // TODO 
-// 		int u = pixel.x;
-// 		int v = pixel.y;
-
-// 		int index = v * msg->width + u;
-// 		if (index >= cloud->points.size()){
-// 			RCLCPP_WARN(this->get_logger(), "Skipping pixel (%d, %d) - out of bounds", u, v);
-// 			continue;
-// 		}
-
-// 		pcl::PointXYZ point = cloud->points[index];
-
-// 		if (!std::isfinite(point.x) || !std::isfinite(point.y) || !std::isfinite(point.z)){
-// 			RCLCPP_WARN(this->get_logger(), "Skipping invalid point at pixel (%d, %d)", u, v);
-// 			continue;
-// 		}
-
-// 		geometry_msgs::msg::PointStamped point_msg;
-// 		point_msg.header = msg->header;
-// 		point_msg.point.x = point.x;
-// 		point_msg.point.y = point.y;
-// 		point_msg.point.z = point.z;
-
-// 		points_in_camera_frame.push_back(point_msg);
-// 	}
-
-// 	masked_pc_gen(points_in_camera_frame);
-// }
 
 int main(int argc, char** argv) {
     rclcpp::init(argc, argv);

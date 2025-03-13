@@ -24,3 +24,7 @@ you may need to delete output_bag is already there
 
 ex.
 ros2 run smartbelt_segmentation mk_pc_seg
+
+
+to run seg pc, need to run the yaml file
+ros2 bag play /home/mkhanum/datapipe/Bags/stair1_seg_pc --qos-profile-overrides-path /home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/scripts/reliability_override.yaml --loop
