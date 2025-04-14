@@ -1,0 +1,9 @@
+[0m** WARNING ** io features related to pcap will be disabled[0m
+[0m** WARNING ** io features related to png will be disabled[0m
+[01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_rgb_seg_bag.cpp:123:10:[m[K [01;31m[Kerror: [m[K‘[01m[KMatching_Pix_to_Ptcld[m[K’ has not been declared
+  123 |     bool [01;31m[KMatching_Pix_to_Ptcld[m[K::run_gsam2(const std::string& image_path, const std::string& mask_path) {
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/mk_rgb_seg_bag.dir/build.make:76: CMakeFiles/mk_rgb_seg_bag.dir/src/MK_rgb_seg_bag.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/mk_rgb_seg_bag.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

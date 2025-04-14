@@ -18,8 +18,11 @@ find_package(PCL REQUIRED COMPONENTS common io)
 find_package(pcl_conversions REQUIRED)
 find_package(rosbag2_cpp REQUIRED)
 find_package(tf2_msgs REQUIRED)
+find_package(CURL REQUIRED)
+find_package(nlohmann_json REQUIRED)
 
 include_directories(include)
+include_directories(/usr/include/jsoncpp)
 
 # First executable
 add_executable(mk_matching_ptcld src/MK_matching_ptcld.cpp)
@@ -59,8 +62,8 @@ ament_target_dependencies(mk_rgb_seg
 
 target_link_libraries(mk_rgb_seg ${PCL_LIBRARIES})
 
-# Third executable
 add_executable(mk_rgb_seg_bag src/MK_rgb_seg_bag.cpp)
+
 ament_target_dependencies(mk_rgb_seg_bag
   rclcpp
   sensor_msgs
@@ -77,7 +80,12 @@ ament_target_dependencies(mk_rgb_seg_bag
   rosbag2_cpp
 )
 
-target_link_libraries(mk_rgb_seg_bag ${PCL_LIBRARIES} rosbag2_cpp::rosbag2_cpp)
+target_link_libraries(mk_rgb_seg_bag
+  ${PCL_LIBRARIES}
+  rosbag2_cpp::rosbag2_cpp
+  CURL::libcurl
+  nlohmann_json::nlohmann_json
+)
 
 # Fourth executable
 add_executable(mk_pc_seg src/MK_pc_seg.cpp)

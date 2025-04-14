@@ -1,0 +1,597 @@
+[0.000000] (-) TimerEvent: {}
+[0.000659] (smartbelt_segmentation) JobQueued: {'identifier': 'smartbelt_segmentation', 'dependencies': OrderedDict()}
+[0.001328] (smartbelt_segmentation) JobStarted: {'identifier': 'smartbelt_segmentation'}
+[0.021539] (smartbelt_segmentation) JobProgress: {'identifier': 'smartbelt_segmentation', 'progress': 'cmake'}
+[0.023782] (smartbelt_segmentation) JobProgress: {'identifier': 'smartbelt_segmentation', 'progress': 'build'}
+[0.025211] (smartbelt_segmentation) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation', '--clean-first', '--', '-j16', '-l16'], 'cwd': '/home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('USER', 'mkhanum'), ('GIT_ASKPASS', '/home/mkhanum/.vscode-server/bin/2fc07b811f760549dab9be9d2bedd06c51dfcb9a/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/mkhanum'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/mkhanum/datapipe/ros2_ws/src'), ('TERM_PROGRAM_VERSION', '1.98.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-0941b6a0-2626-469b-a9df-a5e9a7e24b62.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/mkhanum/.vscode-server/bin/2fc07b811f760549dab9be9d2bedd06c51dfcb9a/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/mkhanum/.vscode-server/bin/2fc07b811f760549dab9be9d2bedd06c51dfcb9a/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/mkhanum/datapipe/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mkhanum'), ('NAME', 'maisha'), ('WSL_INTEROP', '/run/WSL/402_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/mkhanum/.vscode-server/bin/2fc07b811f760549dab9be9d2bedd06c51dfcb9a/bin/remote-cli:/opt/ros/humble/bin:/home/mkhanum/miniconda3/bin:/home/mkhanum/miniconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Windows/System32/OpenSSH:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/MATLAB/R2022a/bin:/mnt/c/Program Files/MATLAB/R2020a/bin:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn:/mnt/c/Program Files/Microsoft SQL Server/120/DTS/Binn:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit:/mnt/c/Program Files/Wolfram Research/WolframScript:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0:/mnt/c/WINDOWS/System32/OpenSSH:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/mkhan/AppData/Local/Programs/Python/Python39/Scripts:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files (x86)/PharosSystems/Core:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/usbipd-win:/mnt/c/Users/mkhan/AppData/Local/Microsoft/WindowsApps:/mnt/c/ProgramData/mkhan/GitHubDesktop/bin:/mnt/c/Users/mkhan/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/mkhan/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files/Multipass/bin:/mnt/c/Users/mkhan/AppData/Roaming/TinyTeX/bin/windows:/mnt/c/Users/mkhan/AppData/Local/Programs/Python/Python39/Scripts:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-ef7082a247.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/mkhanum/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation'), ('CONDA_EXE', '/home/mkhanum/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('CONDA_PREFIX', '/home/mkhanum/miniconda3'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/mkhanum/datapipe/ros2_ws/install/smartbelt_segmentation:/opt/ros/humble'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up:VSCODE_SERVER_TAR/up')]), 'shell': False}
+[0.099379] (-) TimerEvent: {}
+[0.199885] (-) TimerEvent: {}
+[0.300409] (-) TimerEvent: {}
+[0.400946] (-) TimerEvent: {}
+[0.501455] (-) TimerEvent: {}
+[0.602048] (-) TimerEvent: {}
+[0.658781] (smartbelt_segmentation) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/mk_pc_seg.dir/src/MK_pc_seg.cpp.o\x1b[0m\n'}
+[0.659211] (smartbelt_segmentation) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/mk_rgb_seg.dir/src/MK_rgb_seg.cpp.o\x1b[0m\n'}
+[0.659389] (smartbelt_segmentation) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/mk_matching_ptcld.dir/src/MK_matching_ptcld.cpp.o\x1b[0m\n'}
+[0.687202] (smartbelt_segmentation) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/mk_rgb_seg_bag.dir/src/MK_rgb_seg_bag.cpp.o\x1b[0m\n'}
+[0.702181] (-) TimerEvent: {}
+[0.802685] (-) TimerEvent: {}
+[0.903215] (-) TimerEvent: {}
+[1.003754] (-) TimerEvent: {}
+[1.104263] (-) TimerEvent: {}
+[1.204784] (-) TimerEvent: {}
+[1.305313] (-) TimerEvent: {}
+[1.405888] (-) TimerEvent: {}
+[1.506448] (-) TimerEvent: {}
+[1.607004] (-) TimerEvent: {}
+[1.707612] (-) TimerEvent: {}
+[1.808114] (-) TimerEvent: {}
+[1.908686] (-) TimerEvent: {}
+[2.009243] (-) TimerEvent: {}
+[2.109897] (-) TimerEvent: {}
+[2.210469] (-) TimerEvent: {}
+[2.311060] (-) TimerEvent: {}
+[2.411716] (-) TimerEvent: {}
+[2.512323] (-) TimerEvent: {}
+[2.612855] (-) TimerEvent: {}
+[2.713448] (-) TimerEvent: {}
+[2.814161] (-) TimerEvent: {}
+[2.914742] (-) TimerEvent: {}
+[3.015429] (-) TimerEvent: {}
+[3.116061] (-) TimerEvent: {}
+[3.216638] (-) TimerEvent: {}
+[3.317229] (-) TimerEvent: {}
+[3.417848] (-) TimerEvent: {}
+[3.518370] (-) TimerEvent: {}
+[3.618919] (-) TimerEvent: {}
+[3.719473] (-) TimerEvent: {}
+[3.820089] (-) TimerEvent: {}
+[3.920675] (-) TimerEvent: {}
+[4.021281] (-) TimerEvent: {}
+[4.121892] (-) TimerEvent: {}
+[4.222461] (-) TimerEvent: {}
+[4.323080] (-) TimerEvent: {}
+[4.423630] (-) TimerEvent: {}
+[4.524174] (-) TimerEvent: {}
+[4.624797] (-) TimerEvent: {}
+[4.725541] (-) TimerEvent: {}
+[4.826308] (-) TimerEvent: {}
+[4.926843] (-) TimerEvent: {}
+[5.027415] (-) TimerEvent: {}
+[5.128189] (-) TimerEvent: {}
+[5.228762] (-) TimerEvent: {}
+[5.329423] (-) TimerEvent: {}
+[5.430051] (-) TimerEvent: {}
+[5.530637] (-) TimerEvent: {}
+[5.631269] (-) TimerEvent: {}
+[5.731974] (-) TimerEvent: {}
+[5.832584] (-) TimerEvent: {}
+[5.933170] (-) TimerEvent: {}
+[6.033695] (-) TimerEvent: {}
+[6.134288] (-) TimerEvent: {}
+[6.234881] (-) TimerEvent: {}
+[6.335475] (-) TimerEvent: {}
+[6.436034] (-) TimerEvent: {}
+[6.536545] (-) TimerEvent: {}
+[6.637085] (-) TimerEvent: {}
+[6.737719] (-) TimerEvent: {}
+[6.838537] (-) TimerEvent: {}
+[6.939285] (-) TimerEvent: {}
+[7.040050] (-) TimerEvent: {}
+[7.140799] (-) TimerEvent: {}
+[7.241451] (-) TimerEvent: {}
+[7.342066] (-) TimerEvent: {}
+[7.442775] (-) TimerEvent: {}
+[7.543383] (-) TimerEvent: {}
+[7.644069] (-) TimerEvent: {}
+[7.744713] (-) TimerEvent: {}
+[7.845369] (-) TimerEvent: {}
+[7.946131] (-) TimerEvent: {}
+[8.046945] (-) TimerEvent: {}
+[8.147790] (-) TimerEvent: {}
+[8.248536] (-) TimerEvent: {}
+[8.349239] (-) TimerEvent: {}
+[8.449871] (-) TimerEvent: {}
+[8.550586] (-) TimerEvent: {}
+[8.651405] (-) TimerEvent: {}
+[8.752088] (-) TimerEvent: {}
+[8.852774] (-) TimerEvent: {}
+[8.953511] (-) TimerEvent: {}
+[9.054136] (-) TimerEvent: {}
+[9.154852] (-) TimerEvent: {}
+[9.255552] (-) TimerEvent: {}
+[9.356239] (-) TimerEvent: {}
+[9.456923] (-) TimerEvent: {}
+[9.557680] (-) TimerEvent: {}
+[9.658305] (-) TimerEvent: {}
+[9.758956] (-) TimerEvent: {}
+[9.859696] (-) TimerEvent: {}
+[9.960296] (-) TimerEvent: {}
+[10.060898] (-) TimerEvent: {}
+[10.161556] (-) TimerEvent: {}
+[10.262402] (-) TimerEvent: {}
+[10.363450] (-) TimerEvent: {}
+[10.464362] (-) TimerEvent: {}
+[10.565235] (-) TimerEvent: {}
+[10.666202] (-) TimerEvent: {}
+[10.767037] (-) TimerEvent: {}
+[10.867753] (-) TimerEvent: {}
+[10.968500] (-) TimerEvent: {}
+[11.069246] (-) TimerEvent: {}
+[11.169979] (-) TimerEvent: {}
+[11.270608] (-) TimerEvent: {}
+[11.287182] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:13:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KBagProcessor\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[11.292322] (smartbelt_segmentation) StderrLine: {'line': b'   13 | void \x1b[01;31m\x1b[KBagProcessor\x1b[m\x1b[K::process_bags() {\n'}
+[11.292636] (smartbelt_segmentation) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.298870] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid process_bags()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.299297] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:17:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kwriter_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kwrite\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[11.299605] (smartbelt_segmentation) StderrLine: {'line': b'   17 |     \x1b[01;31m\x1b[Kwriter_\x1b[m\x1b[K->open("/home/mkhanum/datapipe/Bags/stair2_seg_pc");\n'}
+[11.299830] (smartbelt_segmentation) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[11.299948] (smartbelt_segmentation) StderrLine: {'line': b'      |     \x1b[32m\x1b[Kwrite\x1b[m\x1b[K\n'}
+[11.337010] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:51:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcamera_model_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.337738] (smartbelt_segmentation) StderrLine: {'line': b'   51 |             \x1b[01;31m\x1b[Kcamera_model_\x1b[m\x1b[K.fromCameraInfo(camera_info_msg);\n'}
+[11.338016] (smartbelt_segmentation) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.349634] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:52:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kapply_mask\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.350027] (smartbelt_segmentation) StderrLine: {'line': b'   52 |             auto segmented_cloud = \x1b[01;31m\x1b[Kapply_mask\x1b[m\x1b[K(cloud_msg, mask_msg, camera_model_);\n'}
+[11.350168] (smartbelt_segmentation) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.350806] (smartbelt_segmentation) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[11.350990] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[11.351226] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[11.351344] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[11.351668] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[11.352083] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[11.352452] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[11.353546] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[11.353928] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[11.354140] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[11.354382] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:1\x1b[m\x1b[K:\n'}
+[11.354614] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:54:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[11.354843] (smartbelt_segmentation) StderrLine: {'line': b'   54 |             RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Processed a pair of messages.");\n'}
+[11.355042] (smartbelt_segmentation) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[11.355220] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:54:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[11.355405] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:54:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[11.355966] (smartbelt_segmentation) StderrLine: {'line': b'   54 |             \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Processed a pair of messages.");\n'}
+[11.356153] (smartbelt_segmentation) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.356316] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:54:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[11.356488] (smartbelt_segmentation) StderrLine: {'line': b'   54 |             \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Processed a pair of messages.");\n'}
+[11.356649] (smartbelt_segmentation) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.356814] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:54:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[11.356990] (smartbelt_segmentation) StderrLine: {'line': b'   54 |             \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Processed a pair of messages.");\n'}
+[11.357150] (smartbelt_segmentation) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.357305] (smartbelt_segmentation) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[11.357429] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[11.357762] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[11.358027] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[11.358218] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[11.358401] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[11.358585] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[11.358772] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[11.358936] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[11.359119] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[11.359307] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[11.359481] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:1\x1b[m\x1b[K:\n'}
+[11.359667] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:54:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[11.359855] (smartbelt_segmentation) StderrLine: {'line': b'   54 |             RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Processed a pair of messages.");\n'}
+[11.360032] (smartbelt_segmentation) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[11.360230] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:54:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[11.360411] (smartbelt_segmentation) StderrLine: {'line': b'   54 |             RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Processed a pair of messages.");\n'}
+[11.360588] (smartbelt_segmentation) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[11.365274] (smartbelt_segmentation) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[11.365553] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[11.365681] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[11.366456] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[11.366688] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[11.367031] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[11.367639] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[11.367863] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[11.368050] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[11.368367] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[11.368570] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:1\x1b[m\x1b[K:\n'}
+[11.368765] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:62:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[11.368948] (smartbelt_segmentation) StderrLine: {'line': b'   62 |             RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Wrote TF_STATIC data.");\n'}
+[11.369127] (smartbelt_segmentation) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[11.369316] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:62:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[11.369503] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:62:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[11.369678] (smartbelt_segmentation) StderrLine: {'line': b'   62 |             \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Wrote TF_STATIC data.");\n'}
+[11.369856] (smartbelt_segmentation) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.370049] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:62:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[11.370385] (smartbelt_segmentation) StderrLine: {'line': b'   62 |             \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Wrote TF_STATIC data.");\n'}
+[11.370588] (smartbelt_segmentation) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.370760] (-) TimerEvent: {}
+[11.371246] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:62:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[11.372674] (smartbelt_segmentation) StderrLine: {'line': b'   62 |             \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Wrote TF_STATIC data.");\n'}
+[11.372838] (smartbelt_segmentation) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.372972] (smartbelt_segmentation) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[11.373090] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[11.373208] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[11.373317] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[11.374351] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[11.374758] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[11.375003] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[11.375249] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[11.375484] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[11.375791] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[11.376023] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[11.376236] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:1\x1b[m\x1b[K:\n'}
+[11.376459] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:62:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[11.376684] (smartbelt_segmentation) StderrLine: {'line': b'   62 |             RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Wrote TF_STATIC data.");\n'}
+[11.376895] (smartbelt_segmentation) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[11.377097] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:62:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[11.377310] (smartbelt_segmentation) StderrLine: {'line': b'   62 |             RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Wrote TF_STATIC data.");\n'}
+[11.377542] (smartbelt_segmentation) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[11.377757] (smartbelt_segmentation) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[11.377981] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[11.379070] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[11.379316] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[11.379512] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[11.379720] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[11.379979] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[11.380179] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[11.380374] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[11.380550] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[11.380744] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:1\x1b[m\x1b[K:\n'}
+[11.380926] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:65:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[11.381108] (smartbelt_segmentation) StderrLine: {'line': b'   65 |     RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Finished processing all pairs.");\n'}
+[11.381283] (smartbelt_segmentation) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[11.381456] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:65:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[11.381630] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:65:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[11.381805] (smartbelt_segmentation) StderrLine: {'line': b'   65 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Finished processing all pairs.");\n'}
+[11.382006] (smartbelt_segmentation) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.382865] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:65:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[11.383113] (smartbelt_segmentation) StderrLine: {'line': b'   65 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Finished processing all pairs.");\n'}
+[11.383364] (smartbelt_segmentation) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.383593] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:65:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[11.383933] (smartbelt_segmentation) StderrLine: {'line': b'   65 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Finished processing all pairs.");\n'}
+[11.384128] (smartbelt_segmentation) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.384313] (smartbelt_segmentation) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[11.384447] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[11.384566] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[11.384764] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[11.384877] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[11.385006] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[11.385120] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[11.385254] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[11.385489] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[11.385724] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[11.385949] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[11.386518] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:1\x1b[m\x1b[K:\n'}
+[11.387037] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:65:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[11.387450] (smartbelt_segmentation) StderrLine: {'line': b'   65 |     RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Finished processing all pairs.");\n'}
+[11.387848] (smartbelt_segmentation) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[11.388277] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:65:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[11.389117] (smartbelt_segmentation) StderrLine: {'line': b'   65 |     RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Finished processing all pairs.");\n'}
+[11.389421] (smartbelt_segmentation) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[11.389645] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.389857] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:70:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KBagProcessor\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.390117] (smartbelt_segmentation) StderrLine: {'line': b'   70 |     rclcpp::spin(std::make_shared<\x1b[01;31m\x1b[KBagProcessor\x1b[m\x1b[K>());\n'}
+[11.390353] (smartbelt_segmentation) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.390506] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:70:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kmake_shared<<expression error> >()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.390862] (smartbelt_segmentation) StderrLine: {'line': b'   70 |     rclcpp::spin(\x1b[01;31m\x1b[Kstd::make_shared<BagProcessor>()\x1b[m\x1b[K);\n'}
+[11.391089] (smartbelt_segmentation) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[11.391310] (smartbelt_segmentation) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[11.391559] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[11.391788] (smartbelt_segmentation) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:1\x1b[m\x1b[K:\n'}
+[11.392033] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:875:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.392304] (smartbelt_segmentation) StderrLine: {'line': b'  875 |     \x1b[01;36m\x1b[Kmake_shared\x1b[m\x1b[K(_Args&&... __args)\n'}
+[11.392541] (smartbelt_segmentation) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.392784] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:875:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[11.393057] (smartbelt_segmentation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:70:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[11.393325] (smartbelt_segmentation) StderrLine: {'line': b'   70 |     rclcpp::spin(\x1b[01;31m\x1b[Kstd::make_shared<BagProcessor>()\x1b[m\x1b[K);\n'}
+[11.393551] (smartbelt_segmentation) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[11.471075] (-) TimerEvent: {}
+[11.572109] (-) TimerEvent: {}
+[11.673123] (-) TimerEvent: {}
+[11.774026] (-) TimerEvent: {}
+[11.874748] (-) TimerEvent: {}
+[11.975399] (-) TimerEvent: {}
+[12.076046] (-) TimerEvent: {}
+[12.176747] (-) TimerEvent: {}
+[12.277423] (-) TimerEvent: {}
+[12.378028] (-) TimerEvent: {}
+[12.478719] (-) TimerEvent: {}
+[12.579446] (-) TimerEvent: {}
+[12.680111] (-) TimerEvent: {}
+[12.780758] (-) TimerEvent: {}
+[12.881529] (-) TimerEvent: {}
+[12.982377] (-) TimerEvent: {}
+[13.083019] (-) TimerEvent: {}
+[13.183879] (-) TimerEvent: {}
+[13.284782] (-) TimerEvent: {}
+[13.385726] (-) TimerEvent: {}
+[13.486496] (-) TimerEvent: {}
+[13.587180] (-) TimerEvent: {}
+[13.687857] (-) TimerEvent: {}
+[13.789575] (-) TimerEvent: {}
+[13.890237] (-) TimerEvent: {}
+[13.991087] (-) TimerEvent: {}
+[14.091932] (-) TimerEvent: {}
+[14.192634] (-) TimerEvent: {}
+[14.293236] (-) TimerEvent: {}
+[14.393837] (-) TimerEvent: {}
+[14.494408] (-) TimerEvent: {}
+[14.595021] (-) TimerEvent: {}
+[14.695670] (-) TimerEvent: {}
+[14.796339] (-) TimerEvent: {}
+[14.897006] (-) TimerEvent: {}
+[14.997739] (-) TimerEvent: {}
+[15.068845] (smartbelt_segmentation) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/mk_pc_seg.dir/build.make:76: CMakeFiles/mk_pc_seg.dir/src/MK_pc_seg.cpp.o] Error 1\n'}
+[15.074772] (smartbelt_segmentation) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/mk_pc_seg.dir/all] Error 2\n'}
+[15.076354] (smartbelt_segmentation) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[15.097989] (-) TimerEvent: {}
+[15.198717] (-) TimerEvent: {}
+[15.299319] (-) TimerEvent: {}
+[15.400057] (-) TimerEvent: {}
+[15.500689] (-) TimerEvent: {}
+[15.601349] (-) TimerEvent: {}
+[15.702019] (-) TimerEvent: {}
+[15.802674] (-) TimerEvent: {}
+[15.903481] (-) TimerEvent: {}
+[16.004213] (-) TimerEvent: {}
+[16.104906] (-) TimerEvent: {}
+[16.205473] (-) TimerEvent: {}
+[16.306034] (-) TimerEvent: {}
+[16.406640] (-) TimerEvent: {}
+[16.507250] (-) TimerEvent: {}
+[16.607930] (-) TimerEvent: {}
+[16.708551] (-) TimerEvent: {}
+[16.809130] (-) TimerEvent: {}
+[16.909833] (-) TimerEvent: {}
+[17.010420] (-) TimerEvent: {}
+[17.111070] (-) TimerEvent: {}
+[17.211625] (-) TimerEvent: {}
+[17.294794] (smartbelt_segmentation) StdoutLine: {'line': b'[ 62%] \x1b[32m\x1b[1mLinking CXX executable mk_rgb_seg_bag\x1b[0m\n'}
+[17.311796] (-) TimerEvent: {}
+[17.412346] (-) TimerEvent: {}
+[17.512859] (-) TimerEvent: {}
+[17.613416] (-) TimerEvent: {}
+[17.713957] (-) TimerEvent: {}
+[17.814491] (-) TimerEvent: {}
+[17.915056] (-) TimerEvent: {}
+[18.015837] (-) TimerEvent: {}
+[18.116699] (-) TimerEvent: {}
+[18.217334] (-) TimerEvent: {}
+[18.317867] (-) TimerEvent: {}
+[18.418401] (-) TimerEvent: {}
+[18.518932] (-) TimerEvent: {}
+[18.619540] (-) TimerEvent: {}
+[18.720068] (-) TimerEvent: {}
+[18.820660] (-) TimerEvent: {}
+[18.921463] (-) TimerEvent: {}
+[19.022187] (-) TimerEvent: {}
+[19.098642] (smartbelt_segmentation) StdoutLine: {'line': b'[ 62%] Built target mk_rgb_seg_bag\n'}
+[19.122401] (-) TimerEvent: {}
+[19.223053] (-) TimerEvent: {}
+[19.323788] (-) TimerEvent: {}
+[19.424464] (-) TimerEvent: {}
+[19.525109] (-) TimerEvent: {}
+[19.625785] (-) TimerEvent: {}
+[19.726384] (-) TimerEvent: {}
+[19.826950] (-) TimerEvent: {}
+[19.927482] (-) TimerEvent: {}
+[20.028019] (-) TimerEvent: {}
+[20.128745] (-) TimerEvent: {}
+[20.229332] (-) TimerEvent: {}
+[20.329917] (-) TimerEvent: {}
+[20.430488] (-) TimerEvent: {}
+[20.531136] (-) TimerEvent: {}
+[20.631728] (-) TimerEvent: {}
+[20.732283] (-) TimerEvent: {}
+[20.832884] (-) TimerEvent: {}
+[20.933415] (-) TimerEvent: {}
+[21.034016] (-) TimerEvent: {}
+[21.134631] (-) TimerEvent: {}
+[21.235168] (-) TimerEvent: {}
+[21.335711] (-) TimerEvent: {}
+[21.436293] (-) TimerEvent: {}
+[21.536938] (-) TimerEvent: {}
+[21.637499] (-) TimerEvent: {}
+[21.738062] (-) TimerEvent: {}
+[21.838633] (-) TimerEvent: {}
+[21.939175] (-) TimerEvent: {}
+[22.039822] (-) TimerEvent: {}
+[22.140398] (-) TimerEvent: {}
+[22.240935] (-) TimerEvent: {}
+[22.341500] (-) TimerEvent: {}
+[22.442057] (-) TimerEvent: {}
+[22.542569] (-) TimerEvent: {}
+[22.643064] (-) TimerEvent: {}
+[22.743583] (-) TimerEvent: {}
+[22.844220] (-) TimerEvent: {}
+[22.944789] (-) TimerEvent: {}
+[23.045479] (-) TimerEvent: {}
+[23.146076] (-) TimerEvent: {}
+[23.246680] (-) TimerEvent: {}
+[23.347246] (-) TimerEvent: {}
+[23.447743] (-) TimerEvent: {}
+[23.548325] (-) TimerEvent: {}
+[23.648833] (-) TimerEvent: {}
+[23.749426] (-) TimerEvent: {}
+[23.850024] (-) TimerEvent: {}
+[23.950557] (-) TimerEvent: {}
+[24.051190] (-) TimerEvent: {}
+[24.151787] (-) TimerEvent: {}
+[24.252369] (-) TimerEvent: {}
+[24.352892] (-) TimerEvent: {}
+[24.453380] (-) TimerEvent: {}
+[24.553955] (-) TimerEvent: {}
+[24.654515] (-) TimerEvent: {}
+[24.755161] (-) TimerEvent: {}
+[24.855744] (-) TimerEvent: {}
+[24.956354] (-) TimerEvent: {}
+[25.056932] (-) TimerEvent: {}
+[25.157512] (-) TimerEvent: {}
+[25.258076] (-) TimerEvent: {}
+[25.358705] (-) TimerEvent: {}
+[25.459282] (-) TimerEvent: {}
+[25.559822] (-) TimerEvent: {}
+[25.660438] (-) TimerEvent: {}
+[25.761098] (-) TimerEvent: {}
+[25.861695] (-) TimerEvent: {}
+[25.962583] (-) TimerEvent: {}
+[26.063178] (-) TimerEvent: {}
+[26.163881] (-) TimerEvent: {}
+[26.264429] (-) TimerEvent: {}
+[26.364992] (-) TimerEvent: {}
+[26.465532] (-) TimerEvent: {}
+[26.566102] (-) TimerEvent: {}
+[26.666875] (-) TimerEvent: {}
+[26.767477] (-) TimerEvent: {}
+[26.868151] (-) TimerEvent: {}
+[26.968718] (-) TimerEvent: {}
+[27.069174] (-) TimerEvent: {}
+[27.169758] (-) TimerEvent: {}
+[27.270307] (-) TimerEvent: {}
+[27.370916] (-) TimerEvent: {}
+[27.471443] (-) TimerEvent: {}
+[27.571949] (-) TimerEvent: {}
+[27.672507] (-) TimerEvent: {}
+[27.773125] (-) TimerEvent: {}
+[27.873714] (-) TimerEvent: {}
+[27.974260] (-) TimerEvent: {}
+[28.074916] (-) TimerEvent: {}
+[28.175603] (-) TimerEvent: {}
+[28.276216] (-) TimerEvent: {}
+[28.377725] (-) TimerEvent: {}
+[28.478272] (-) TimerEvent: {}
+[28.578838] (-) TimerEvent: {}
+[28.679317] (-) TimerEvent: {}
+[28.779813] (-) TimerEvent: {}
+[28.880428] (-) TimerEvent: {}
+[28.981166] (-) TimerEvent: {}
+[29.081890] (-) TimerEvent: {}
+[29.182433] (-) TimerEvent: {}
+[29.282982] (-) TimerEvent: {}
+[29.383589] (-) TimerEvent: {}
+[29.484165] (-) TimerEvent: {}
+[29.584737] (-) TimerEvent: {}
+[29.685217] (-) TimerEvent: {}
+[29.785720] (-) TimerEvent: {}
+[29.886277] (-) TimerEvent: {}
+[29.986805] (-) TimerEvent: {}
+[30.087328] (-) TimerEvent: {}
+[30.201173] (-) TimerEvent: {}
+[30.301844] (-) TimerEvent: {}
+[30.402401] (-) TimerEvent: {}
+[30.502982] (-) TimerEvent: {}
+[30.603576] (-) TimerEvent: {}
+[30.704290] (-) TimerEvent: {}
+[30.804928] (-) TimerEvent: {}
+[30.812603] (smartbelt_segmentation) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable mk_rgb_seg\x1b[0m\n'}
+[30.905115] (-) TimerEvent: {}
+[31.005608] (-) TimerEvent: {}
+[31.106153] (-) TimerEvent: {}
+[31.206634] (-) TimerEvent: {}
+[31.307128] (-) TimerEvent: {}
+[31.407658] (-) TimerEvent: {}
+[31.508213] (-) TimerEvent: {}
+[31.608793] (-) TimerEvent: {}
+[31.709325] (-) TimerEvent: {}
+[31.809907] (-) TimerEvent: {}
+[31.910443] (-) TimerEvent: {}
+[32.010974] (-) TimerEvent: {}
+[32.111541] (-) TimerEvent: {}
+[32.179059] (smartbelt_segmentation) StdoutLine: {'line': b'[ 75%] Built target mk_rgb_seg\n'}
+[32.211709] (-) TimerEvent: {}
+[32.312212] (-) TimerEvent: {}
+[32.412793] (-) TimerEvent: {}
+[32.513375] (-) TimerEvent: {}
+[32.613990] (-) TimerEvent: {}
+[32.714529] (-) TimerEvent: {}
+[32.815024] (-) TimerEvent: {}
+[32.915599] (-) TimerEvent: {}
+[33.016152] (-) TimerEvent: {}
+[33.116657] (-) TimerEvent: {}
+[33.217177] (-) TimerEvent: {}
+[33.317682] (-) TimerEvent: {}
+[33.418228] (-) TimerEvent: {}
+[33.518764] (-) TimerEvent: {}
+[33.619263] (-) TimerEvent: {}
+[33.719779] (-) TimerEvent: {}
+[33.820284] (-) TimerEvent: {}
+[33.920862] (-) TimerEvent: {}
+[34.021414] (-) TimerEvent: {}
+[34.121944] (-) TimerEvent: {}
+[34.222487] (-) TimerEvent: {}
+[34.323076] (-) TimerEvent: {}
+[34.423619] (-) TimerEvent: {}
+[34.524092] (-) TimerEvent: {}
+[34.624630] (-) TimerEvent: {}
+[34.725162] (-) TimerEvent: {}
+[34.825697] (-) TimerEvent: {}
+[34.926211] (-) TimerEvent: {}
+[35.026740] (-) TimerEvent: {}
+[35.127356] (-) TimerEvent: {}
+[35.227982] (-) TimerEvent: {}
+[35.328558] (-) TimerEvent: {}
+[35.429114] (-) TimerEvent: {}
+[35.529615] (-) TimerEvent: {}
+[35.630150] (-) TimerEvent: {}
+[35.730698] (-) TimerEvent: {}
+[35.831292] (-) TimerEvent: {}
+[35.931913] (-) TimerEvent: {}
+[36.032509] (-) TimerEvent: {}
+[36.133120] (-) TimerEvent: {}
+[36.233755] (-) TimerEvent: {}
+[36.334347] (-) TimerEvent: {}
+[36.435035] (-) TimerEvent: {}
+[36.535672] (-) TimerEvent: {}
+[36.636254] (-) TimerEvent: {}
+[36.736915] (-) TimerEvent: {}
+[36.837476] (-) TimerEvent: {}
+[36.938009] (-) TimerEvent: {}
+[37.038577] (-) TimerEvent: {}
+[37.139144] (-) TimerEvent: {}
+[37.239719] (-) TimerEvent: {}
+[37.340312] (-) TimerEvent: {}
+[37.440869] (-) TimerEvent: {}
+[37.541539] (-) TimerEvent: {}
+[37.642244] (-) TimerEvent: {}
+[37.742871] (-) TimerEvent: {}
+[37.843427] (-) TimerEvent: {}
+[37.943997] (-) TimerEvent: {}
+[38.044543] (-) TimerEvent: {}
+[38.145165] (-) TimerEvent: {}
+[38.245721] (-) TimerEvent: {}
+[38.346270] (-) TimerEvent: {}
+[38.446843] (-) TimerEvent: {}
+[38.547423] (-) TimerEvent: {}
+[38.648039] (-) TimerEvent: {}
+[38.748731] (-) TimerEvent: {}
+[38.849411] (-) TimerEvent: {}
+[38.949993] (-) TimerEvent: {}
+[39.050540] (-) TimerEvent: {}
+[39.151221] (-) TimerEvent: {}
+[39.251841] (-) TimerEvent: {}
+[39.352500] (-) TimerEvent: {}
+[39.453185] (-) TimerEvent: {}
+[39.553904] (-) TimerEvent: {}
+[39.654725] (-) TimerEvent: {}
+[39.755240] (-) TimerEvent: {}
+[39.855831] (-) TimerEvent: {}
+[39.893371] (smartbelt_segmentation) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking CXX executable mk_matching_ptcld\x1b[0m\n'}
+[39.956006] (-) TimerEvent: {}
+[40.056598] (-) TimerEvent: {}
+[40.157145] (-) TimerEvent: {}
+[40.257674] (-) TimerEvent: {}
+[40.358217] (-) TimerEvent: {}
+[40.458868] (-) TimerEvent: {}
+[40.559481] (-) TimerEvent: {}
+[40.660140] (-) TimerEvent: {}
+[40.760741] (-) TimerEvent: {}
+[40.861415] (-) TimerEvent: {}
+[40.962351] (-) TimerEvent: {}
+[41.062931] (-) TimerEvent: {}
+[41.163572] (-) TimerEvent: {}
+[41.264158] (-) TimerEvent: {}
+[41.364756] (-) TimerEvent: {}
+[41.465446] (-) TimerEvent: {}
+[41.566100] (-) TimerEvent: {}
+[41.666783] (-) TimerEvent: {}
+[41.767367] (-) TimerEvent: {}
+[41.861606] (smartbelt_segmentation) StdoutLine: {'line': b'[ 87%] Built target mk_matching_ptcld\n'}
+[41.865921] (smartbelt_segmentation) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[41.867463] (-) TimerEvent: {}
+[41.913139] (smartbelt_segmentation) CommandEnded: {'returncode': 2}
+[41.967646] (-) TimerEvent: {}
+[42.045711] (smartbelt_segmentation) JobEnded: {'identifier': 'smartbelt_segmentation', 'rc': 2}
+[42.060277] (-) EventReactorShutdown: {}

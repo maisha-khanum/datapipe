@@ -6,6 +6,11 @@
 #include <sensor_msgs/msg/image.hpp>
 #include <cv_bridge/cv_bridge.h>
 #include <opencv2/opencv.hpp>
+#include <curl/curl.h>
+#include <nlohmann/json.hpp>
+#include <vector>
+#include <fstream>
+#include <chrono>
 
 class ROSBagProcessor : public rclcpp::Node
 {
@@ -81,12 +86,33 @@ public:
         RCLCPP_INFO(this->get_logger(), "Processing complete. Output saved in: %s", output_bag_path_.c_str());
     }
 
+    void save_data_to_file(const std::string& filename) {
+        std::ofstream outfile(filename);
+        if (outfile.is_open()) {
+            outfile << "Message Counter,Duration (ms),Empty Mask\n";
+            for (const auto& point : data) {
+                outfile << point.message_counter << "," << point.duration << "," << point.is_empty_mask << "\n";
+            }
+            outfile.close();
+            RCLCPP_INFO(this->get_logger(), "Data saved to %s", filename.c_str());
+        } else {
+            RCLCPP_ERROR(this->get_logger(), "Failed to open file for writing: %s", filename.c_str());
+        }
+    }
+
 private:
     std::string input_bag_path_;
     std::string output_bag_path_;
     rosbag2_cpp::Reader reader_;
     rosbag2_cpp::Writer writer_;
     int message_counter_;
+
+    struct DataPoint {
+        int message_counter;
+        long long duration;
+        bool is_empty_mask;
+    };
+    std::vector<DataPoint> data;
 
     bool process_with_gsam2(const cv::Mat &color_img, cv::Mat &mask)
     {
@@ -103,11 +129,17 @@ private:
         message_counter_++;
         RCLCPP_INFO(this->get_logger(), "Processing message number: %d", message_counter_);
 
+        
+        // Time measurement start
+        auto start_time = std::chrono::high_resolution_clock::now();
         if (!run_gsam2(image_path, mask_path))
         {
             RCLCPP_ERROR(this->get_logger(), "GSAM2 segmentation failed.");
             return false;
         }
+        // Time measurement end
+        auto end_time = std::chrono::high_resolution_clock::now();
+        auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end_time - start_time);
 
         mask = cv::imread(mask_path, cv::IMREAD_GRAYSCALE);
         if (mask.empty())
@@ -115,27 +147,50 @@ private:
             RCLCPP_ERROR(this->get_logger(), "Failed to load segmentation mask.");
             return false;
         }
+
+        bool is_empty_mask = true;
+        if (!mask.empty()) {
+          is_empty_mask = cv::countNonZero(mask) == 0;
+        }
+    
+        // Store data for plotting
+        data.push_back({message_counter_, duration.count(), is_empty_mask});
+    
         return true;
     }
 
-    bool run_gsam2(const std::string &image_path, const std::string &mask_path)
-    {
-        std::string python_path = "/home/mkhanum/miniconda3/envs/GSAM2Env/bin/python";
-        std::string script_path = "/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/scripts/run_gsam2.py";
-        std::string command = python_path + " " + script_path + " " + image_path + " " + mask_path;
-        int ret_code = std::system(command.c_str());
-
-        if (ret_code == 0)
-        {
-            RCLCPP_INFO(this->get_logger(), "GSAM2 segmentation finished successfully.");
-            return true;
+    bool run_gsam2(const std::string& image_path, const std::string& mask_path) {
+        CURL *curl;
+        CURLcode res;
+    
+        // JSON payload
+        nlohmann::json json_data;
+        json_data["image_path"] = image_path;
+        json_data["mask_path"] = mask_path;
+    
+        std::string json_str = json_data.dump();
+    
+        struct curl_slist *headers = NULL;
+        headers = curl_slist_append(headers, "Content-Type: application/json");
+    
+        curl = curl_easy_init();
+        if (curl) {
+            curl_easy_setopt(curl, CURLOPT_URL, "http://localhost:5000/run_gsam2");
+            curl_easy_setopt(curl, CURLOPT_POSTFIELDS, json_str.c_str());
+            curl_easy_setopt(curl, CURLOPT_POSTFIELDSIZE, json_str.size());
+            curl_easy_setopt(curl, CURLOPT_HTTPHEADER, headers);
+            
+            res = curl_easy_perform(curl);
+            
+            // Clean up
+            curl_slist_free_all(headers);
+            curl_easy_cleanup(curl);
+    
+            return res == CURLE_OK;
         }
-        else
-        {
-            RCLCPP_ERROR(this->get_logger(), "GSAM2 segmentation failed with return code: %d", ret_code);
-            return false;
-        }
+        return false;
     }
+    
 };
 
 int main(int argc, char **argv)
@@ -153,6 +208,7 @@ int main(int argc, char **argv)
 
     auto processor = std::make_shared<ROSBagProcessor>(input_bag, output_bag);
     processor->process();
+    processor->save_data_to_file("gsam2_timing_data.csv");
 
     rclcpp::shutdown();
     return 0;

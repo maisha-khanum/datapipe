@@ -190,6 +190,7 @@ mk_rgb_seg_bag: /usr/lib/x86_64-linux-gnu/libvtkRenderingLOD-9.1.so.9.1.0
 mk_rgb_seg_bag: /usr/lib/x86_64-linux-gnu/libvtkViewsContext2D-9.1.so.9.1.0
 mk_rgb_seg_bag: /usr/lib/x86_64-linux-gnu/libvtkGUISupportQt-9.1.so.9.1.0
 mk_rgb_seg_bag: /opt/ros/humble/lib/librosbag2_cpp.so
+mk_rgb_seg_bag: /usr/lib/x86_64-linux-gnu/libcurl.so
 mk_rgb_seg_bag: /opt/ros/humble/lib/libtf2_ros.so
 mk_rgb_seg_bag: /opt/ros/humble/lib/libtf2.so
 mk_rgb_seg_bag: /opt/ros/humble/lib/librclcpp_action.so

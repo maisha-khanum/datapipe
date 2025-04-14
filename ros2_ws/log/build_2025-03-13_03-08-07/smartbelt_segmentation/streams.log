@@ -1,0 +1,173 @@
+[0.032s] Invoking command in '/home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation --clean-first -- -j16 -l16
+[0.658s] [ 12%] [32mBuilding CXX object CMakeFiles/mk_pc_seg.dir/src/MK_pc_seg.cpp.o[0m
+[0.658s] [ 37%] [32mBuilding CXX object CMakeFiles/mk_rgb_seg.dir/src/MK_rgb_seg.cpp.o[0m
+[0.658s] [ 37%] [32mBuilding CXX object CMakeFiles/mk_matching_ptcld.dir/src/MK_matching_ptcld.cpp.o[0m
+[0.686s] [ 50%] [32mBuilding CXX object CMakeFiles/mk_rgb_seg_bag.dir/src/MK_rgb_seg_bag.cpp.o[0m
+[11.289s] [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:13:6:[m[K [01;31m[Kerror: [m[K‘[01m[KBagProcessor[m[K’ has not been declared
+[11.291s]    13 | void [01;31m[KBagProcessor[m[K::process_bags() {
+[11.291s]       |      [01;31m[K^~~~~~~~~~~~[m[K
+[11.298s] [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:[m[K In function ‘[01m[Kvoid process_bags()[m[K’:
+[11.298s] [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:17:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kwriter_[m[K’ was not declared in this scope; did you mean ‘[01m[Kwrite[m[K’?
+[11.298s]    17 |     [01;31m[Kwriter_[m[K->open("/home/mkhanum/datapipe/Bags/stair2_seg_pc");
+[11.299s]       |     [01;31m[K^~~~~~~[m[K
+[11.299s]       |     [32m[Kwrite[m[K
+[11.336s] [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:51:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kcamera_model_[m[K’ was not declared in this scope
+[11.337s]    51 |             [01;31m[Kcamera_model_[m[K.fromCameraInfo(camera_info_msg);
+[11.337s]       |             [01;31m[K^~~~~~~~~~~~~[m[K
+[11.349s] [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:52:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kapply_mask[m[K’ was not declared in this scope
+[11.349s]    52 |             auto segmented_cloud = [01;31m[Kapply_mask[m[K(cloud_msg, mask_msg, camera_model_);
+[11.349s]       |                                    [01;31m[K^~~~~~~~~~[m[K
+[11.350s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[11.350s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[11.350s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[11.350s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[11.351s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[11.351s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[11.352s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[11.352s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[11.353s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[11.353s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[11.353s]                  from [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:1[m[K:
+[11.353s] [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:54:25:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[11.354s]    54 |             RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Processed a pair of messages.");
+[11.354s]       |                         [01;31m[K^~~~[m[K
+[11.354s] [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:54:25:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[11.354s] [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:54:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[11.355s]    54 |             [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Processed a pair of messages.");
+[11.355s]       |             [01;31m[K^~~~~~~~~~~[m[K
+[11.355s] [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:54:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[11.355s]    54 |             [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Processed a pair of messages.");
+[11.355s]       |             [01;31m[K^~~~~~~~~~~[m[K
+[11.356s] [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:54:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[11.356s]    54 |             [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Processed a pair of messages.");
+[11.356s]       |             [01;31m[K^~~~~~~~~~~[m[K
+[11.356s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[11.356s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[11.357s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[11.357s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[11.357s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[11.357s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[11.357s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[11.358s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[11.358s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[11.358s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[11.358s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[11.358s]                  from [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:1[m[K:
+[11.358s] [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:54:25:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[11.359s]    54 |             RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Processed a pair of messages.");
+[11.359s]       |                         [01;31m[K^~~~[m[K
+[11.359s] [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:54:25:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[11.359s]    54 |             RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Processed a pair of messages.");
+[11.360s]       |                         [01;31m[K^~~~[m[K
+[11.364s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[11.364s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[11.365s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[11.365s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[11.366s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[11.366s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[11.366s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[11.367s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[11.367s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[11.367s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[11.367s]                  from [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:1[m[K:
+[11.368s] [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:62:25:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[11.368s]    62 |             RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Wrote TF_STATIC data.");
+[11.368s]       |                         [01;31m[K^~~~[m[K
+[11.368s] [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:62:25:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[11.368s] [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:62:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[11.368s]    62 |             [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Wrote TF_STATIC data.");
+[11.369s]       |             [01;31m[K^~~~~~~~~~~[m[K
+[11.369s] [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:62:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[11.369s]    62 |             [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Wrote TF_STATIC data.");
+[11.369s]       |             [01;31m[K^~~~~~~~~~~[m[K
+[11.371s] [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:62:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[11.371s]    62 |             [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Wrote TF_STATIC data.");
+[11.372s]       |             [01;31m[K^~~~~~~~~~~[m[K
+[11.372s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[11.372s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[11.372s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[11.373s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[11.373s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[11.374s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[11.374s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[11.374s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[11.374s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[11.375s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[11.375s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[11.375s]                  from [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:1[m[K:
+[11.375s] [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:62:25:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[11.375s]    62 |             RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Wrote TF_STATIC data.");
+[11.376s]       |                         [01;31m[K^~~~[m[K
+[11.376s] [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:62:25:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[11.376s]    62 |             RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Wrote TF_STATIC data.");
+[11.376s]       |                         [01;31m[K^~~~[m[K
+[11.377s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[11.378s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[11.378s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[11.378s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[11.378s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[11.379s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[11.379s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[11.379s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[11.379s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[11.379s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[11.380s]                  from [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:1[m[K:
+[11.380s] [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:65:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[11.380s]    65 |     RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Finished processing all pairs.");
+[11.380s]       |                 [01;31m[K^~~~[m[K
+[11.380s] [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:65:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[11.380s] [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:65:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[11.381s]    65 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Finished processing all pairs.");
+[11.381s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[11.382s] [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:65:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[11.382s]    65 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Finished processing all pairs.");
+[11.382s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[11.382s] [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:65:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[11.383s]    65 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Finished processing all pairs.");
+[11.383s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[11.383s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[11.383s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[11.383s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[11.383s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[11.384s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[11.384s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[11.384s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[11.384s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[11.384s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[11.385s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[11.385s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[11.386s]                  from [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:1[m[K:
+[11.386s] [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:65:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[11.386s]    65 |     RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Finished processing all pairs.");
+[11.387s]       |                 [01;31m[K^~~~[m[K
+[11.387s] [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:65:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[11.388s]    65 |     RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Finished processing all pairs.");
+[11.388s]       |                 [01;31m[K^~~~[m[K
+[11.388s] [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[11.389s] [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:70:35:[m[K [01;31m[Kerror: [m[K‘[01m[KBagProcessor[m[K’ was not declared in this scope
+[11.389s]    70 |     rclcpp::spin(std::make_shared<[01;31m[KBagProcessor[m[K>());
+[11.389s]       |                                   [01;31m[K^~~~~~~~~~~~[m[K
+[11.389s] [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:70:48:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<<expression error> >()[m[K’
+[11.390s]    70 |     rclcpp::spin([01;31m[Kstd::make_shared<BagProcessor>()[m[K);
+[11.390s]       |                  [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[11.390s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[11.390s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[11.391s]                  from [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:1[m[K:
+[11.391s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+[11.391s]   875 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+[11.391s]       |     [01;36m[K^~~~~~~~~~~[m[K
+[11.392s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[11.392s] [01m[K/home/mkhanum/datapipe/ros2_ws/src/smartbelt_segmentation/src/MK_pc_seg.cpp:70:48:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[11.392s]    70 |     rclcpp::spin([01;31m[Kstd::make_shared<BagProcessor>()[m[K);
+[11.392s]       |                  [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[15.068s] gmake[2]: *** [CMakeFiles/mk_pc_seg.dir/build.make:76: CMakeFiles/mk_pc_seg.dir/src/MK_pc_seg.cpp.o] Error 1
+[15.074s] gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/mk_pc_seg.dir/all] Error 2
+[15.075s] gmake[1]: *** Waiting for unfinished jobs....
+[17.294s] [ 62%] [32m[1mLinking CXX executable mk_rgb_seg_bag[0m
+[19.098s] [ 62%] Built target mk_rgb_seg_bag
+[30.812s] [ 75%] [32m[1mLinking CXX executable mk_rgb_seg[0m
+[32.178s] [ 75%] Built target mk_rgb_seg
+[39.892s] [ 87%] [32m[1mLinking CXX executable mk_matching_ptcld[0m
+[41.860s] [ 87%] Built target mk_matching_ptcld
+[41.865s] gmake: *** [Makefile:146: all] Error 2
+[41.914s] Invoked command in '/home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/mkhanum/datapipe/ros2_ws/build/smartbelt_segmentation --clean-first -- -j16 -l16

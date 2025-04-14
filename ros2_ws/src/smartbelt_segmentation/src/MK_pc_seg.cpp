@@ -24,9 +24,13 @@ private:
 
     void process_bags() {
         rosbag2_cpp::Reader reader_mask, reader_cloud;
-        reader_mask.open("/home/mkhanum/datapipe/Bags/stair1_full");
-        reader_cloud.open("/home/mkhanum/datapipe/Bags/stair1");
-        writer_->open("/home/mkhanum/datapipe/Bags/stair1_seg_pc");
+        // reader_mask.open("/home/mkhanum/datapipe/Bags/stair1_masked");
+        // reader_cloud.open("/home/mkhanum/datapipe/Bags/stair1");
+        // writer_->open("/home/mkhanum/datapipe/Bags/stair1_seg_pc_v3");
+
+        reader_mask.open("/home/mkhanum/datapipe/Bags/stair2_masked");
+        reader_cloud.open("/mnt/c/Users/mkhan/Downloads/realsense_ros2A");
+        writer_->open("/home/mkhanum/datapipe/Bags/stair2_seg_pc");
 
         std::vector<sensor_msgs::msg::Image::SharedPtr> mask_msgs;
         std::vector<sensor_msgs::msg::PointCloud2::SharedPtr> cloud_msgs;
@@ -47,6 +51,8 @@ private:
         // Read all cloud messages
         while (reader_cloud.has_next()) {
             auto bag_message = reader_cloud.read_next();
+            RCLCPP_INFO(this->get_logger(), "%s", bag_message->topic_name);
+
             if (bag_message->topic_name == "/d455/depth/color/points") {
                 auto cloud_msg = std::make_shared<sensor_msgs::msg::PointCloud2>();
                 rclcpp::SerializedMessage serialized_msg(*bag_message->serialized_data);

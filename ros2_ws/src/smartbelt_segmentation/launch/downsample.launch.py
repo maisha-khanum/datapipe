@@ -11,14 +11,15 @@ def generate_launch_description():
         "/d455/color/camera_info",
         "/d455/color/image_raw",
         "/d455/depth/camera_info",
-        "/d455/depth/color/points"
+        "/d455/depth/color/points",
+        "/tf_static"
     ]
 
     throttle_nodes = [
         Node(
             package="topic_tools",
             executable="throttle",
-            arguments=["messages", topic, "20.0"],
+            arguments=["messages", topic, "15.0"],
             remappings=[(topic, f"{topic}_throttled")],
             output="screen"
         )
@@ -28,7 +29,7 @@ def generate_launch_description():
     return LaunchDescription([
         # Play the original bag file at normal speed
         ExecuteProcess(
-            cmd=["ros2", "bag", "play", bag_path, "--rate", "1.0"],
+            cmd=["ros2", "bag", "play", bag_path, "--rate", "1.0", "--read-ahead-queue-size", "1000"],            
             output="screen"
         ),
 
@@ -37,7 +38,7 @@ def generate_launch_description():
 
         # Record the downsampled topics
         ExecuteProcess(
-            cmd=["ros2", "bag", "record", "-o", downsampled_bag_path] + [f"{topic}_throttled" for topic in topics],
+            cmd=["ros2", "bag", "record", "-o", downsampled_bag_path] + [f"{topic}" for topic in topics],
             output="screen"
         ),
     ])
